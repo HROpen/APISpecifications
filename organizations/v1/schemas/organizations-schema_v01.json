@@ -1,0 +1,15 @@
+{
+	"$schema": "http://json-schema.org/draft/2020-12/schema",	
+	"title": "OrganizationsSchema",
+	"description": "A list of organizations",
+	"type": "object",
+    "properties": {
+        "organizations": {
+            "type": "array",
+            "items": {
+                "$ref": "../../../../common/json/organization/OrganizationType.json"
+            }
+        }
+    },
+	"unevaluatedProperties": false
+}

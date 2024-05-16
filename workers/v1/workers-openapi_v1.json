@@ -1,0 +1,1201 @@
+{
+  "openapi": "3.1.0",
+  "servers": [
+    {
+      "url": "https://__host__/"
+    }
+  ],
+  "info": {
+    "description": "APIs to support managing workers for organizations participating in JEDx",
+    "version": "1.0.0",
+    "title": "Workers",
+    "contact": {
+      "name": "JEDx Working Group"
+    }
+  },
+  "externalDocs": {
+    "description": "JEDx Website",
+    "url": "https://www.uschamberfoundation.org/solutions/workforce-development-and-training/jedx"
+  },
+  "tags": [    
+    {
+      "name": "Worker Management",
+      "description": "Manage workers within participant organizations"
+    }
+  ],
+  "paths": {
+    "/jedx/v1/workers": {
+      "get": {
+        "description": "Retrieve a list of workers matching the filter criteria",
+        "tags": [
+          "Worker Management"
+        ],
+        "summary": "Retrieve Workers",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/query_worker_filter"
+          },
+          {
+            "$ref": "#/components/parameters/query_select"
+          },
+          {
+            "$ref": "#/components/parameters/header_Accept-Language"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "headers": {
+              "ETag": {
+                "$ref": "#/components/headers/ETag"
+              },
+              "Last-Modified": {
+                "$ref": "#/components/headers/Last-Modified"
+              },
+              "Content-Language": {
+                "$ref": "#/components/headers/Content-Language"
+              },
+              "OAGi-MessageID": {
+                "$ref": "#/components/headers/OAGi-MessageID"
+              },
+              "OAGi-CorrelationID": {
+                "$ref": "#/components/headers/OAGi-CorrelationID"
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./schemas/workers-schema_v01.json"
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          },
+          "503": {
+            "$ref": "#/components/responses/503"
+          }
+        }
+      },
+      "post": {
+        "description": "Add new workers to JEDx",
+        "tags": [
+          "Worker Management"
+        ],
+        "summary": "Add New Workers",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/workers-add-change-request"
+        },
+        "parameters": [          
+          {
+            "$ref": "#/components/parameters/header_Link"
+          }
+        ],
+        "responses": {
+          "201": {
+            "$ref": "#/components/responses/201"
+          },
+          "202": {
+            "$ref": "#/components/responses/202"
+          },
+          "207": {
+            "$ref": "#/components/responses/207"
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "413": {
+            "$ref": "#/components/responses/413"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          },
+          "503": {
+            "$ref": "#/components/responses/503"
+          }
+        }
+      },
+      "put": {
+        "description": "Update (modify/change) existing workers (full replacement) based on filter criterion",
+        "tags": [
+          "Worker Management"
+        ],
+        "summary": "Update Workers (Bulk Operation)",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/workers-add-change-request"
+        },
+        "parameters": [   
+          {
+            "$ref": "#/components/parameters/query_worker_filter"
+          },       
+          {
+            "$ref": "#/components/parameters/header_Link"
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/200"
+          },
+          "202": {
+            "$ref": "#/components/responses/202"
+          },
+          "207": {
+            "$ref": "#/components/responses/207"
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "413": {
+            "$ref": "#/components/responses/413"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          },
+          "503": {
+            "$ref": "#/components/responses/503"
+          }
+        }
+      },
+      "delete": {
+        "description": "Delete/remove existing workers based on filter criterion",
+        "tags": [
+          "Worker Management"
+        ],
+        "summary": "Remove Workers (Bulk Operation)",
+        "parameters": [                    
+          {
+            "$ref": "#/components/parameters/query_worker_filter"
+          },
+          {
+            "$ref": "#/components/parameters/header_Link"
+          }
+        ],
+        "responses": {          
+          "204": {
+            "$ref": "#/components/responses/204"
+          },
+          "207": {
+            "$ref": "#/components/responses/207"
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          },
+          "503": {
+            "$ref": "#/components/responses/503"
+          }
+        }
+      }
+    },
+    "/jedx/v1/workers/{worker-id}": {
+      "get": {
+        "description": "Retrieve an existing worker instance resource",
+        "tags": [
+          "Worker Management"
+        ],
+        "summary": "Retrieve a Worker",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/path_worker-id"
+          },
+          {
+            "$ref": "#/components/parameters/header_Accept-Language"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "headers": {
+              "ETag": {
+                "$ref": "#/components/headers/ETag"
+              },
+              "Last-Modified": {
+                "$ref": "#/components/headers/Last-Modified"
+              },
+              "Content-Language": {
+                "$ref": "#/components/headers/Content-Language"
+              },
+              "OAGi-MessageID": {
+                "$ref": "#/components/headers/OAGi-MessageID"
+              },
+              "OAGi-CorrelationID": {
+                "$ref": "#/components/headers/OAGi-CorrelationID"
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./schemas/worker-schema_v01.json"
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          },
+          "503": {
+            "$ref": "#/components/responses/503"
+          }
+        }
+      },
+      "put": {
+        "description": "Update an existing worker (full replacement)",
+        "tags": [
+          "Worker Management"
+        ],
+        "summary": "Update a Worker",
+        "requestBody": {
+          "$ref": "#/components/requestBodies/worker-change-request"
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/path_worker-id"
+          },
+          {
+            "$ref": "#/components/parameters/header_Link"
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/200"
+          },
+          "202": {
+            "$ref": "#/components/responses/202"
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "413": {
+            "$ref": "#/components/responses/413"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          },
+          "503": {
+            "$ref": "#/components/responses/503"
+          }
+        }
+      },
+      "delete": {
+        "description": "Delete/remove an existing worker",
+        "tags": [
+          "Worker Management"
+        ],
+        "summary": "Remove a Worker",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/path_worker-id"
+          },
+          {
+            "$ref": "#/components/parameters/header_Link"
+          }
+        ],
+        "responses": {          
+          "204": {
+            "$ref": "#/components/responses/204"
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          },
+          "503": {
+            "$ref": "#/components/responses/503"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "responses": {
+      "200": {
+        "description": "OK (Default)",
+        "headers": {
+          "ETag": {
+            "$ref": "#/components/headers/ETag"
+          },
+          "Last-Modified": {
+            "$ref": "#/components/headers/Last-Modified"
+          },
+          "Content-Language": {
+            "$ref": "#/components/headers/Content-Language"
+          },
+          "OAGi-MessageID": {
+            "$ref": "#/components/headers/OAGi-MessageID"
+          },
+          "OAGi-CorrelationID": {
+            "$ref": "#/components/headers/OAGi-CorrelationID"
+          }
+        },
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "../../../common/json/shared/confirm-message-schema_v01.json"
+            }
+          }
+        }
+      },
+      "201": {
+        "description": "Created",
+        "headers": {
+          "Location": {
+            "$ref": "#/components/headers/Location"
+          },
+          "Retry-After": {
+            "$ref": "#/components/headers/Retry-After"
+          },
+          "OAGi-MessageID": {
+            "$ref": "#/components/headers/OAGi-MessageID"
+          },
+          "OAGi-CorrelationID": {
+            "$ref": "#/components/headers/OAGi-CorrelationID"
+          }
+        },
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "../../../common/json/shared/confirm-message-schema_v01.json"
+            }
+          }
+        }
+      },
+      "202": {
+        "description": "Accepted",
+        "headers": {
+          "OAGi-MessageID": {
+            "$ref": "#/components/headers/OAGi-MessageID"
+          },
+          "OAGi-CorrelationID": {
+            "$ref": "#/components/headers/OAGi-CorrelationID"
+          },
+          "OAGi-ConversationID": {
+            "$ref": "#/components/headers/OAGi-ConversationID"
+          }
+        },
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "../../../common/json/shared/confirm-message-schema_v01.json"
+            }
+          }
+        }
+      },
+      "204": {
+        "description": "No Content",
+        "headers": {
+          "ETag": {
+            "$ref": "#/components/headers/ETag"
+          },
+          "Last-Modified": {
+            "$ref": "#/components/headers/Last-Modified"
+          },
+          "OAGi-MessageID": {
+            "$ref": "#/components/headers/OAGi-MessageID"
+          },
+          "OAGi-CorrelationID": {
+            "$ref": "#/components/headers/OAGi-CorrelationID"
+          }
+        }
+      },
+      "206": {
+        "description": "Partial Content",
+        "headers": {
+          "ETag": {
+            "$ref": "#/components/headers/ETag"
+          },
+          "Last-Modified": {
+            "$ref": "#/components/headers/Last-Modified"
+          },
+          "OAGi-MessageID": {
+            "$ref": "#/components/headers/OAGi-MessageID"
+          },
+          "OAGi-CorrelationID": {
+            "$ref": "#/components/headers/OAGi-CorrelationID"
+          }
+        }
+      },
+      "207": {
+        "description": "Multi-Status",
+        "headers": {
+          "ETag": {
+            "$ref": "#/components/headers/ETag"
+          },
+          "Last-Modified": {
+            "$ref": "#/components/headers/Last-Modified"
+          },
+          "Content-Language": {
+            "$ref": "#/components/headers/Content-Language"
+          },
+          "OAGi-MessageID": {
+            "$ref": "#/components/headers/OAGi-MessageID"
+          },
+          "OAGi-CorrelationID": {
+            "$ref": "#/components/headers/OAGi-CorrelationID"
+          }
+        },
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "../../../common/json/shared/confirm-message-schema_v01.json"
+            }
+          }
+        }
+      },
+      "304": {
+        "description": "Not Modified",
+        "headers": {
+          "OAGi-MessageID": {
+            "$ref": "#/components/headers/OAGi-MessageID"
+          },
+          "OAGi-CorrelationID": {
+            "$ref": "#/components/headers/OAGi-CorrelationID"
+          }
+        }
+      },
+      "400": {
+        "description": "Bad Request",
+        "headers": {
+          "Content-Language": {
+            "$ref": "#/components/headers/Content-Language"
+          },
+          "OAGi-MessageID": {
+            "$ref": "#/components/headers/OAGi-MessageID"
+          },
+          "OAGi-CorrelationID": {
+            "$ref": "#/components/headers/OAGi-CorrelationID"
+          }
+        },
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "../../../common/json/shared/confirm-message-schema_v01.json"
+            }
+          }
+        }
+      },
+      "401": {
+        "description": "Unauthorized",
+        "headers": {
+          "Content-Language": {
+            "$ref": "#/components/headers/Content-Language"
+          },
+          "OAGi-MessageID": {
+            "$ref": "#/components/headers/OAGi-MessageID"
+          },
+          "OAGi-CorrelationID": {
+            "$ref": "#/components/headers/OAGi-CorrelationID"
+          }
+        },
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "../../../common/json/shared/confirm-message-schema_v01.json"
+            }
+          }
+        }
+      },
+      "403": {
+        "description": "Forbidden",
+        "headers": {
+          "Content-Language": {
+            "$ref": "#/components/headers/Content-Language"
+          },
+          "OAGi-MessageID": {
+            "$ref": "#/components/headers/OAGi-MessageID"
+          },
+          "OAGi-CorrelationID": {
+            "$ref": "#/components/headers/OAGi-CorrelationID"
+          }
+        },
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "../../../common/json/shared/confirm-message-schema_v01.json"
+            }
+          }
+        }
+      },
+      "404": {
+        "description": "Not Found",
+        "headers": {
+          "Content-Language": {
+            "$ref": "#/components/headers/Content-Language"
+          },
+          "OAGi-MessageID": {
+            "$ref": "#/components/headers/OAGi-MessageID"
+          },
+          "OAGi-CorrelationID": {
+            "$ref": "#/components/headers/OAGi-CorrelationID"
+          }
+        },
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "../../../common/json/shared/confirm-message-schema_v01.json"
+            }
+          }
+        }
+      },
+      "405": {
+        "description": "Method Not Allowed",
+        "headers": {
+          "Content-Language": {
+            "$ref": "#/components/headers/Content-Language"
+          },
+          "OAGi-MessageID": {
+            "$ref": "#/components/headers/OAGi-MessageID"
+          },
+          "OAGi-CorrelationID": {
+            "$ref": "#/components/headers/OAGi-CorrelationID"
+          }
+        },
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "../../../common/json/shared/confirm-message-schema_v01.json"
+            }
+          }
+        }
+      },
+      "406": {
+        "description": "Not Acceptable",
+        "headers": {
+          "Content-Language": {
+            "$ref": "#/components/headers/Content-Language"
+          },
+          "OAGi-MessageID": {
+            "$ref": "#/components/headers/OAGi-MessageID"
+          },
+          "OAGi-CorrelationID": {
+            "$ref": "#/components/headers/OAGi-CorrelationID"
+          }
+        },
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "../../../common/json/shared/confirm-message-schema_v01.json"
+            }
+          }
+        }
+      },
+      "409": {
+        "description": "Conflict",
+        "headers": {
+          "Content-Language": {
+            "$ref": "#/components/headers/Content-Language"
+          },
+          "OAGi-MessageID": {
+            "$ref": "#/components/headers/OAGi-MessageID"
+          },
+          "OAGi-CorrelationID": {
+            "$ref": "#/components/headers/OAGi-CorrelationID"
+          }
+        },
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "../../../common/json/shared/confirm-message-schema_v01.json"
+            }
+          }
+        }
+      },
+      "412": {
+        "description": "Precondition Failed",
+        "headers": {
+          "Content-Language": {
+            "$ref": "#/components/headers/Content-Language"
+          },
+          "OAGi-MessageID": {
+            "$ref": "#/components/headers/OAGi-MessageID"
+          },                   
+          "OAGi-CorrelationID": {
+            "$ref": "#/components/headers/OAGi-CorrelationID"
+          }
+        },
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "../../../common/json/shared/confirm-message-schema_v01.json"
+            }
+          }
+        }
+      },
+      "413": {
+        "description": "Request Entity Too Large",
+        "headers": {
+          "Content-Language": {
+            "$ref": "#/components/headers/Content-Language"
+          },
+          "OAGi-MessageID": {
+            "$ref": "#/components/headers/OAGi-MessageID"
+          },
+          "OAGi-CorrelationID": {
+            "$ref": "#/components/headers/OAGi-CorrelationID"
+          }
+        },
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "../../../common/json/shared/confirm-message-schema_v01.json"
+            }
+          }
+        }
+      },
+      "429": {
+        "description": "Too Many Requests",
+        "headers": {
+          "Content-Language": {
+            "$ref": "#/components/headers/Content-Language"
+          },
+          "OAGi-MessageID": {
+            "$ref": "#/components/headers/OAGi-MessageID"
+          },
+          "OAGi-CorrelationID": {
+            "$ref": "#/components/headers/OAGi-CorrelationID"
+          }
+        },
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "../../../common/json/shared/confirm-message-schema_v01.json"
+            }
+          }
+        }
+      },
+      "500": {
+        "description": "Internal Server Error",
+        "headers": {
+          "Content-Language": {
+            "$ref": "#/components/headers/Content-Language"
+          },
+          "OAGi-MessageID": {
+            "$ref": "#/components/headers/OAGi-MessageID"
+          },
+          "OAGi-CorrelationID": {
+            "$ref": "#/components/headers/OAGi-CorrelationID"
+          }
+        },
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "../../../common/json/shared/confirm-message-schema_v01.json"
+            }
+          }
+        }
+      },
+      "503": {
+        "description": "Service Unavailable",
+        "headers": {
+          "Content-Language": {
+            "$ref": "#/components/headers/Content-Language"
+          },
+          "OAGi-MessageID": {
+            "$ref": "#/components/headers/OAGi-MessageID"
+          },
+          "OAGi-CorrelationID": {
+            "$ref": "#/components/headers/OAGi-CorrelationID"
+          }
+        },
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "../../../common/json/shared/confirm-message-schema_v01.json"
+            }
+          }
+        }
+      }
+    },
+    "parameters": {
+      "path_worker-id": {
+        "name": "worker-id",
+        "in": "path",
+        "description": "Unique identifier of the worker",
+        "required": true,
+        "schema": {
+          "type": "string"
+        }
+      },
+      "query_filter": {
+        "name": "$filter",
+        "in": "query",
+        "description": "The OData $filter parameter MUST be used to specify the filter criterion",
+        "required": false,
+        "schema": {
+          "type": "string"
+        },
+        "example": "{OData $filter example}"
+      },
+      "query_worker_filter": {
+        "name": "$filter",
+        "in": "query",
+        "description": "The OData $filter parameter MUST be used to specify worker filter criterion",
+        "required": true,
+        "schema": {
+          "type": "string"
+        },
+        "example": "workerID in ('worker1','worker2','worker3')"
+      },
+      "query_select": {
+        "name": "$select",
+        "in": "query",
+        "description": "The OData $select parameter MUST be used to specify the selection criterion",
+        "required": false,
+        "schema": {
+          "type": "string"
+        },
+        "example": "{OData $select example}"
+      },
+      "query_skip": {
+        "name": "$skip",
+        "in": "query",
+        "description": "The OData $skip parameter MUST be used to specify the start sequence criterion",
+        "required": false,
+        "schema": {
+          "type": "string"
+        },
+        "example": "{OData $skip example}"
+      },
+      "query_top": {
+        "name": "$top",
+        "in": "query",
+        "description": "The OData $top parameter MUST be used to specify the maximum number criterion",
+        "required": false,
+        "schema": {
+          "type": "string"
+        },
+        "example": "{OData $top example}"
+      },
+      "query_count": {
+        "name": "$count",
+        "in": "query",
+        "description": "The OData $count parameter MUST be used to specify the total number criterion",
+        "required": false,
+        "schema": {
+          "type": "boolean"
+        },
+        "example": "{OData $count example}"
+      },
+      "query_orderby": {
+        "name": "$orderby",
+        "in": "query",
+        "description": "The OData $orderby parameter MUST be used to specify the order criterion",
+        "required": false,
+        "schema": {
+          "type": "string"
+        },
+        "example": "{OData $orderby example}"
+      },
+      "query_search": {
+        "name": "$search",
+        "in": "query",
+        "description": "The OData $search parameter MUST be used to specify the search criterion",
+        "required": false,
+        "schema": {
+          "type": "string"
+        },
+        "example": "{OData $search example}"
+      },
+      "query_expand": {
+        "name": "$expand",
+        "in": "query",
+        "description": "The OData $expand parameter MUST be used to specify the expand criterion",
+        "required": false,
+        "schema": {
+          "type": "string"
+        },
+        "example": "{OData $expand example}"
+      },
+      "header_Prefer": {
+        "name": "Prefer",
+        "in": "header",
+        "description": "Used to indicate that particular server behaviors are preferred by the consumer.  Prefer:[preference]=[value], e.g.  respond=async, return=representation, return=minimal, etc.",
+        "required": false,
+        "schema": {
+          "type": "string"
+        }
+      },
+      "header_Link": {
+        "description": "Expresses a typed relationship with another resource, typically used in the callback scenarios to specify a callback URI",
+        "name": "Link",
+        "in": "header",
+        "required": false,
+        "schema": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "header_Accept": {
+        "name": "Accept",
+        "in": "header",
+        "description": "Accept' ': ' ( '*/*' | (type'/' '*') | (type'/'subtype)) ['; ' 'q' '='qvalue]. Describes media type(s) and subtype(s) that are acceptable for the response. The optional qvalue represents an acceptable quality level for acceptable types.",
+        "required": false,
+        "schema": {
+          "type": "string"
+        }
+      },
+      "header_Accept-Language": {
+        "description": "Accept-Language:language|*;q=qvalue. Specifies the language(s) that are acceptable for the response. The optional qvalue represents a quality level for acceptable languages.",
+        "name": "Accept-Language",
+        "in": "header",
+        "required": false,
+        "schema": {
+          "type": "string"
+        }
+      },
+      "header_Last-Modified": {
+        "name": "Last-Modified",
+        "in": "header",
+        "description": "Specifies the date and time the representational state of the resource was last modified",
+        "required": true,
+        "schema": {
+          "type": "string"
+        }
+      },
+      "header_Content-Language": {
+        "name": "Content-Language",
+        "in": "header",
+        "description": "Specifies the languages for which the entity-body is intended ",
+        "required": false,
+        "schema": {
+          "type": "string"
+        }
+      },
+      "header_OAGi-Allow-CustomOperator": {
+        "name": "OAGi-Allow-CustomOperator",
+        "in": "header",
+        "description": "Contains a list of custom operators that are allowed in a request at a specified URI.",
+        "required": false,
+        "schema": {
+          "type": "string"
+        }
+      },
+      "header_OAGi-Context-ExpressionID": {
+        "description": "Geopolitical context, typically country, region, e.g. country=CA;subdivision=Quebec",
+        "name": "OAGi-Context-ExpressionID",
+        "in": "header",
+        "required": false,
+        "schema": {
+          "type": "string"
+        }
+      },
+      "header_OAGi-CorrelationID": {
+        "name": "OAGi-CorrelationID",
+        "in": "header",
+        "description": "Contains the message identifier that can be used to correlate the response with the previous / future requests. Usually used for asynchronous / callback style communication.",
+        "required": false,
+        "schema": {
+          "type": "string"
+        }
+      },
+      "header_OAGi-ConversationID": {
+        "name": "OAGi-ConversationID",
+        "in": "header",
+        "description": "Contains the identifier of the conversation in which the request or response participates.  A conversation is the coordinated exchange of multiple messages between two or more partners. The scope of the identifier spans an entire conversation.",
+        "required": false,
+        "schema": {
+          "type": "string"
+        }
+      },
+      "header_OAGi-IntermediaryID": {
+        "name": "OAGi-IntermediaryID",
+        "in": "header",
+        "description": "eContains the identifier of the system that acts as an intermediary between the sending and receiving systems.",
+        "required": false,
+        "schema": {
+          "type": "string"
+        }
+      },
+      "header_OAGi-MessageID": {
+        "name": "OAGi-MessageID",
+        "in": "header",
+        "description": "Contains the message identifier of the message instance (i.e. request or the response)",
+        "required": false,
+        "schema": {
+          "type": "string"
+        }
+      },
+      "header_OAGi-OriginatorID": {
+        "name": "OAGi-Originator-ApplicationID",
+        "in": "header",
+        "description": "Identifier of the application that initiated (i.e. originated) a command request - not intended to be used as a correlation id for messages across systems participating in a collaboration",
+        "required": false,
+        "schema": {
+          "type": "string"
+        }
+      },
+      "header_OAGi-ReferenceID": {
+        "name": "OAGi-ReferenceID",
+        "in": "header",
+        "description": "Contains the identifier of the business task instance that initiated the need for the request to be created.",
+        "required": false,
+        "schema": {
+          "type": "string"
+        }
+      },
+      "header_OAGi-ScenarioID": {
+        "name": "OAGi-ScenarioID",
+        "in": "header",
+        "description": "Contains the identifier of the system that sent a request.",
+        "required": false,
+        "schema": {
+          "type": "string"
+        }
+      },
+      "header_OAGi-SenderID": {
+        "name": "OAGi-SenderID",
+        "in": "header",
+        "description": "Contains the identifier of the system that sent a request.",
+        "required": false,
+        "schema": {
+          "type": "string"
+        }
+      },
+      "header_OAGi-TaskID": {
+        "name": "header_OAGi-TaskID",
+        "in": "header",
+        "description": "Contains the identifier for the business task (command or event) that initiated the need for the request to be created.",
+        "required": false,
+        "schema": {
+          "type": "string"
+        }
+      },
+      "header_OAGi-UserID": {
+        "name": "header_OAGi-UserID",
+        "in": "header",
+        "description": "Contains the identifier of the user that initiated the request.",
+        "required": false,
+        "schema": {
+          "type": "string"
+        }
+      },
+      "header_Authorization": {
+        "name": "Authorization",
+        "in": "header",
+        "description": "The Authorization header is used to provide the client’s authorization to access the resource in the following format: Authorization: {scheme credentials}, e.g. Authorization: pin 123456",
+        "required": true,
+        "schema": {
+          "type": "string"
+        }
+      },
+      "header_ETag": {
+        "description": "Defines the entity tag for use with the If-Match and If-None-Match request headers",
+        "name": "ETag",
+        "in": "header",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "header_If-Match": {
+        "description": "Makes the request method conditional on the recipient origin server either having at least one current representation of the target resource, when the field-value is \"*\", or having a current representation of the target resource that has an entity-tag matching a member of the list of entity-tags provided in the field-value",
+        "name": "If-Match",
+        "in": "header",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "header_If-None-Match": {
+        "description": "Makes the request method conditional on a recipient cache or origin server either not having any current representation of the target resource, when the field-value is \"*\", or having a selected representation with an entity-tag that does not match any of those listed in the field-value",
+        "name": "If-None-Match",
+        "in": "header",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "header_Cache-Control": {
+        "description": "Specifies directives that must be obeyed by all caching mechanisms along the request/response chain",
+        "name": "Cache-Control",
+        "in": "header",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "header_Content-Type": {
+        "description": "Describes the media type and subtype of an entity-body",
+        "name": "Content-Type",
+        "in": "header",
+        "schema": {
+          "type": "string"
+        }
+      }
+    },
+    "headers": {
+      "Link": {
+        "description": "Expresses a typed relationship with another resource, typically used in the callback scenarios to specify a callback URI",
+        "schema": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "Last-Modified": {
+        "description": "Specifies the date and time the representational state of the resource was last modified",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "Content-Language": {
+        "description": "Specifies the languages for which the entity-body is intended ",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "Location": {
+        "description": "Used to redirect the recipient to a location other the request URI for completion of the request or identification of a new resource",
+        "schema": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "Retry-After": {
+        "description": "Retry-After: [date-time | seconds] Contains either a date time or an integer number of seconds after which the client may try the request again",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "OAGi-Allow-CustomOperator": {
+        "description": "Contains a list of custom operators that are allowed in a request at a specified URI.",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "OAGi-CorrelationID": {
+        "description": "Contains the message identifier that can be used to correlate the response with the previous / future requests. Usually used for asynchronous / callback style communication.",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "OAGi-ConversationID": {
+        "description": "Contains the identifier of the conversation in which the request or response participates.  A conversation is the coordinated exchange of multiple messages between two or more partners. The scope of the identifier spans an entire conversation.",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "OAGi-MessageID": {
+        "description": "Contains the message identifier of the message instance (i.e. request or the response)",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "OAGi-SenderID": {
+        "description": "Contains the identifier of the system that sent a request.",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "ETag": {
+        "description": "Defines the entity tag for use with the If-Match and If-None-Match request headers",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "Cache-Control": {
+        "description": "Specifies directives that must be obeyed by all caching mechanisms along the request/response chain",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "Content-Type": {
+        "description": "Describes the media type and subtype of an entity-body",
+        "schema": {
+          "type": "string"
+        }
+      }
+    },
+    "requestBodies": {
+      "workers-add-change-request": {
+        "description": "Request body to add or change one or more workers",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "./schemas/workers-schema_v01.json"
+            }
+          }
+        },
+        "required": true
+      },
+      "worker-change-request": {
+        "description": "Request body to change a single existing worker",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "./schemas/worker-schema_v01.json"
+            }
+          }
+        },
+        "required": true
+      }
+    }    
+  }
+}

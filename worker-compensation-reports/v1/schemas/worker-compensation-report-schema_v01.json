@@ -1,0 +1,12 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",	
+	"title": "WorkerCompensationReportSchema",
+	"description": "Information to identify and describe a specific worker compensation report",
+	"type": "object",
+	"allOf": [
+		{
+			"$ref": "../../../../payroll/json/WorkerCompensationReportType.json"
+		}
+	],
+	"unevaluatedProperties": false
+}

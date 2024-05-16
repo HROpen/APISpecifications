@@ -1,0 +1,12 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",	
+	"title": "WorkerPaidHoursReportSchema",
+	"description": "Information to identify and describe a specific worker paid hours report",
+	"type": "object",
+	"allOf": [
+		{
+			"$ref": "../../../../payroll/json/WorkerPaidHoursReportType.json"
+		}
+	],
+	"unevaluatedProperties": false
+}

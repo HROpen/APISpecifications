@@ -1,0 +1,15 @@
+{
+	"$schema": "http://json-schema.org/draft/2020-12/schema",	
+	"title": "WorkersSchema",
+	"description": "A list of workers",
+	"type": "object",
+    "properties": {
+        "workers": {
+            "type": "array",
+            "items": {
+                "$ref": "../../../../common/json/work/workerType.json"
+            }
+        }
+    },
+	"unevaluatedProperties": false
+}

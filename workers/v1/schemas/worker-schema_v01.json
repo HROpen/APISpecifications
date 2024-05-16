@@ -1,0 +1,12 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",	
+	"title": "WorkerSchema",
+	"description": "Information to identify and describe a specific worker.",
+	"type": "object",
+	"allOf": [
+		{
+			"$ref": "../../../../common/json/work/workerType.json"
+		}
+	],
+	"unevaluatedProperties": false
+}

@@ -1,0 +1,15 @@
+{
+	"$schema": "http://json-schema.org/draft/2020-12/schema",	
+	"title": "WorkerCompensationReportsSchema",
+	"description": "A list of worker compensation reports",
+	"type": "object",
+    "properties": {
+        "workerCompensationReports": {
+            "type": "array",
+            "items": {
+                "$ref": "../../../../payroll/json/WorkerCompensationReportType.json"
+            }
+        }
+    },
+	"unevaluatedProperties": false
+}
