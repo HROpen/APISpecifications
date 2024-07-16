@@ -65,7 +65,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "./schemas/worker-compensation-reports-schema_v01.json"
+                  "$ref": "./schemas/worker-compensation-reports-schema_v1.json"
                 }
               }
             }
@@ -267,7 +267,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "./schemas/worker-compensation-report-schema_v01.json"
+                  "$ref": "./schemas/worker-compensation-report-schema_v1.json"
                 }
               }
             }
@@ -403,7 +403,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../../common/json/shared/confirm-message-schema_v01.json"
+              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -427,7 +427,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../../common/json/shared/confirm-message-schema_v01.json"
+              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -448,7 +448,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../../common/json/shared/confirm-message-schema_v01.json"
+              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -509,7 +509,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../../common/json/shared/confirm-message-schema_v01.json"
+              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -541,7 +541,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../../common/json/shared/confirm-message-schema_v01.json"
+              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -562,7 +562,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../../common/json/shared/confirm-message-schema_v01.json"
+              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -583,7 +583,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../../common/json/shared/confirm-message-schema_v01.json"
+              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -604,7 +604,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../../common/json/shared/confirm-message-schema_v01.json"
+              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -625,7 +625,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../../common/json/shared/confirm-message-schema_v01.json"
+              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -646,7 +646,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../../common/json/shared/confirm-message-schema_v01.json"
+              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -667,7 +667,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../../common/json/shared/confirm-message-schema_v01.json"
+              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -688,7 +688,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../../common/json/shared/confirm-message-schema_v01.json"
+              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -709,7 +709,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../../common/json/shared/confirm-message-schema_v01.json"
+              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -730,7 +730,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../../common/json/shared/confirm-message-schema_v01.json"
+              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -751,7 +751,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../../common/json/shared/confirm-message-schema_v01.json"
+              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -772,7 +772,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../../common/json/shared/confirm-message-schema_v01.json"
+              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -1179,7 +1179,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "./schemas/worker-compensation-reports-schema_v01.json"
+              "$ref": "./schemas/worker-compensation-reports-schema_v1.json"
             }
           }
         },
@@ -1190,7 +1190,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "./schemas/worker-compensation-report-schema_v01.json"
+              "$ref": "./schemas/worker-compensation-report-schema_v1.json"
             }
           }
         },
