@@ -427,7 +427,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../../common/json/shared/confirm-message-schema_v1.json"
+              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
