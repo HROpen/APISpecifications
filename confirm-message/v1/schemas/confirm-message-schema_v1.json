@@ -9,5 +9,5 @@
 			"$ref": "../../../../common/json/messages/ConfirmMessageType.json"
         }
     },	
-	"unevaluatedProperties": false
+	"additionalProperties": false
 }

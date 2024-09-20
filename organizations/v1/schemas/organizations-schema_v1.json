@@ -7,9 +7,9 @@
         "organizations": {
             "type": "array",
             "items": {
-                "$ref": "../../../../common/json/organization/OrganizationType.json"
+                "$ref": "../../../../common/json/organization/OrganizationNounType.json"
             }
         }
     },
-	"unevaluatedProperties": false
+	"additionalProperties": false
 }

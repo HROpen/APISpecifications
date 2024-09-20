@@ -267,7 +267,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "./schemas/worker-compensation-report-schema_v1.json"
+                  "$ref": "./schemas/worker-compensation-reports-schema_v1.json"
                 }
               }
             }
@@ -299,7 +299,7 @@
         ],
         "summary": "Update a Worker Compensation Report",
         "requestBody": {
-          "$ref": "#/components/requestBodies/report-change-request"
+          "$ref": "#/components/requestBodies/reports-add-change-request"
         },
         "parameters": [
           {
@@ -1180,17 +1180,6 @@
           "application/json": {
             "schema": {
               "$ref": "./schemas/worker-compensation-reports-schema_v1.json"
-            }
-          }
-        },
-        "required": true
-      },
-      "report-change-request": {
-        "description": "Request body to change a single worker compensation report",
-        "content": {
-          "application/json": {
-            "schema": {
-              "$ref": "./schemas/worker-compensation-report-schema_v1.json"
             }
           }
         },

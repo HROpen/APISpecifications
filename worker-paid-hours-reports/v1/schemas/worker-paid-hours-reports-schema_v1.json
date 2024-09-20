@@ -1,5 +1,5 @@
 {
-	"$schema": "http://json-schema.org/draft/2020-12/schema",	
+	"$schema": "http://json-schema.org/draft-04/schema#",	
 	"title": "WorkerPaidHoursReportsSchema",
 	"description": "A list of worker paid hours reports",
 	"type": "object",
@@ -7,9 +7,9 @@
         "workerPaidHoursReports": {
             "type": "array",
             "items": {
-                "$ref": "../../../../payroll/json/WorkerPaidHoursReportType.json"
+                "$ref": "../../../../payroll/json/WorkerPaidHoursReportNounType.json"
             }
         }
     },
-	"unevaluatedProperties": false
+	"additionalProperties": false
 }

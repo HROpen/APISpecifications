@@ -267,7 +267,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "./schemas/organization-schema_v1.json"
+                  "$ref": "./schemas/organizations-schema_v1.json"
                 }
               }
             }
@@ -299,7 +299,7 @@
         ],
         "summary": "Update an Organization",
         "requestBody": {
-          "$ref": "#/components/requestBodies/organization-change-request"
+          "$ref": "#/components/requestBodies/organizations-add-change-request"
         },
         "parameters": [
           {
@@ -1180,17 +1180,6 @@
           "application/json": {
             "schema": {
               "$ref": "./schemas/organizations-schema_v1.json"
-            }
-          }
-        },
-        "required": true
-      },
-      "organization-change-request": {
-        "description": "Request body to change a single existing organization",
-        "content": {
-          "application/json": {
-            "schema": {
-              "$ref": "./schemas/organization-schema_v1.json"
             }
           }
         },

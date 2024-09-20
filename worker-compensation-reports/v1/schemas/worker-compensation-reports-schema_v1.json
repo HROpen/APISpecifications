@@ -7,9 +7,9 @@
         "workerCompensationReports": {
             "type": "array",
             "items": {
-                "$ref": "../../../../payroll/json/WorkerCompensationReportType.json"
+                "$ref": "../../../../payroll/json/WorkerCompensationReportNounType.json"
             }
         }
     },
-	"unevaluatedProperties": false
+	"additionalProperties": false
 }

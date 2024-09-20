@@ -267,7 +267,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "./schemas/worker-schema_v1.json"
+                  "$ref": "./schemas/workers-schema_v1.json"
                 }
               }
             }
@@ -299,7 +299,7 @@
         ],
         "summary": "Update a Worker",
         "requestBody": {
-          "$ref": "#/components/requestBodies/worker-change-request"
+          "$ref": "#/components/requestBodies/workers-add-change-request"
         },
         "parameters": [
           {
@@ -1180,17 +1180,6 @@
           "application/json": {
             "schema": {
               "$ref": "./schemas/workers-schema_v1.json"
-            }
-          }
-        },
-        "required": true
-      },
-      "worker-change-request": {
-        "description": "Request body to change a single existing worker",
-        "content": {
-          "application/json": {
-            "schema": {
-              "$ref": "./schemas/worker-schema_v1.json"
             }
           }
         },
