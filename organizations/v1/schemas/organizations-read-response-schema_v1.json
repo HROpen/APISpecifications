@@ -1,0 +1,21 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",	
+	"title": "OrganizationsReadResponseSchema",
+	"description": "A list of organizations and/or confirm message",
+	"type": "object",
+    "properties": {
+        "organizations": {
+            "type": "array",
+            "items": {
+                "$ref": "../../../../common/json/organization/OrganizationNounType.json"
+            }
+        },
+        "meta": {
+			"$ref": "../../../../common/json/meta/MetaType.json"
+        },
+        "confirmMessage": {
+			"$ref": "../../../../common/json/messages/confirmMessageType.json"
+        }
+    },
+	"additionalProperties": false
+}

@@ -65,7 +65,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "./schemas/worker-compensation-reports-schema_v1.json"
+                  "$ref": "./schemas/worker-compensation-reports-read-response-schema_v1.json"
                 }
               }
             }
@@ -97,7 +97,7 @@
         ],
         "summary": "Add New Worker Compensation Reports",
         "requestBody": {
-          "$ref": "#/components/requestBodies/reports-add-change-request"
+          "$ref": "#/components/requestBodies/reports-add-update-request"
         },
         "parameters": [          
           {
@@ -106,7 +106,28 @@
         ],
         "responses": {
           "201": {
-            "$ref": "#/components/responses/201"
+            "description": "Created",
+            "headers": {
+			  "Location": {
+				"$ref": "#/components/headers/Location"
+			  },
+			  "Retry-After": {
+				"$ref": "#/components/headers/Retry-After"
+			  },
+			  "OAGi-MessageID": {
+				"$ref": "#/components/headers/OAGi-MessageID"
+			  },
+			  "OAGi-CorrelationID": {
+				"$ref": "#/components/headers/OAGi-CorrelationID"
+			  }
+			},
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "../../common/bulk-add-response/v1/schemas/bulk-add-response-schema_v1.json"
+                }
+              }
+            }
           },
           "202": {
             "$ref": "#/components/responses/202"
@@ -138,13 +159,13 @@
         }
       },
       "put": {
-        "description": "Update (modify/change) existing worker compensation reports (full replacement) based on filter criterion",
+        "description": "Update (modify) existing worker compensation reports (full replacement) based on filter criterion",
         "tags": [
           "Worker Compensation Report Management"
         ],
         "summary": "Update Worker Compensation Reports (Bulk Operation)",
         "requestBody": {
-          "$ref": "#/components/requestBodies/reports-add-change-request"
+          "$ref": "#/components/requestBodies/reports-add-update-request"
         },
         "parameters": [   
           {
@@ -202,6 +223,9 @@
           }
         ],
         "responses": {          
+          "200": {
+            "$ref": "#/components/responses/200"
+          },
           "204": {
             "$ref": "#/components/responses/204"
           },
@@ -267,7 +291,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "./schemas/worker-compensation-reports-schema_v1.json"
+                  "$ref": "./schemas/worker-compensation-reports-read-response-schema_v1.json"
                 }
               }
             }
@@ -299,7 +323,7 @@
         ],
         "summary": "Update a Worker Compensation Report",
         "requestBody": {
-          "$ref": "#/components/requestBodies/reports-add-change-request"
+          "$ref": "#/components/requestBodies/reports-add-update-request"
         },
         "parameters": [
           {
@@ -354,6 +378,9 @@
           }
         ],
         "responses": {          
+          "200": {
+            "$ref": "#/components/responses/200"
+          },
           "204": {
             "$ref": "#/components/responses/204"
           },
@@ -403,7 +430,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
+              "$ref": "../../common/confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -427,7 +454,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
+              "$ref": "../../common/confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -448,7 +475,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
+              "$ref": "../../common/confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -509,7 +536,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
+              "$ref": "../../common/confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -541,7 +568,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
+              "$ref": "../../common/confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -562,7 +589,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
+              "$ref": "../../common/confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -583,7 +610,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
+              "$ref": "../../common/confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -604,7 +631,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
+              "$ref": "../../common/confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -625,7 +652,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
+              "$ref": "../../common/confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -646,7 +673,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
+              "$ref": "../../common/confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -667,7 +694,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
+              "$ref": "../../common/confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -688,7 +715,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
+              "$ref": "../../common/confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -709,7 +736,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
+              "$ref": "../../common/confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -730,7 +757,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
+              "$ref": "../../common/confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -751,7 +778,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
+              "$ref": "../../common/confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -772,7 +799,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
+              "$ref": "../../common/confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -1174,12 +1201,12 @@
       }
     },
     "requestBodies": {
-      "reports-add-change-request": {
-        "description": "Request body to add or change one or more worker compensation reports",
+      "reports-add-update-request": {
+        "description": "Request body to add or update one or more worker compensation reports",
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "./schemas/worker-compensation-reports-schema_v1.json"
+              "$ref": "./schemas/worker-compensation-reports-add-update-request-schema_v1.json"
             }
           }
         },

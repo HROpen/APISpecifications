@@ -1,0 +1,15 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",	
+	"title": "BulkAddResponseSchema",
+	"description": "A list of organizations and/or confirm message",
+	"type": "object",
+    "properties": {
+        "meta": {
+			"$ref": "../../../../../common/json/meta/MetaType.json"
+        },
+        "confirmMessage": {
+			"$ref": "../../../../../common/json/messages/confirmMessageType.json"
+        }
+    },
+	"additionalProperties": false
+}

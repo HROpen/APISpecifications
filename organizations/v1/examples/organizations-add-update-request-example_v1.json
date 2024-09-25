@@ -1,0 +1,478 @@
+{
+	"organizations": [
+		{
+			"taxId": {
+				"value": "String",
+				"schemeId": "String",
+				"agencyUri": "http://www.altova.com/",
+				"schemeLink": "http://www.altova.com/",
+				"description": "String",
+				"schemeAgencyId": "String",
+				"schemeVersionId": "String"
+			},
+			"legalId": {
+				"value": "String",
+				"schemeId": "String",
+				"agencyUri": "http://www.altova.com/",
+				"schemeLink": "http://www.altova.com/",
+				"description": "String",
+				"schemeAgencyId": "String",
+				"schemeVersionId": "String"
+			},
+			"revenue": {
+				"value": 0.1,
+				"currency": "AED"
+			},
+			"contacts": [
+				{
+					"roleCode": "String",
+					"id": {
+						"value": "String",
+						"schemeId": "String",
+						"agencyUri": "http://www.altova.com/",
+						"schemeLink": "http://www.altova.com/",
+						"description": "String",
+						"schemeAgencyId": "String",
+						"schemeVersionId": "String"
+					},
+					"name": {
+						"alias": "String",
+						"given": "String",
+						"legal": "String",
+						"family": "String",
+						"middle": "String",
+						"script": "String",
+						"initials": "String",
+						"preferred": "String",
+						"familyPrefix": "String",
+						"formerFamily": "String",
+						"formattedName": "String",
+						"titleAffixCode": "String",
+						"formerFamilyPrefix": "String",
+						"generationAffixCode": "String",
+						"qualificationAffixCode": "String",
+						"preferredSalutationCode": "String",
+						"language": "aa"
+					},
+					"communication": {
+						"web": [
+							{
+								"url": "http://www.altova.com/",
+								"name": "String",
+								"useCode": "String",
+								"preference": 1,
+								"availablePeriod": {
+									"end": "2001-12-17T09:30:47.0",
+									"start": "2001-12-17T09:30:47.0"
+								}
+							}
+						],
+						"email": [
+							{
+								"address": "jdoe@example.com",
+								"name": "String",
+								"useCode": "String",
+								"preference": 1,
+								"availablePeriod": {
+									"end": "2001-12-17T09:30:47.0",
+									"start": "2001-12-17T09:30:47.0"
+								}
+							}
+						],
+						"phone": [
+							{
+								"access": "String",
+								"dialNumber": "String",
+								"phoneExtension": "String",
+								"areaDialingCode": "String",
+								"formattedNumber": "String",
+								"countryDialingCode": "String",
+								"name": "String",
+								"useCode": "String",
+								"preference": 1,
+								"availablePeriod": {
+									"end": "2001-12-17T09:30:47.0",
+									"start": "2001-12-17T09:30:47.0"
+								}
+							}
+						],
+						"social": [
+							{
+								"url": "http://www.altova.com/",
+								"handle": "String",
+								"name": "String",
+								"useCode": "String",
+								"preference": 1,
+								"availablePeriod": {
+									"end": "2001-12-17T09:30:47.0",
+									"start": "2001-12-17T09:30:47.0"
+								}
+							}
+						],
+						"address": [
+							{
+								"city": "String",
+								"line": "String",
+								"postalCode": "String",
+								"countryCode": "AD",
+								"geoLocation": {
+									"name": "String",
+									"altitude": {
+										"value": 0.1,
+										"unitCode": "ACR"
+									},
+									"latitude": -90,
+									"longitude": -180
+								},
+								"extendedLines": [
+									{
+										"type": "String",
+										"value": "String"
+									}
+								],
+								"postOfficeBox": "String",
+								"formattedAddress": "String",
+								"countrySubDivisions": [
+									{
+										"type": "String",
+										"value": "String"
+									}
+								],
+								"name": "String",
+								"useCode": "String",
+								"preference": 1,
+								"availablePeriod": {
+									"end": "2001-12-17T09:30:47.0",
+									"start": "2001-12-17T09:30:47.0"
+								}
+							}
+						]
+					},
+					"primaryLanguage": "aa"
+				}
+			],
+			"typeCode": "FederalGovernmentAgency",
+			"headCount": 0.1,
+			"tradeName": "String",
+			"documentId": {
+				"value": "String",
+				"schemeId": "String",
+				"agencyUri": "http://www.altova.com/",
+				"schemeLink": "http://www.altova.com/",
+				"description": "String",
+				"schemeAgencyId": "String",
+				"schemeVersionId": "String"
+			},
+			"domainName": "http://www.altova.com/",
+			"description": {
+				"value": "String",
+				"languageCode": "aa"
+			},
+			"formerTaxId": {
+				"value": "String",
+				"schemeId": "String",
+				"agencyUri": "http://www.altova.com/",
+				"schemeLink": "http://www.altova.com/",
+				"description": "String",
+				"schemeAgencyId": "String",
+				"schemeVersionId": "String"
+			},
+			"stockSymbol": "String",
+			"alternateIds": [
+				{
+					"value": "String",
+					"schemeId": "String",
+					"schemeVersionId": "String",
+					"schemeAgencyId": "String",
+					"description": "String",
+					"schemeLink": "http://www.altova.com/",
+					"agencyUri": "http://www.altova.com/"
+				}
+			],
+			"communication": {
+				"web": [
+					{
+						"url": "http://www.altova.com/",
+						"name": "String",
+						"useCode": "String",
+						"preference": 1,
+						"availablePeriod": {
+							"end": "2001-12-17T09:30:47.0",
+							"start": "2001-12-17T09:30:47.0"
+						}
+					}
+				],
+				"email": [
+					{
+						"address": "jdoe@example.com",
+						"name": "String",
+						"useCode": "String",
+						"preference": 1,
+						"availablePeriod": {
+							"end": "2001-12-17T09:30:47.0",
+							"start": "2001-12-17T09:30:47.0"
+						}
+					}
+				],
+				"phone": [
+					{
+						"access": "String",
+						"dialNumber": "String",
+						"phoneExtension": "String",
+						"areaDialingCode": "String",
+						"formattedNumber": "String",
+						"countryDialingCode": "String",
+						"name": "String",
+						"useCode": "String",
+						"preference": 1,
+						"availablePeriod": {
+							"end": "2001-12-17T09:30:47.0",
+							"start": "2001-12-17T09:30:47.0"
+						}
+					}
+				],
+				"social": [
+					{
+						"url": "http://www.altova.com/",
+						"handle": "String",
+						"name": "String",
+						"useCode": "String",
+						"preference": 1,
+						"availablePeriod": {
+							"end": "2001-12-17T09:30:47.0",
+							"start": "2001-12-17T09:30:47.0"
+						}
+					}
+				],
+				"address": [
+					{
+						"city": "String",
+						"line": "String",
+						"postalCode": "String",
+						"countryCode": "AD",
+						"geoLocation": {
+							"name": "String",
+							"altitude": {
+								"value": 0.1,
+								"unitCode": "ACR"
+							},
+							"latitude": -90,
+							"longitude": -180
+						},
+						"extendedLines": [
+							{
+								"type": "String",
+								"value": "String"
+							}
+						],
+						"postOfficeBox": "String",
+						"formattedAddress": "String",
+						"countrySubDivisions": [
+							{
+								"type": "String",
+								"value": "String"
+							}
+						],
+						"name": "String",
+						"useCode": "String",
+						"preference": 1,
+						"availablePeriod": {
+							"end": "2001-12-17T09:30:47.0",
+							"start": "2001-12-17T09:30:47.0"
+						}
+					}
+				]
+			},
+			"industryCodes": {
+			},
+			"ownershipType": "Public",
+			"statusHistory": [
+				{
+					"statusCode": "String",
+					"statusDate": "0000",
+					"description": {
+						"value": "String",
+						"languageCode": "aa"
+					},
+					"reasonCode": "String"
+				}
+			],
+			"parentCompanyName": "String",
+			"parentCompanyTaxId": {
+				"value": "String",
+				"schemeId": "String",
+				"agencyUri": "http://www.altova.com/",
+				"schemeLink": "http://www.altova.com/",
+				"description": "String",
+				"schemeAgencyId": "String",
+				"schemeVersionId": "String"
+			},
+			"parentOrganization": {
+				"taxId": {
+					"value": "String",
+					"schemeId": "String",
+					"agencyUri": "http://www.altova.com/",
+					"schemeLink": "http://www.altova.com/",
+					"description": "String",
+					"schemeAgencyId": "String",
+					"schemeVersionId": "String"
+				},
+				"legalId": {
+					"value": "String",
+					"schemeId": "String",
+					"agencyUri": "http://www.altova.com/",
+					"schemeLink": "http://www.altova.com/",
+					"description": "String",
+					"schemeAgencyId": "String",
+					"schemeVersionId": "String"
+				},
+				"typeCode": "FederalGovernmentAgency",
+				"communication": {
+					"web": [
+						{
+							"url": "http://www.altova.com/",
+							"name": "String",
+							"useCode": "String",
+							"preference": 1,
+							"availablePeriod": {
+								"end": "2001-12-17T09:30:47.0",
+								"start": "2001-12-17T09:30:47.0"
+							}
+						}
+					],
+					"email": [
+						{
+							"address": "jdoe@example.com",
+							"name": "String",
+							"useCode": "String",
+							"preference": 1,
+							"availablePeriod": {
+								"end": "2001-12-17T09:30:47.0",
+								"start": "2001-12-17T09:30:47.0"
+							}
+						}
+					],
+					"phone": [
+						{
+							"access": "String",
+							"dialNumber": "String",
+							"phoneExtension": "String",
+							"areaDialingCode": "String",
+							"formattedNumber": "String",
+							"countryDialingCode": "String",
+							"name": "String",
+							"useCode": "String",
+							"preference": 1,
+							"availablePeriod": {
+								"end": "2001-12-17T09:30:47.0",
+								"start": "2001-12-17T09:30:47.0"
+							}
+						}
+					],
+					"social": [
+						{
+							"url": "http://www.altova.com/",
+							"handle": "String",
+							"name": "String",
+							"useCode": "String",
+							"preference": 1,
+							"availablePeriod": {
+								"end": "2001-12-17T09:30:47.0",
+								"start": "2001-12-17T09:30:47.0"
+							}
+						}
+					],
+					"address": [
+						{
+							"city": "String",
+							"line": "String",
+							"postalCode": "String",
+							"countryCode": "AD",
+							"geoLocation": {
+								"name": "String",
+								"altitude": {
+									"value": 0.1,
+									"unitCode": "ACR"
+								},
+								"latitude": -90,
+								"longitude": -180
+							},
+							"extendedLines": [
+								{
+									"type": "String",
+									"value": "String"
+								}
+							],
+							"postOfficeBox": "String",
+							"formattedAddress": "String",
+							"countrySubDivisions": [
+								{
+									"type": "String",
+									"value": "String"
+								}
+							],
+							"name": "String",
+							"useCode": "String",
+							"preference": 1,
+							"availablePeriod": {
+								"end": "2001-12-17T09:30:47.0",
+								"start": "2001-12-17T09:30:47.0"
+							}
+						}
+					]
+				},
+				"responsibilityCode": "Unit",
+				"organizationUnitTypeCode": "DomesticUltimate",
+				"id": {
+					"value": "String",
+					"schemeId": "String",
+					"agencyUri": "http://www.altova.com/",
+					"schemeLink": "http://www.altova.com/",
+					"description": "String",
+					"schemeAgencyId": "String",
+					"schemeVersionId": "String"
+				},
+				"code": "String",
+				"name": "String"
+			},
+			"responsibilityCode": "Unit",
+			"industryIdentifiers": [
+				{
+					"value": "String",
+					"schemeId": "String",
+					"schemeVersionId": "String",
+					"schemeAgencyId": "String",
+					"description": "String",
+					"schemeLink": "http://www.altova.com/",
+					"agencyUri": "http://www.altova.com/"
+				}
+			],
+			"workEnvironmentCode": "String",
+			"organizationActivity": [
+				{
+					"activityCode": [
+						"String"
+					],
+					"description": {
+						"value": "String",
+						"languageCode": "aa"
+					},
+					"percentage": 0.1
+				}
+			],
+			"organizationUnitTypeCode": "DomesticUltimate",
+			"geographicResponsibilityCode": "Global",
+			"id": {
+				"value": "String",
+				"schemeId": "String",
+				"agencyUri": "http://www.altova.com/",
+				"schemeLink": "http://www.altova.com/",
+				"description": "String",
+				"schemeAgencyId": "String",
+				"schemeVersionId": "String"
+			},
+			"code": "String",
+			"name": "String"
+		}
+	]
+}

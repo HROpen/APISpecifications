@@ -65,7 +65,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "./schemas/workers-schema_v1.json"
+                  "$ref": "./schemas/workers-read-response-schema_v1.json"
                 }
               }
             }
@@ -97,7 +97,7 @@
         ],
         "summary": "Add New Workers",
         "requestBody": {
-          "$ref": "#/components/requestBodies/workers-add-change-request"
+          "$ref": "#/components/requestBodies/workers-add-update-request"
         },
         "parameters": [          
           {
@@ -106,7 +106,28 @@
         ],
         "responses": {
           "201": {
-            "$ref": "#/components/responses/201"
+            "description": "Created",
+            "headers": {
+			  "Location": {
+				"$ref": "#/components/headers/Location"
+			  },
+			  "Retry-After": {
+				"$ref": "#/components/headers/Retry-After"
+			  },
+			  "OAGi-MessageID": {
+				"$ref": "#/components/headers/OAGi-MessageID"
+			  },
+			  "OAGi-CorrelationID": {
+				"$ref": "#/components/headers/OAGi-CorrelationID"
+			  }
+			},
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "../../common/bulk-add-response/v1/schemas/bulk-add-response-schema_v1.json"
+                }
+              }
+            }
           },
           "202": {
             "$ref": "#/components/responses/202"
@@ -138,13 +159,13 @@
         }
       },
       "put": {
-        "description": "Update (modify/change) existing workers (full replacement) based on filter criterion",
+        "description": "Update (modify) existing workers (full replacement) based on filter criterion",
         "tags": [
           "Worker Management"
         ],
         "summary": "Update Workers (Bulk Operation)",
         "requestBody": {
-          "$ref": "#/components/requestBodies/workers-add-change-request"
+          "$ref": "#/components/requestBodies/workers-add-update-request"
         },
         "parameters": [   
           {
@@ -201,7 +222,10 @@
             "$ref": "#/components/parameters/header_Link"
           }
         ],
-        "responses": {          
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/200"
+          },                
           "204": {
             "$ref": "#/components/responses/204"
           },
@@ -267,7 +291,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "./schemas/workers-schema_v1.json"
+                  "$ref": "./schemas/workers-read-response-schema_v1.json"
                 }
               }
             }
@@ -299,7 +323,7 @@
         ],
         "summary": "Update a Worker",
         "requestBody": {
-          "$ref": "#/components/requestBodies/workers-add-change-request"
+          "$ref": "#/components/requestBodies/workers-add-update-request"
         },
         "parameters": [
           {
@@ -353,7 +377,10 @@
             "$ref": "#/components/parameters/header_Link"
           }
         ],
-        "responses": {          
+        "responses": {
+          "200": {
+            "$ref": "#/components/responses/200"
+          },        	          
           "204": {
             "$ref": "#/components/responses/204"
           },
@@ -403,7 +430,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
+                            "$ref": "../../common/confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -427,7 +454,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
+                            "$ref": "../../common/confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -448,7 +475,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
+                            "$ref": "../../common/confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -509,7 +536,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
+                            "$ref": "../../common/confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -541,7 +568,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
+                            "$ref": "../../common/confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -562,7 +589,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
+                            "$ref": "../../common/confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -583,7 +610,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
+                            "$ref": "../../common/confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -604,7 +631,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
+                            "$ref": "../../common/confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -625,7 +652,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
+                            "$ref": "../../common/confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -646,7 +673,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
+                            "$ref": "../../common/confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -667,7 +694,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
+                            "$ref": "../../common/confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -688,7 +715,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
+                            "$ref": "../../common/confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -709,7 +736,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
+                            "$ref": "../../common/confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -730,7 +757,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
+                            "$ref": "../../common/confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -751,7 +778,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
+                            "$ref": "../../common/confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -772,7 +799,7 @@
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "../../confirm-message/v1/schemas/confirm-message-schema_v1.json"
+                            "$ref": "../../common/confirm-message/v1/schemas/confirm-message-schema_v1.json"
             }
           }
         }
@@ -1174,12 +1201,12 @@
       }
     },
     "requestBodies": {
-      "workers-add-change-request": {
-        "description": "Request body to add or change one or more workers",
+      "workers-add-update-request": {
+        "description": "Request body to add or update one or more workers",
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "./schemas/workers-schema_v1.json"
+              "$ref": "./schemas/workers-add-update-request-schema_v1.json"
             }
           }
         },
