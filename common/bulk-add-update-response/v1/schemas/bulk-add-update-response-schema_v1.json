@@ -8,7 +8,7 @@
 			"$ref": "../../../../../common/json/meta/MetaType.json"
         },
         "confirmMessage": {
-			"$ref": "../../../../../common/json/messages/confirmMessageType.json"
+			"$ref": "../../../../../common/json/messages/ConfirmMessageType.json"
         }
     },
 	"additionalProperties": false

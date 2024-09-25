@@ -124,7 +124,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "../../common/bulk-add-response/v1/schemas/bulk-add-response-schema_v1.json"
+                  "$ref": "../../common/bulk-add-update-response/v1/schemas/bulk-add-update-response-schema_v1.json"
                 }
               }
             }
@@ -177,8 +177,32 @@
         ],
         "responses": {
           "200": {
-            "$ref": "#/components/responses/200"
-          },
+			"description": "OK (Default)",
+			"headers": {
+			  "ETag": {
+				"$ref": "#/components/headers/ETag"
+			  },
+			  "Last-Modified": {
+				"$ref": "#/components/headers/Last-Modified"
+			  },
+			  "Content-Language": {
+				"$ref": "#/components/headers/Content-Language"
+			  },
+			  "OAGi-MessageID": {
+				"$ref": "#/components/headers/OAGi-MessageID"
+			  },
+			  "OAGi-CorrelationID": {
+				"$ref": "#/components/headers/OAGi-CorrelationID"
+			  }
+			},
+			"content": {
+			  "application/json": {
+				"schema": {
+				  "$ref": "../../common/bulk-add-update-response/v1/schemas/bulk-add-update-response-schema_v1.json"
+				}
+			  }
+			}
+		  },
           "202": {
             "$ref": "#/components/responses/202"
           },
