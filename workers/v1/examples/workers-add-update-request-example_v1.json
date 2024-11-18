@@ -133,6 +133,15 @@
 								"schemeAgencyId": "String",
 								"schemeVersionId": "String"
 							},
+							"status": {
+								"reasonCode": "String",
+								"statusCode": "String",
+								"statusDate": "0000",
+								"description": {
+									"value": "String",
+									"languageCode": "aa"
+								}
+							},
 							"legalId": {
 								"value": "String",
 								"schemeId": "String",
@@ -236,6 +245,7 @@
 											{
 												"city": "String",
 												"line": "String",
+												"typeCode": "String",
 												"postalCode": "String",
 												"countryCode": "AD",
 												"geoLocation": {
@@ -275,6 +285,38 @@
 								}
 							],
 							"typeCode": "FederalGovernmentAgency",
+							"addresses": [
+								{
+									"typeCode": "String",
+									"line": "String",
+									"extendedLines": [
+										{
+											"type": "String",
+											"value": "String"
+										}
+									],
+									"countryCode": "AD",
+									"countrySubDivisions": [
+										{
+											"type": "String",
+											"value": "String"
+										}
+									],
+									"city": "String",
+									"postalCode": "String",
+									"postOfficeBox": "String",
+									"geoLocation": {
+										"latitude": -90,
+										"longitude": -180,
+										"altitude": {
+											"value": 0.1,
+											"unitCode": "ACR"
+										},
+										"name": "String"
+									},
+									"formattedAddress": "String"
+								}
+							],
 							"headCount": 0.1,
 							"tradeName": "String",
 							"domainName": "http://www.altova.com/",
@@ -351,6 +393,7 @@
 									{
 										"city": "String",
 										"line": "String",
+										"typeCode": "String",
 										"postalCode": "String",
 										"countryCode": "AD",
 										"geoLocation": {
@@ -430,6 +473,38 @@
 									"schemeVersionId": "String"
 								},
 								"typeCode": "FederalGovernmentAgency",
+								"addresses": [
+									{
+										"typeCode": "String",
+										"line": "String",
+										"extendedLines": [
+											{
+												"type": "String",
+												"value": "String"
+											}
+										],
+										"countryCode": "AD",
+										"countrySubDivisions": [
+											{
+												"type": "String",
+												"value": "String"
+											}
+										],
+										"city": "String",
+										"postalCode": "String",
+										"postOfficeBox": "String",
+										"geoLocation": {
+											"latitude": -90,
+											"longitude": -180,
+											"altitude": {
+												"value": 0.1,
+												"unitCode": "ACR"
+											},
+											"name": "String"
+										},
+										"formattedAddress": "String"
+									}
+								],
 								"communication": {
 									"web": [
 										{
@@ -489,6 +564,7 @@
 										{
 											"city": "String",
 											"line": "String",
+											"typeCode": "String",
 											"postalCode": "String",
 											"countryCode": "AD",
 											"geoLocation": {
@@ -689,6 +765,7 @@
 						{
 							"city": "String",
 							"line": "String",
+							"typeCode": "String",
 							"postalCode": "String",
 							"countryCode": "AD",
 							"geoLocation": {
@@ -877,6 +954,7 @@
 						}
 					},
 					"assignmentLocation": {
+						"typeCode": "String",
 						"line": "String",
 						"extendedLines": [
 							{
@@ -1090,6 +1168,15 @@
 								"schemeAgencyId": "String",
 								"schemeVersionId": "String"
 							},
+							"status": {
+								"reasonCode": "String",
+								"statusCode": "String",
+								"statusDate": "0000",
+								"description": {
+									"value": "String",
+									"languageCode": "aa"
+								}
+							},
 							"legalId": {
 								"value": "String",
 								"schemeId": "String",
@@ -1193,6 +1280,7 @@
 											{
 												"city": "String",
 												"line": "String",
+												"typeCode": "String",
 												"postalCode": "String",
 												"countryCode": "AD",
 												"geoLocation": {
@@ -1232,6 +1320,38 @@
 								}
 							],
 							"typeCode": "FederalGovernmentAgency",
+							"addresses": [
+								{
+									"typeCode": "String",
+									"line": "String",
+									"extendedLines": [
+										{
+											"type": "String",
+											"value": "String"
+										}
+									],
+									"countryCode": "AD",
+									"countrySubDivisions": [
+										{
+											"type": "String",
+											"value": "String"
+										}
+									],
+									"city": "String",
+									"postalCode": "String",
+									"postOfficeBox": "String",
+									"geoLocation": {
+										"latitude": -90,
+										"longitude": -180,
+										"altitude": {
+											"value": 0.1,
+											"unitCode": "ACR"
+										},
+										"name": "String"
+									},
+									"formattedAddress": "String"
+								}
+							],
 							"headCount": 0.1,
 							"tradeName": "String",
 							"domainName": "http://www.altova.com/",
@@ -1308,6 +1428,7 @@
 									{
 										"city": "String",
 										"line": "String",
+										"typeCode": "String",
 										"postalCode": "String",
 										"countryCode": "AD",
 										"geoLocation": {
@@ -1387,6 +1508,38 @@
 									"schemeVersionId": "String"
 								},
 								"typeCode": "FederalGovernmentAgency",
+								"addresses": [
+									{
+										"typeCode": "String",
+										"line": "String",
+										"extendedLines": [
+											{
+												"type": "String",
+												"value": "String"
+											}
+										],
+										"countryCode": "AD",
+										"countrySubDivisions": [
+											{
+												"type": "String",
+												"value": "String"
+											}
+										],
+										"city": "String",
+										"postalCode": "String",
+										"postOfficeBox": "String",
+										"geoLocation": {
+											"latitude": -90,
+											"longitude": -180,
+											"altitude": {
+												"value": 0.1,
+												"unitCode": "ACR"
+											},
+											"name": "String"
+										},
+										"formattedAddress": "String"
+									}
+								],
 								"communication": {
 									"web": [
 										{
@@ -1446,6 +1599,7 @@
 										{
 											"city": "String",
 											"line": "String",
+											"typeCode": "String",
 											"postalCode": "String",
 											"countryCode": "AD",
 											"geoLocation": {
@@ -1535,7 +1689,7 @@
 							"name": "String"
 						}
 					],
-					"assignedWorkLocations": [
+					"workLocations": [
 						{
 							"id": {
 								"value": "String",
@@ -1546,8 +1700,10 @@
 								"schemeAgencyId": "String",
 								"schemeVersionId": "String"
 							},
+							"name": "String",
 							"city": "String",
 							"line": "String",
+							"typeCode": "String",
 							"postalCode": "String",
 							"countryCode": "AD",
 							"geoLocation": {
@@ -1669,6 +1825,7 @@
 							}
 						},
 						"assignmentLocation": {
+							"typeCode": "String",
 							"line": "String",
 							"extendedLines": [
 								{
@@ -1882,6 +2039,15 @@
 									"schemeAgencyId": "String",
 									"schemeVersionId": "String"
 								},
+								"status": {
+									"reasonCode": "String",
+									"statusCode": "String",
+									"statusDate": "0000",
+									"description": {
+										"value": "String",
+										"languageCode": "aa"
+									}
+								},
 								"legalId": {
 									"value": "String",
 									"schemeId": "String",
@@ -1985,6 +2151,7 @@
 												{
 													"city": "String",
 													"line": "String",
+													"typeCode": "String",
 													"postalCode": "String",
 													"countryCode": "AD",
 													"geoLocation": {
@@ -2024,6 +2191,38 @@
 									}
 								],
 								"typeCode": "FederalGovernmentAgency",
+								"addresses": [
+									{
+										"typeCode": "String",
+										"line": "String",
+										"extendedLines": [
+											{
+												"type": "String",
+												"value": "String"
+											}
+										],
+										"countryCode": "AD",
+										"countrySubDivisions": [
+											{
+												"type": "String",
+												"value": "String"
+											}
+										],
+										"city": "String",
+										"postalCode": "String",
+										"postOfficeBox": "String",
+										"geoLocation": {
+											"latitude": -90,
+											"longitude": -180,
+											"altitude": {
+												"value": 0.1,
+												"unitCode": "ACR"
+											},
+											"name": "String"
+										},
+										"formattedAddress": "String"
+									}
+								],
 								"headCount": 0.1,
 								"tradeName": "String",
 								"domainName": "http://www.altova.com/",
@@ -2100,6 +2299,7 @@
 										{
 											"city": "String",
 											"line": "String",
+											"typeCode": "String",
 											"postalCode": "String",
 											"countryCode": "AD",
 											"geoLocation": {
@@ -2179,6 +2379,38 @@
 										"schemeVersionId": "String"
 									},
 									"typeCode": "FederalGovernmentAgency",
+									"addresses": [
+										{
+											"typeCode": "String",
+											"line": "String",
+											"extendedLines": [
+												{
+													"type": "String",
+													"value": "String"
+												}
+											],
+											"countryCode": "AD",
+											"countrySubDivisions": [
+												{
+													"type": "String",
+													"value": "String"
+												}
+											],
+											"city": "String",
+											"postalCode": "String",
+											"postOfficeBox": "String",
+											"geoLocation": {
+												"latitude": -90,
+												"longitude": -180,
+												"altitude": {
+													"value": 0.1,
+													"unitCode": "ACR"
+												},
+												"name": "String"
+											},
+											"formattedAddress": "String"
+										}
+									],
 									"communication": {
 										"web": [
 											{
@@ -2238,6 +2470,7 @@
 											{
 												"city": "String",
 												"line": "String",
+												"typeCode": "String",
 												"postalCode": "String",
 												"countryCode": "AD",
 												"geoLocation": {
@@ -2327,7 +2560,7 @@
 								"name": "String"
 							}
 						],
-						"assignedWorkLocations": [
+						"workLocations": [
 							{
 								"id": {
 									"value": "String",
@@ -2338,8 +2571,10 @@
 									"schemeAgencyId": "String",
 									"schemeVersionId": "String"
 								},
+								"name": "String",
 								"city": "String",
 								"line": "String",
+								"typeCode": "String",
 								"postalCode": "String",
 								"countryCode": "AD",
 								"geoLocation": {
@@ -2381,8 +2616,10 @@
 					"schemeAgencyId": "String",
 					"schemeVersionId": "String"
 				},
+				"name": "String",
 				"city": "String",
 				"line": "String",
+				"typeCode": "String",
 				"postalCode": "String",
 				"countryCode": "AD",
 				"geoLocation": {
