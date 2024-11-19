@@ -1012,9 +1012,6 @@
 							"agencyUri": "http://www.altova.com/"
 						},
 						"code": "String",
-						"alternateCodes": [
-							"String"
-						],
 						"title": "String",
 						"categoryCode": "String",
 						"jobFunction": "String",
@@ -1039,6 +1036,17 @@
 						},
 						"occupationalClassificationCodes": [
 							"String"
+						],
+						"standardOccupationalClassificationCodes": [
+							{
+								"value": "String",
+								"listId": "String",
+								"listVersionId": "String",
+								"listAgencyId": "String",
+								"description": "String",
+								"listLink": "http://www.altova.com/",
+								"agencyUri": "http://www.altova.com/"
+							}
 						],
 						"jobResponsibilities": "String",
 						"requiredEducationAndExperience": "String",
@@ -1883,9 +1891,6 @@
 								"agencyUri": "http://www.altova.com/"
 							},
 							"code": "String",
-							"alternateCodes": [
-								"String"
-							],
 							"title": "String",
 							"categoryCode": "String",
 							"jobFunction": "String",
@@ -1910,6 +1915,17 @@
 							},
 							"occupationalClassificationCodes": [
 								"String"
+							],
+							"standardOccupationalClassificationCodes": [
+								{
+									"value": "String",
+									"listId": "String",
+									"listVersionId": "String",
+									"listAgencyId": "String",
+									"description": "String",
+									"listLink": "http://www.altova.com/",
+									"agencyUri": "http://www.altova.com/"
+								}
 							],
 							"jobResponsibilities": "String",
 							"requiredEducationAndExperience": "String",
