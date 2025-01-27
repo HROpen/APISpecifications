@@ -1,0 +1,107 @@
+{
+	"workers": [
+		{
+
+			"workerID": {
+				"value": "00000001257",
+				"schemeId": "emplId",
+				"description": "Employee Id"
+			},
+			"person": {
+				"gender": "Male",
+				"maritalStatusCode": "Married",
+				"Name": {
+					"preferredSalutationCode": "Mr",
+					"given": "Shwan",
+					"middle": "S",
+					"family": "Last",
+					"formattedName": "Shwan,Last M"
+				},
+				"communication": {
+					"addresses": [
+						{
+							"line": "321 1st st",
+							"city": "san jose",
+							"countrySubDivisions": [
+							{
+								"type": "State",
+								"value": "California"
+							}
+							],
+							"countryCode": "US",
+							"postalCode": "91025",
+							"typeCode": "Legal"
+						}
+					],
+					"phone": [
+						{
+							"itemID": "WORK",
+							"name":  "WORK",
+							"countryDialing": "123",
+
+							"formattedNumber": "123-123-4321"
+						}
+					],
+					"emails": [
+						{
+							"name": "business",
+							"address": "wq3@ead.com"
+						}
+					]
+				}
+			},
+			"originalHireDate": "2022-01-05",
+			"startedWorkDate": "2022-10-05",
+			"workRelationship": {
+				"statusCode": "Active",
+				"statusDate": "2022-12-05"
+			},
+
+			"workAssignments": [
+				{
+					"id": {
+						"value": "3236",
+						"schemeId": "assignmentiD"
+					},
+					"hireDate": "2022-01-05",
+					"assignmentTermTypeCode": "Fixed",
+					"status": {
+						"statusDate": "2022-04-08",
+						"statusCode": "A",
+						"description": {
+							"value": "Active"
+						}
+					},
+					"job": {
+						"title": "Sr Accountant",
+						"managerIndicator": true,
+						"managerLevel": "String",
+						"wageHourLawCoverageIndicator": true,
+						"occupationId": {
+							"value": "A",
+							"schemeId": "occupation Id",
+							"description": "Accounting"
+						},
+						"occupationalClassificationCodes": [
+							"Finance"
+						]
+					},
+					"position": {
+						"remunerationBasisCode": "Hourly",
+						"positionScheduleType": "FullTime",
+						"positionTypeCode": "DirectHire",
+						"positionTermTypeCode": "Fixed",
+						"permanentEligibleIndicator": true,
+						"fillByContractorIndicator": true,
+						"fillByStudentIndicator": true,
+						"fillByVolunteerIndicator": true,
+						"positionStatusCode": "Approved"
+					}
+				}
+
+
+			]
+
+		}
+	]
+}

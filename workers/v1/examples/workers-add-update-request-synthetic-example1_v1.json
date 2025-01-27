@@ -1,0 +1,102 @@
+{
+	"workers": [
+		{
+			"workerID": {
+				"value": "00000001253",
+				"schemeId": "emplId",
+				"description": "Employee Id"
+			},
+			"person": {
+				"gender": "Female",
+				"maritalStatusCode": "Married",
+				"Name": {
+					"preferredSalutationCode": "Mr",
+					"given": "Lia",
+					"middle": "Madison",
+					"family": "Andrews",
+					"formattedName": "Andrews,Lia M"
+				},
+				"communication": {
+					"addresses": [
+						{
+							"line": "123 Davis st",
+							"city": "Atlanta",
+							"countrySubDivisions": [
+							{
+								"type": "State",
+								"value": "Georgia"
+							}
+							],
+							"countryCode": "US",
+							"postalCode": "30005",
+							"typeCode": "Legal"
+						}
+					],
+					"phone": [
+						{
+							"itemID": "WORK",
+							"name":  "WORK",
+							"countryDialing": "123",
+							"extension": "1234",
+							"formattedNumber": "88405793"
+						}
+					],
+					"emails": [
+						{
+							"name": "business",
+							"address": "business@email.com"
+						}
+					]
+				}
+			},
+			"originalHireDate": "2016-02-05",
+			"startedWorkDate": "2016-02-05",
+			"workRelationship": {
+				"statusCode": "Active",
+				"statusDate": "2016-02-05"
+			},
+			"workAssignments": [
+				{
+					"id": {
+						"value": "1234",
+						"schemeId": "assignmentiD"
+					},
+					"hireDate": "2016-02-05",
+					"assignmentTermTypeCode": "Fixed",
+					"status": {
+						"statusDate": "2024-04-08",
+						"statusCode": "A",
+						"description": {
+							"value": "Active"
+						}
+					},
+					"job": {
+						"title": "Sr Accountant",
+						"managerIndicator": true,
+						"wageHourLawCoverageIndicator": true,
+						"occupationId": {
+							"value": "A",
+							"schemeId": "occupation Id",
+							"description": "Accounting"
+						},
+						"occupationalClassificationCodes": [
+							"Finance"
+						]
+					},
+					"position": {
+						"remunerationBasisCode": "Hourly",
+						"positionScheduleType": "FullTime",
+						"positionTypeCode": "DirectHire",
+						"positionTermTypeCode": "Fixed",
+						"permanentEligibleIndicator": true,
+						"fillByContractorIndicator": true,
+						"fillByStudentIndicator": true,
+						"fillByVolunteerIndicator": true,
+						"positionStatusCode": "Approved"
+					}
+				}
+			]
+
+		}
+	]
+}

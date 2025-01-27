@@ -1,0 +1,205 @@
+{
+	"organizations": [
+		{
+			"taxId": {
+				"value": "123456789",
+				"schemeId": "FEIN",
+				"description": "Fedaral Tax Identification Number"
+
+			},
+			"status": {
+				"reasonCode": "Active",
+				"statusCode": "A",
+				"statusDate": "2023-10-01",
+				"description": {
+					"value": "Active status"
+				}
+			},
+			"legalId": {
+				"value": "987654321",
+				"schemeId": "EIN",
+				"description": "Employer Identification Number",
+				"schemeAgencyId": "IRS",
+				"schemeVersionId": "1.0"
+			},
+			"revenue": {
+				"value": 1000000.0,
+				"currency": "USD"
+			},
+			"contacts": [
+				{
+					"roleCode": "CEO",
+					"name": {
+						"alias": "JD",
+						"given": "John",
+						"legal": "John Doe",
+						"family": "Doe"
+					},
+					"communication": {
+
+						"email": [
+							{
+								"address": "jdoe@company.com",
+								"name": "John Doe",
+								"useCode": "Work",
+								"preference": 1,
+								"availablePeriod": {
+									"end": "2023-12-31T23:59:59.0",
+									"start": "2023-01-01T00:00:00.0"
+								}
+							}
+						],
+						"phone": [
+							{
+								"access": "Direct",
+								"dialNumber": "123-456-7890"
+
+							}
+						],
+
+						"address": [
+							{
+								"city": "New York",
+								"line": "123 Main St",
+								"typeCode": "Office",
+								"postalCode": "10001",
+								"countryCode": "US",
+
+								"extendedLines": [
+									{
+										"type": "Suite",
+										"value": "500"
+									}
+								]
+
+							}
+						]
+					}
+
+				}
+			],
+			"headCount": 100,
+			"tradeName": "ACME Anvil Corporation",
+			"communication": {
+
+				"email": [
+					{
+						"address": "info@acme.com",
+						"name": "Example Email",
+						"useCode": "Official",
+						"preference": 1
+					}
+				],
+				"phone": [
+					{
+						"access": "1",
+						"dialNumber": "123-456-7890",
+						"phoneExtension": "123",
+						"areaDialingCode": "123"
+
+						}
+
+				],
+
+				"address": [
+					{
+						"city": "Example City",
+						"line": "123 Example St",
+						"typeCode": "Office",
+						"postalCode": "12345",
+						"countryCode": "US"
+
+					}
+				]
+			},
+			"industryCodes": {
+				"NAICS": "541512",
+				"SIC": "7371"
+			},
+			"ownershipType": "Public",
+			"statusHistory": [
+				{
+					"statusCode": "Active",
+					"statusDate": "2023-01-01",
+					"description": {
+						"value": "Active status"
+					},
+					"reasonCode": "Verified"
+				}
+			],
+			"parentCompanyName": "Example Parent Company",
+			"parentCompanyTaxId": {
+				"value": "123456777",
+				"schemeId": "FEIN"
+
+			},
+			"parentOrganization": {
+				"taxId": {
+					"value": "PARENT12345",
+					"schemeId": "TIN"
+
+				},
+
+				"typeCode": "FederalGovernmentAgency",
+				"addresses": [
+					{
+						"city": "Santa clara",
+						"line": "456 1st St",
+						"typeCode": "Office",
+						"postalCode": "91200",
+						"countryCode": "US",
+						"countrySubDivisions": [
+							{
+								"type": "State",
+								"value": "CA"
+							}
+						]
+
+					}
+				],
+				"communication": {
+
+					"email": [
+						{
+							"address": "parent@abc.com",
+							"name": "Parent Email",
+							"useCode": "Official",
+							"preference": 1
+
+						}
+					],
+
+					"address": [
+						{
+							"city": "Santa clara",
+							"line": "456 1st St",
+							"typeCode": "Office",
+							"postalCode": "91200",
+							"countryCode": "US",
+							"countrySubDivisions": [
+								{
+									"type": "State",
+									"value": "CA"
+								}
+							]
+
+						}
+					]
+				},
+				"responsibilityCode": "Unit",
+				"organizationUnitTypeCode": "DomesticUltimate",
+
+				"code": "PARENT",
+				"name": "Parent Organization"
+			},
+			"responsibilityCode": "Unit",
+			"workEnvironmentCode": "Office",
+			"organizationUnitTypeCode": "DomesticUltimate",
+			"geographicResponsibilityCode": "Global",
+			"id": {
+				"value": "ORG12345",
+				"schemeId": "ORGID"
+			}
+		}
+	]
+}

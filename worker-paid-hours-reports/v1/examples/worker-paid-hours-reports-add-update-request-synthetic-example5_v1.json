@@ -1,0 +1,37 @@
+{
+	"workerPaidHoursReports": [
+		{
+			"workerId": {
+				"value": "00000007252",
+				"schemeId": "emplId",
+				"description": "Employee Id"
+			},
+
+			"workedWeeks": 4.0,
+			"totalPaidHours": 160.0,
+			"paidTimeOffHours": [
+				{
+					"timeOffTypeCode": "Vacation",
+					"description": "Vacation Time",
+					"timeOffHours": 8.0
+				}
+			],
+			"totalWorkedHours": 152.0,
+			"premiumWorkedHours": [
+				{
+					"workedPayTypeCode": "Overtime",
+					"description": "Overtime Hours",
+					"workedHours": 10.0
+				}
+			],
+			"regularWorkedHours": 142.0,
+			"reportingTimePeriod": {
+				"validTo": "2023-01-01",
+				"validFrom": "2023-01-31"
+			},
+			"totalPaidTimeOffHours": 8.0,
+			"totalPremiumWorkedHours": 10.0
+
+			}
+	]
+}
