@@ -3412,7 +3412,7 @@
                               "value"
                             ]
                           },
-                          "directCompensationAmount": {
+                          "directCompensation": {
                             "description": "The monetary compensation paid to a worker.",
                             "$schema": "http://json-schema.org/draft-04/schema#",
                             "version": "4.3.0",
@@ -8389,7 +8389,7 @@
                               }
                             }
                           },
-                          "indirectCompensationAmount": {
+                          "indirectCompensation": {
                             "description": "The monetary value of compensation paid by the employer for a worker's voluntary and non-voluntary non-cash fringe benefits.",
                             "$schema": "http://json-schema.org/draft-04/schema#",
                             "version": "4.3.x",
@@ -11248,7 +11248,7 @@
                               }
                             }
                           },
-                          "workerWithholdingAmount": {
+                          "workerWithholding": {
                             "description": "The monetary value withheld from the worker for the specified tax, premiums, retirement or other purposes.",
                             "$schema": "http://json-schema.org/draft-04/schema#",
                             "version": "4.3.0",
@@ -35792,7 +35792,7 @@
                             "value"
                           ]
                         },
-                        "directCompensationAmount": {
+                        "directCompensation": {
                           "description": "The monetary compensation paid to a worker.",
                           "$schema": "http://json-schema.org/draft-04/schema#",
                           "version": "4.3.0",
@@ -40769,7 +40769,7 @@
                             }
                           }
                         },
-                        "indirectCompensationAmount": {
+                        "indirectCompensation": {
                           "description": "The monetary value of compensation paid by the employer for a worker's voluntary and non-voluntary non-cash fringe benefits.",
                           "$schema": "http://json-schema.org/draft-04/schema#",
                           "version": "4.3.x",
@@ -43628,7 +43628,7 @@
                             }
                           }
                         },
-                        "workerWithholdingAmount": {
+                        "workerWithholding": {
                           "description": "The monetary value withheld from the worker for the specified tax, premiums, retirement or other purposes.",
                           "$schema": "http://json-schema.org/draft-04/schema#",
                           "version": "4.3.0",
@@ -75912,7 +75912,7 @@
                             "value"
                           ]
                         },
-                        "directCompensationAmount": {
+                        "directCompensation": {
                           "description": "The monetary compensation paid to a worker.",
                           "$schema": "http://json-schema.org/draft-04/schema#",
                           "version": "4.3.0",
@@ -80889,7 +80889,7 @@
                             }
                           }
                         },
-                        "indirectCompensationAmount": {
+                        "indirectCompensation": {
                           "description": "The monetary value of compensation paid by the employer for a worker's voluntary and non-voluntary non-cash fringe benefits.",
                           "$schema": "http://json-schema.org/draft-04/schema#",
                           "version": "4.3.x",
@@ -83748,7 +83748,7 @@
                             }
                           }
                         },
-                        "workerWithholdingAmount": {
+                        "workerWithholding": {
                           "description": "The monetary value withheld from the worker for the specified tax, premiums, retirement or other purposes.",
                           "$schema": "http://json-schema.org/draft-04/schema#",
                           "version": "4.3.0",
@@ -136642,7 +136642,7 @@
                               "value"
                             ]
                           },
-                          "directCompensationAmount": {
+                          "directCompensation": {
                             "description": "The monetary compensation paid to a worker.",
                             "$schema": "http://json-schema.org/draft-04/schema#",
                             "version": "4.3.0",
@@ -141619,7 +141619,7 @@
                               }
                             }
                           },
-                          "indirectCompensationAmount": {
+                          "indirectCompensation": {
                             "description": "The monetary value of compensation paid by the employer for a worker's voluntary and non-voluntary non-cash fringe benefits.",
                             "$schema": "http://json-schema.org/draft-04/schema#",
                             "version": "4.3.x",
@@ -144478,7 +144478,7 @@
                               }
                             }
                           },
-                          "workerWithholdingAmount": {
+                          "workerWithholding": {
                             "description": "The monetary value withheld from the worker for the specified tax, premiums, retirement or other purposes.",
                             "$schema": "http://json-schema.org/draft-04/schema#",
                             "version": "4.3.0",
@@ -169022,7 +169022,7 @@
                             "value"
                           ]
                         },
-                        "directCompensationAmount": {
+                        "directCompensation": {
                           "description": "The monetary compensation paid to a worker.",
                           "$schema": "http://json-schema.org/draft-04/schema#",
                           "version": "4.3.0",
@@ -173999,7 +173999,7 @@
                             }
                           }
                         },
-                        "indirectCompensationAmount": {
+                        "indirectCompensation": {
                           "description": "The monetary value of compensation paid by the employer for a worker's voluntary and non-voluntary non-cash fringe benefits.",
                           "$schema": "http://json-schema.org/draft-04/schema#",
                           "version": "4.3.x",
@@ -176858,7 +176858,7 @@
                             }
                           }
                         },
-                        "workerWithholdingAmount": {
+                        "workerWithholding": {
                           "description": "The monetary value withheld from the worker for the specified tax, premiums, retirement or other purposes.",
                           "$schema": "http://json-schema.org/draft-04/schema#",
                           "version": "4.3.0",
@@ -265824,7 +265824,7 @@
                           "value"
                         ]
                       },
-                      "directCompensationAmount": {
+                      "directCompensation": {
                         "description": "The monetary compensation paid to a worker.",
                         "$schema": "http://json-schema.org/draft-04/schema#",
                         "version": "4.3.0",
@@ -270801,7 +270801,7 @@
                           }
                         }
                       },
-                      "indirectCompensationAmount": {
+                      "indirectCompensation": {
                         "description": "The monetary value of compensation paid by the employer for a worker's voluntary and non-voluntary non-cash fringe benefits.",
                         "$schema": "http://json-schema.org/draft-04/schema#",
                         "version": "4.3.x",
@@ -273660,7 +273660,7 @@
                           }
                         }
                       },
-                      "workerWithholdingAmount": {
+                      "workerWithholding": {
                         "description": "The monetary value withheld from the worker for the specified tax, premiums, retirement or other purposes.",
                         "$schema": "http://json-schema.org/draft-04/schema#",
                         "version": "4.3.0",
@@ -299058,7 +299058,7 @@
               "value"
             ]
           },
-          "directCompensationAmount": {
+          "directCompensation": {
             "description": "The monetary compensation paid to a worker.",
             "$schema": "http://json-schema.org/draft-04/schema#",
             "version": "4.3.0",
@@ -304035,7 +304035,7 @@
               }
             }
           },
-          "indirectCompensationAmount": {
+          "indirectCompensation": {
             "description": "The monetary value of compensation paid by the employer for a worker's voluntary and non-voluntary non-cash fringe benefits.",
             "$schema": "http://json-schema.org/draft-04/schema#",
             "version": "4.3.x",
@@ -306894,7 +306894,7 @@
               }
             }
           },
-          "workerWithholdingAmount": {
+          "workerWithholding": {
             "description": "The monetary value withheld from the worker for the specified tax, premiums, retirement or other purposes.",
             "$schema": "http://json-schema.org/draft-04/schema#",
             "version": "4.3.0",
@@ -318352,7 +318352,7 @@
                     "value"
                   ]
                 },
-                "directCompensationAmount": {
+                "directCompensation": {
                   "description": "The monetary compensation paid to a worker.",
                   "$schema": "http://json-schema.org/draft-04/schema#",
                   "version": "4.3.0",
@@ -323329,7 +323329,7 @@
                     }
                   }
                 },
-                "indirectCompensationAmount": {
+                "indirectCompensation": {
                   "description": "The monetary value of compensation paid by the employer for a worker's voluntary and non-voluntary non-cash fringe benefits.",
                   "$schema": "http://json-schema.org/draft-04/schema#",
                   "version": "4.3.x",
@@ -326188,7 +326188,7 @@
                     }
                   }
                 },
-                "workerWithholdingAmount": {
+                "workerWithholding": {
                   "description": "The monetary value withheld from the worker for the specified tax, premiums, retirement or other purposes.",
                   "$schema": "http://json-schema.org/draft-04/schema#",
                   "version": "4.3.0",
@@ -340426,7 +340426,7 @@
                     "value"
                   ]
                 },
-                "directCompensationAmount": {
+                "directCompensation": {
                   "description": "The monetary compensation paid to a worker.",
                   "$schema": "http://json-schema.org/draft-04/schema#",
                   "version": "4.3.0",
@@ -345403,7 +345403,7 @@
                     }
                   }
                 },
-                "indirectCompensationAmount": {
+                "indirectCompensation": {
                   "description": "The monetary value of compensation paid by the employer for a worker's voluntary and non-voluntary non-cash fringe benefits.",
                   "$schema": "http://json-schema.org/draft-04/schema#",
                   "version": "4.3.x",
@@ -348262,7 +348262,7 @@
                     }
                   }
                 },
-                "workerWithholdingAmount": {
+                "workerWithholding": {
                   "description": "The monetary value withheld from the worker for the specified tax, premiums, retirement or other purposes.",
                   "$schema": "http://json-schema.org/draft-04/schema#",
                   "version": "4.3.0",
