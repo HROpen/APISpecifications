@@ -2047,41 +2047,12 @@
                             "title": "NumberType",
                             "type": "number"
                           },
-                          "paidForWorkInPayPeriod": {
-                            "description": "Details on if the worker was paid in a particular month.",
-                            "type": "array",
-                            "items": {
-                              "title": "PaidForWorkInPayPeriodType",
-                              "description": "Details on if the worker was paid in a particular month.",
-                              "type": "object",
-                              "properties": {
-                                "includedDayOfMonth": {
-                                  "description": "Specifies pay period that includes this day, i.e The person worked during this pay period that includes the 12th.",
-                                  "$schema": "http://json-schema.org/draft-04/schema#",
-                                  "version": "4.3.0",
-                                  "title": "DayOfMonthType",
-                                  "type": "string",
-                                  "hropenFormat": "day",
-                                  "pattern": "^(0[1-9]|[12][0-9]|3[01])$"
-                                },
-                                "reportedMonth": {
-                                  "description": "The reported month.",
-                                  "$schema": "http://json-schema.org/draft-04/schema#",
-                                  "version": "4.3.0",
-                                  "title": "MonthType",
-                                  "type": "string",
-                                  "hropenFormat": "month",
-                                  "pattern": "^(1[012]|0?[1-9])$"
-                                },
-                                "paidForWorkIndicator": {
-                                  "description": "Indicate if worker was paid in PayPeriodMonthDay and ReportedYearMonth.",
-                                  "$schema": "http://json-schema.org/draft-04/schema#",
-                                  "version": "4.3.0",
-                                  "title": "IndicatorType",
-                                  "type": "boolean"
-                                }
-                              }
-                            }
+                          "workedDays": {
+                            "description": "The number of days, during the paid time period, for which the worker earned compensation.",
+                            "$schema": "http://json-schema.org/draft-04/schema#",
+                            "version": "4.3.0",
+                            "title": "NumberType",
+                            "type": "number"
                           },
                           "regularWorkedHours": {
                             "description": "The number of hours a worker was engaged in a regular paid work activity.",
@@ -2089,6 +2060,50 @@
                             "version": "4.3.0",
                             "title": "NumberType",
                             "type": "number"
+                          },
+                          "paidTimeOffHours": {
+                            "description": "The number of hours of employer-paid time used by a worker for any type of absence from work including vacation, sickness, bereavement, maternity, family care, jury duty, education, meals, military duty, administrative time off, sabbatical, or other personal leave. Includes hours of compensatory time off (CTO) when used. ",
+                            "type": "array",
+                            "items": {
+                              "title": "TimeOffHoursType",
+                              "description": "The hours a worker took off. For example, 8 hours of vacation pay.",
+                              "type": "object",
+                              "properties": {
+                                "timeOffTypeCode": {
+                                  "description": "The type of hours a worker took off, such as bereavement, jury duty, vacation, etc.",
+                                  "$schema": "http://json-schema.org/draft-04/schema#",
+                                  "version": "4.3.x",
+                                  "title": "TimeOffTypeCodeList",
+                                  "enum": [
+                                    "Administrative",
+                                    "Bereavement",
+                                    "Compensatory",
+                                    "Consolidated",
+                                    "Education",
+                                    "Family",
+                                    "PublicHoliday",
+                                    "FloatingHoliday",
+                                    "InLieuOfNotice",
+                                    "JuryDuty",
+                                    "MilitaryDuty",
+                                    "Sick",
+                                    "Vacation",
+                                    "OtherPersonal"
+                                  ]
+                                },
+                                "description": {
+                                  "description": "A short phrase further describing the pay type.",
+                                  "type": "string"
+                                },
+                                "timeOffHours": {
+                                  "description": "Number of hours a worker took off.",
+                                  "$schema": "http://json-schema.org/draft-04/schema#",
+                                  "version": "4.3.0",
+                                  "title": "NumberType",
+                                  "type": "number"
+                                }
+                              }
+                            }
                           },
                           "premiumWorkedHours": {
                             "description": "The number of hours a worker was engaged in a premium paid work activity, including premium hours (overtime, shift differential), rest periods and stand-by time. Includes work hours for which compensatory time off was earned. Does not include any employer-paid leave time used.",
@@ -2162,46 +2177,38 @@
                               }
                             }
                           },
-                          "paidTimeOffHours": {
-                            "description": "The number of hours of employer-paid time used by a worker for any type of absence from work including vacation, sickness, bereavement, maternity, family care, jury duty, education, meals, military duty, administrative time off, sabbatical, or other personal leave. Includes hours of compensatory time off (CTO) when used. ",
+                          "paidForWorkInPayPeriod": {
+                            "description": "Details on if the worker was paid in a particular month.",
                             "type": "array",
                             "items": {
-                              "title": "TimeOffHoursType",
-                              "description": "The hours a worker took off. For example, 8 hours of vacation pay.",
+                              "title": "PaidForWorkInPayPeriodType",
+                              "description": "Details on if the worker was paid in a particular month.",
                               "type": "object",
                               "properties": {
-                                "timeOffTypeCode": {
-                                  "description": "The type of hours a worker took off, such as bereavement, jury duty, vacation, etc.",
-                                  "$schema": "http://json-schema.org/draft-04/schema#",
-                                  "version": "4.3.x",
-                                  "title": "TimeOffTypeCodeList",
-                                  "enum": [
-                                    "Administrative",
-                                    "Bereavement",
-                                    "Compensatory",
-                                    "Consolidated",
-                                    "Education",
-                                    "Family",
-                                    "PublicHoliday",
-                                    "FloatingHoliday",
-                                    "InLieuOfNotice",
-                                    "JuryDuty",
-                                    "MilitaryDuty",
-                                    "Sick",
-                                    "Vacation",
-                                    "OtherPersonal"
-                                  ]
-                                },
-                                "description": {
-                                  "description": "A short phrase further describing the pay type.",
-                                  "type": "string"
-                                },
-                                "timeOffHours": {
-                                  "description": "Number of hours a worker took off.",
+                                "includedDayOfMonth": {
+                                  "description": "Specifies pay period that includes this day, i.e The person worked during this pay period that includes the 12th.",
                                   "$schema": "http://json-schema.org/draft-04/schema#",
                                   "version": "4.3.0",
-                                  "title": "NumberType",
-                                  "type": "number"
+                                  "title": "DayOfMonthType",
+                                  "type": "string",
+                                  "hropenFormat": "day",
+                                  "pattern": "^(0[1-9]|[12][0-9]|3[01])$"
+                                },
+                                "reportedMonth": {
+                                  "description": "The reported month.",
+                                  "$schema": "http://json-schema.org/draft-04/schema#",
+                                  "version": "4.3.0",
+                                  "title": "MonthType",
+                                  "type": "string",
+                                  "hropenFormat": "month",
+                                  "pattern": "^(1[012]|0?[1-9])$"
+                                },
+                                "paidForWorkIndicator": {
+                                  "description": "Indicate if worker was paid in PayPeriodMonthDay and ReportedYearMonth.",
+                                  "$schema": "http://json-schema.org/draft-04/schema#",
+                                  "version": "4.3.0",
+                                  "title": "IndicatorType",
+                                  "type": "boolean"
                                 }
                               }
                             }
@@ -22184,41 +22191,12 @@
                           "title": "NumberType",
                           "type": "number"
                         },
-                        "paidForWorkInPayPeriod": {
-                          "description": "Details on if the worker was paid in a particular month.",
-                          "type": "array",
-                          "items": {
-                            "title": "PaidForWorkInPayPeriodType",
-                            "description": "Details on if the worker was paid in a particular month.",
-                            "type": "object",
-                            "properties": {
-                              "includedDayOfMonth": {
-                                "description": "Specifies pay period that includes this day, i.e The person worked during this pay period that includes the 12th.",
-                                "$schema": "http://json-schema.org/draft-04/schema#",
-                                "version": "4.3.0",
-                                "title": "DayOfMonthType",
-                                "type": "string",
-                                "hropenFormat": "day",
-                                "pattern": "^(0[1-9]|[12][0-9]|3[01])$"
-                              },
-                              "reportedMonth": {
-                                "description": "The reported month.",
-                                "$schema": "http://json-schema.org/draft-04/schema#",
-                                "version": "4.3.0",
-                                "title": "MonthType",
-                                "type": "string",
-                                "hropenFormat": "month",
-                                "pattern": "^(1[012]|0?[1-9])$"
-                              },
-                              "paidForWorkIndicator": {
-                                "description": "Indicate if worker was paid in PayPeriodMonthDay and ReportedYearMonth.",
-                                "$schema": "http://json-schema.org/draft-04/schema#",
-                                "version": "4.3.0",
-                                "title": "IndicatorType",
-                                "type": "boolean"
-                              }
-                            }
-                          }
+                        "workedDays": {
+                          "description": "The number of days, during the paid time period, for which the worker earned compensation.",
+                          "$schema": "http://json-schema.org/draft-04/schema#",
+                          "version": "4.3.0",
+                          "title": "NumberType",
+                          "type": "number"
                         },
                         "regularWorkedHours": {
                           "description": "The number of hours a worker was engaged in a regular paid work activity.",
@@ -22226,6 +22204,50 @@
                           "version": "4.3.0",
                           "title": "NumberType",
                           "type": "number"
+                        },
+                        "paidTimeOffHours": {
+                          "description": "The number of hours of employer-paid time used by a worker for any type of absence from work including vacation, sickness, bereavement, maternity, family care, jury duty, education, meals, military duty, administrative time off, sabbatical, or other personal leave. Includes hours of compensatory time off (CTO) when used. ",
+                          "type": "array",
+                          "items": {
+                            "title": "TimeOffHoursType",
+                            "description": "The hours a worker took off. For example, 8 hours of vacation pay.",
+                            "type": "object",
+                            "properties": {
+                              "timeOffTypeCode": {
+                                "description": "The type of hours a worker took off, such as bereavement, jury duty, vacation, etc.",
+                                "$schema": "http://json-schema.org/draft-04/schema#",
+                                "version": "4.3.x",
+                                "title": "TimeOffTypeCodeList",
+                                "enum": [
+                                  "Administrative",
+                                  "Bereavement",
+                                  "Compensatory",
+                                  "Consolidated",
+                                  "Education",
+                                  "Family",
+                                  "PublicHoliday",
+                                  "FloatingHoliday",
+                                  "InLieuOfNotice",
+                                  "JuryDuty",
+                                  "MilitaryDuty",
+                                  "Sick",
+                                  "Vacation",
+                                  "OtherPersonal"
+                                ]
+                              },
+                              "description": {
+                                "description": "A short phrase further describing the pay type.",
+                                "type": "string"
+                              },
+                              "timeOffHours": {
+                                "description": "Number of hours a worker took off.",
+                                "$schema": "http://json-schema.org/draft-04/schema#",
+                                "version": "4.3.0",
+                                "title": "NumberType",
+                                "type": "number"
+                              }
+                            }
+                          }
                         },
                         "premiumWorkedHours": {
                           "description": "The number of hours a worker was engaged in a premium paid work activity, including premium hours (overtime, shift differential), rest periods and stand-by time. Includes work hours for which compensatory time off was earned. Does not include any employer-paid leave time used.",
@@ -22299,46 +22321,38 @@
                             }
                           }
                         },
-                        "paidTimeOffHours": {
-                          "description": "The number of hours of employer-paid time used by a worker for any type of absence from work including vacation, sickness, bereavement, maternity, family care, jury duty, education, meals, military duty, administrative time off, sabbatical, or other personal leave. Includes hours of compensatory time off (CTO) when used. ",
+                        "paidForWorkInPayPeriod": {
+                          "description": "Details on if the worker was paid in a particular month.",
                           "type": "array",
                           "items": {
-                            "title": "TimeOffHoursType",
-                            "description": "The hours a worker took off. For example, 8 hours of vacation pay.",
+                            "title": "PaidForWorkInPayPeriodType",
+                            "description": "Details on if the worker was paid in a particular month.",
                             "type": "object",
                             "properties": {
-                              "timeOffTypeCode": {
-                                "description": "The type of hours a worker took off, such as bereavement, jury duty, vacation, etc.",
-                                "$schema": "http://json-schema.org/draft-04/schema#",
-                                "version": "4.3.x",
-                                "title": "TimeOffTypeCodeList",
-                                "enum": [
-                                  "Administrative",
-                                  "Bereavement",
-                                  "Compensatory",
-                                  "Consolidated",
-                                  "Education",
-                                  "Family",
-                                  "PublicHoliday",
-                                  "FloatingHoliday",
-                                  "InLieuOfNotice",
-                                  "JuryDuty",
-                                  "MilitaryDuty",
-                                  "Sick",
-                                  "Vacation",
-                                  "OtherPersonal"
-                                ]
-                              },
-                              "description": {
-                                "description": "A short phrase further describing the pay type.",
-                                "type": "string"
-                              },
-                              "timeOffHours": {
-                                "description": "Number of hours a worker took off.",
+                              "includedDayOfMonth": {
+                                "description": "Specifies pay period that includes this day, i.e The person worked during this pay period that includes the 12th.",
                                 "$schema": "http://json-schema.org/draft-04/schema#",
                                 "version": "4.3.0",
-                                "title": "NumberType",
-                                "type": "number"
+                                "title": "DayOfMonthType",
+                                "type": "string",
+                                "hropenFormat": "day",
+                                "pattern": "^(0[1-9]|[12][0-9]|3[01])$"
+                              },
+                              "reportedMonth": {
+                                "description": "The reported month.",
+                                "$schema": "http://json-schema.org/draft-04/schema#",
+                                "version": "4.3.0",
+                                "title": "MonthType",
+                                "type": "string",
+                                "hropenFormat": "month",
+                                "pattern": "^(1[012]|0?[1-9])$"
+                              },
+                              "paidForWorkIndicator": {
+                                "description": "Indicate if worker was paid in PayPeriodMonthDay and ReportedYearMonth.",
+                                "$schema": "http://json-schema.org/draft-04/schema#",
+                                "version": "4.3.0",
+                                "title": "IndicatorType",
+                                "type": "boolean"
                               }
                             }
                           }
@@ -50061,41 +50075,12 @@
                           "title": "NumberType",
                           "type": "number"
                         },
-                        "paidForWorkInPayPeriod": {
-                          "description": "Details on if the worker was paid in a particular month.",
-                          "type": "array",
-                          "items": {
-                            "title": "PaidForWorkInPayPeriodType",
-                            "description": "Details on if the worker was paid in a particular month.",
-                            "type": "object",
-                            "properties": {
-                              "includedDayOfMonth": {
-                                "description": "Specifies pay period that includes this day, i.e The person worked during this pay period that includes the 12th.",
-                                "$schema": "http://json-schema.org/draft-04/schema#",
-                                "version": "4.3.0",
-                                "title": "DayOfMonthType",
-                                "type": "string",
-                                "hropenFormat": "day",
-                                "pattern": "^(0[1-9]|[12][0-9]|3[01])$"
-                              },
-                              "reportedMonth": {
-                                "description": "The reported month.",
-                                "$schema": "http://json-schema.org/draft-04/schema#",
-                                "version": "4.3.0",
-                                "title": "MonthType",
-                                "type": "string",
-                                "hropenFormat": "month",
-                                "pattern": "^(1[012]|0?[1-9])$"
-                              },
-                              "paidForWorkIndicator": {
-                                "description": "Indicate if worker was paid in PayPeriodMonthDay and ReportedYearMonth.",
-                                "$schema": "http://json-schema.org/draft-04/schema#",
-                                "version": "4.3.0",
-                                "title": "IndicatorType",
-                                "type": "boolean"
-                              }
-                            }
-                          }
+                        "workedDays": {
+                          "description": "The number of days, during the paid time period, for which the worker earned compensation.",
+                          "$schema": "http://json-schema.org/draft-04/schema#",
+                          "version": "4.3.0",
+                          "title": "NumberType",
+                          "type": "number"
                         },
                         "regularWorkedHours": {
                           "description": "The number of hours a worker was engaged in a regular paid work activity.",
@@ -50103,6 +50088,50 @@
                           "version": "4.3.0",
                           "title": "NumberType",
                           "type": "number"
+                        },
+                        "paidTimeOffHours": {
+                          "description": "The number of hours of employer-paid time used by a worker for any type of absence from work including vacation, sickness, bereavement, maternity, family care, jury duty, education, meals, military duty, administrative time off, sabbatical, or other personal leave. Includes hours of compensatory time off (CTO) when used. ",
+                          "type": "array",
+                          "items": {
+                            "title": "TimeOffHoursType",
+                            "description": "The hours a worker took off. For example, 8 hours of vacation pay.",
+                            "type": "object",
+                            "properties": {
+                              "timeOffTypeCode": {
+                                "description": "The type of hours a worker took off, such as bereavement, jury duty, vacation, etc.",
+                                "$schema": "http://json-schema.org/draft-04/schema#",
+                                "version": "4.3.x",
+                                "title": "TimeOffTypeCodeList",
+                                "enum": [
+                                  "Administrative",
+                                  "Bereavement",
+                                  "Compensatory",
+                                  "Consolidated",
+                                  "Education",
+                                  "Family",
+                                  "PublicHoliday",
+                                  "FloatingHoliday",
+                                  "InLieuOfNotice",
+                                  "JuryDuty",
+                                  "MilitaryDuty",
+                                  "Sick",
+                                  "Vacation",
+                                  "OtherPersonal"
+                                ]
+                              },
+                              "description": {
+                                "description": "A short phrase further describing the pay type.",
+                                "type": "string"
+                              },
+                              "timeOffHours": {
+                                "description": "Number of hours a worker took off.",
+                                "$schema": "http://json-schema.org/draft-04/schema#",
+                                "version": "4.3.0",
+                                "title": "NumberType",
+                                "type": "number"
+                              }
+                            }
+                          }
                         },
                         "premiumWorkedHours": {
                           "description": "The number of hours a worker was engaged in a premium paid work activity, including premium hours (overtime, shift differential), rest periods and stand-by time. Includes work hours for which compensatory time off was earned. Does not include any employer-paid leave time used.",
@@ -50176,46 +50205,38 @@
                             }
                           }
                         },
-                        "paidTimeOffHours": {
-                          "description": "The number of hours of employer-paid time used by a worker for any type of absence from work including vacation, sickness, bereavement, maternity, family care, jury duty, education, meals, military duty, administrative time off, sabbatical, or other personal leave. Includes hours of compensatory time off (CTO) when used. ",
+                        "paidForWorkInPayPeriod": {
+                          "description": "Details on if the worker was paid in a particular month.",
                           "type": "array",
                           "items": {
-                            "title": "TimeOffHoursType",
-                            "description": "The hours a worker took off. For example, 8 hours of vacation pay.",
+                            "title": "PaidForWorkInPayPeriodType",
+                            "description": "Details on if the worker was paid in a particular month.",
                             "type": "object",
                             "properties": {
-                              "timeOffTypeCode": {
-                                "description": "The type of hours a worker took off, such as bereavement, jury duty, vacation, etc.",
-                                "$schema": "http://json-schema.org/draft-04/schema#",
-                                "version": "4.3.x",
-                                "title": "TimeOffTypeCodeList",
-                                "enum": [
-                                  "Administrative",
-                                  "Bereavement",
-                                  "Compensatory",
-                                  "Consolidated",
-                                  "Education",
-                                  "Family",
-                                  "PublicHoliday",
-                                  "FloatingHoliday",
-                                  "InLieuOfNotice",
-                                  "JuryDuty",
-                                  "MilitaryDuty",
-                                  "Sick",
-                                  "Vacation",
-                                  "OtherPersonal"
-                                ]
-                              },
-                              "description": {
-                                "description": "A short phrase further describing the pay type.",
-                                "type": "string"
-                              },
-                              "timeOffHours": {
-                                "description": "Number of hours a worker took off.",
+                              "includedDayOfMonth": {
+                                "description": "Specifies pay period that includes this day, i.e The person worked during this pay period that includes the 12th.",
                                 "$schema": "http://json-schema.org/draft-04/schema#",
                                 "version": "4.3.0",
-                                "title": "NumberType",
-                                "type": "number"
+                                "title": "DayOfMonthType",
+                                "type": "string",
+                                "hropenFormat": "day",
+                                "pattern": "^(0[1-9]|[12][0-9]|3[01])$"
+                              },
+                              "reportedMonth": {
+                                "description": "The reported month.",
+                                "$schema": "http://json-schema.org/draft-04/schema#",
+                                "version": "4.3.0",
+                                "title": "MonthType",
+                                "type": "string",
+                                "hropenFormat": "month",
+                                "pattern": "^(1[012]|0?[1-9])$"
+                              },
+                              "paidForWorkIndicator": {
+                                "description": "Indicate if worker was paid in PayPeriodMonthDay and ReportedYearMonth.",
+                                "$schema": "http://json-schema.org/draft-04/schema#",
+                                "version": "4.3.0",
+                                "title": "IndicatorType",
+                                "type": "boolean"
                               }
                             }
                           }
@@ -98548,41 +98569,12 @@
                             "title": "NumberType",
                             "type": "number"
                           },
-                          "paidForWorkInPayPeriod": {
-                            "description": "Details on if the worker was paid in a particular month.",
-                            "type": "array",
-                            "items": {
-                              "title": "PaidForWorkInPayPeriodType",
-                              "description": "Details on if the worker was paid in a particular month.",
-                              "type": "object",
-                              "properties": {
-                                "includedDayOfMonth": {
-                                  "description": "Specifies pay period that includes this day, i.e The person worked during this pay period that includes the 12th.",
-                                  "$schema": "http://json-schema.org/draft-04/schema#",
-                                  "version": "4.3.0",
-                                  "title": "DayOfMonthType",
-                                  "type": "string",
-                                  "hropenFormat": "day",
-                                  "pattern": "^(0[1-9]|[12][0-9]|3[01])$"
-                                },
-                                "reportedMonth": {
-                                  "description": "The reported month.",
-                                  "$schema": "http://json-schema.org/draft-04/schema#",
-                                  "version": "4.3.0",
-                                  "title": "MonthType",
-                                  "type": "string",
-                                  "hropenFormat": "month",
-                                  "pattern": "^(1[012]|0?[1-9])$"
-                                },
-                                "paidForWorkIndicator": {
-                                  "description": "Indicate if worker was paid in PayPeriodMonthDay and ReportedYearMonth.",
-                                  "$schema": "http://json-schema.org/draft-04/schema#",
-                                  "version": "4.3.0",
-                                  "title": "IndicatorType",
-                                  "type": "boolean"
-                                }
-                              }
-                            }
+                          "workedDays": {
+                            "description": "The number of days, during the paid time period, for which the worker earned compensation.",
+                            "$schema": "http://json-schema.org/draft-04/schema#",
+                            "version": "4.3.0",
+                            "title": "NumberType",
+                            "type": "number"
                           },
                           "regularWorkedHours": {
                             "description": "The number of hours a worker was engaged in a regular paid work activity.",
@@ -98590,6 +98582,50 @@
                             "version": "4.3.0",
                             "title": "NumberType",
                             "type": "number"
+                          },
+                          "paidTimeOffHours": {
+                            "description": "The number of hours of employer-paid time used by a worker for any type of absence from work including vacation, sickness, bereavement, maternity, family care, jury duty, education, meals, military duty, administrative time off, sabbatical, or other personal leave. Includes hours of compensatory time off (CTO) when used. ",
+                            "type": "array",
+                            "items": {
+                              "title": "TimeOffHoursType",
+                              "description": "The hours a worker took off. For example, 8 hours of vacation pay.",
+                              "type": "object",
+                              "properties": {
+                                "timeOffTypeCode": {
+                                  "description": "The type of hours a worker took off, such as bereavement, jury duty, vacation, etc.",
+                                  "$schema": "http://json-schema.org/draft-04/schema#",
+                                  "version": "4.3.x",
+                                  "title": "TimeOffTypeCodeList",
+                                  "enum": [
+                                    "Administrative",
+                                    "Bereavement",
+                                    "Compensatory",
+                                    "Consolidated",
+                                    "Education",
+                                    "Family",
+                                    "PublicHoliday",
+                                    "FloatingHoliday",
+                                    "InLieuOfNotice",
+                                    "JuryDuty",
+                                    "MilitaryDuty",
+                                    "Sick",
+                                    "Vacation",
+                                    "OtherPersonal"
+                                  ]
+                                },
+                                "description": {
+                                  "description": "A short phrase further describing the pay type.",
+                                  "type": "string"
+                                },
+                                "timeOffHours": {
+                                  "description": "Number of hours a worker took off.",
+                                  "$schema": "http://json-schema.org/draft-04/schema#",
+                                  "version": "4.3.0",
+                                  "title": "NumberType",
+                                  "type": "number"
+                                }
+                              }
+                            }
                           },
                           "premiumWorkedHours": {
                             "description": "The number of hours a worker was engaged in a premium paid work activity, including premium hours (overtime, shift differential), rest periods and stand-by time. Includes work hours for which compensatory time off was earned. Does not include any employer-paid leave time used.",
@@ -98663,46 +98699,38 @@
                               }
                             }
                           },
-                          "paidTimeOffHours": {
-                            "description": "The number of hours of employer-paid time used by a worker for any type of absence from work including vacation, sickness, bereavement, maternity, family care, jury duty, education, meals, military duty, administrative time off, sabbatical, or other personal leave. Includes hours of compensatory time off (CTO) when used. ",
+                          "paidForWorkInPayPeriod": {
+                            "description": "Details on if the worker was paid in a particular month.",
                             "type": "array",
                             "items": {
-                              "title": "TimeOffHoursType",
-                              "description": "The hours a worker took off. For example, 8 hours of vacation pay.",
+                              "title": "PaidForWorkInPayPeriodType",
+                              "description": "Details on if the worker was paid in a particular month.",
                               "type": "object",
                               "properties": {
-                                "timeOffTypeCode": {
-                                  "description": "The type of hours a worker took off, such as bereavement, jury duty, vacation, etc.",
-                                  "$schema": "http://json-schema.org/draft-04/schema#",
-                                  "version": "4.3.x",
-                                  "title": "TimeOffTypeCodeList",
-                                  "enum": [
-                                    "Administrative",
-                                    "Bereavement",
-                                    "Compensatory",
-                                    "Consolidated",
-                                    "Education",
-                                    "Family",
-                                    "PublicHoliday",
-                                    "FloatingHoliday",
-                                    "InLieuOfNotice",
-                                    "JuryDuty",
-                                    "MilitaryDuty",
-                                    "Sick",
-                                    "Vacation",
-                                    "OtherPersonal"
-                                  ]
-                                },
-                                "description": {
-                                  "description": "A short phrase further describing the pay type.",
-                                  "type": "string"
-                                },
-                                "timeOffHours": {
-                                  "description": "Number of hours a worker took off.",
+                                "includedDayOfMonth": {
+                                  "description": "Specifies pay period that includes this day, i.e The person worked during this pay period that includes the 12th.",
                                   "$schema": "http://json-schema.org/draft-04/schema#",
                                   "version": "4.3.0",
-                                  "title": "NumberType",
-                                  "type": "number"
+                                  "title": "DayOfMonthType",
+                                  "type": "string",
+                                  "hropenFormat": "day",
+                                  "pattern": "^(0[1-9]|[12][0-9]|3[01])$"
+                                },
+                                "reportedMonth": {
+                                  "description": "The reported month.",
+                                  "$schema": "http://json-schema.org/draft-04/schema#",
+                                  "version": "4.3.0",
+                                  "title": "MonthType",
+                                  "type": "string",
+                                  "hropenFormat": "month",
+                                  "pattern": "^(1[012]|0?[1-9])$"
+                                },
+                                "paidForWorkIndicator": {
+                                  "description": "Indicate if worker was paid in PayPeriodMonthDay and ReportedYearMonth.",
+                                  "$schema": "http://json-schema.org/draft-04/schema#",
+                                  "version": "4.3.0",
+                                  "title": "IndicatorType",
+                                  "type": "boolean"
                                 }
                               }
                             }
@@ -118685,41 +118713,12 @@
                           "title": "NumberType",
                           "type": "number"
                         },
-                        "paidForWorkInPayPeriod": {
-                          "description": "Details on if the worker was paid in a particular month.",
-                          "type": "array",
-                          "items": {
-                            "title": "PaidForWorkInPayPeriodType",
-                            "description": "Details on if the worker was paid in a particular month.",
-                            "type": "object",
-                            "properties": {
-                              "includedDayOfMonth": {
-                                "description": "Specifies pay period that includes this day, i.e The person worked during this pay period that includes the 12th.",
-                                "$schema": "http://json-schema.org/draft-04/schema#",
-                                "version": "4.3.0",
-                                "title": "DayOfMonthType",
-                                "type": "string",
-                                "hropenFormat": "day",
-                                "pattern": "^(0[1-9]|[12][0-9]|3[01])$"
-                              },
-                              "reportedMonth": {
-                                "description": "The reported month.",
-                                "$schema": "http://json-schema.org/draft-04/schema#",
-                                "version": "4.3.0",
-                                "title": "MonthType",
-                                "type": "string",
-                                "hropenFormat": "month",
-                                "pattern": "^(1[012]|0?[1-9])$"
-                              },
-                              "paidForWorkIndicator": {
-                                "description": "Indicate if worker was paid in PayPeriodMonthDay and ReportedYearMonth.",
-                                "$schema": "http://json-schema.org/draft-04/schema#",
-                                "version": "4.3.0",
-                                "title": "IndicatorType",
-                                "type": "boolean"
-                              }
-                            }
-                          }
+                        "workedDays": {
+                          "description": "The number of days, during the paid time period, for which the worker earned compensation.",
+                          "$schema": "http://json-schema.org/draft-04/schema#",
+                          "version": "4.3.0",
+                          "title": "NumberType",
+                          "type": "number"
                         },
                         "regularWorkedHours": {
                           "description": "The number of hours a worker was engaged in a regular paid work activity.",
@@ -118727,6 +118726,50 @@
                           "version": "4.3.0",
                           "title": "NumberType",
                           "type": "number"
+                        },
+                        "paidTimeOffHours": {
+                          "description": "The number of hours of employer-paid time used by a worker for any type of absence from work including vacation, sickness, bereavement, maternity, family care, jury duty, education, meals, military duty, administrative time off, sabbatical, or other personal leave. Includes hours of compensatory time off (CTO) when used. ",
+                          "type": "array",
+                          "items": {
+                            "title": "TimeOffHoursType",
+                            "description": "The hours a worker took off. For example, 8 hours of vacation pay.",
+                            "type": "object",
+                            "properties": {
+                              "timeOffTypeCode": {
+                                "description": "The type of hours a worker took off, such as bereavement, jury duty, vacation, etc.",
+                                "$schema": "http://json-schema.org/draft-04/schema#",
+                                "version": "4.3.x",
+                                "title": "TimeOffTypeCodeList",
+                                "enum": [
+                                  "Administrative",
+                                  "Bereavement",
+                                  "Compensatory",
+                                  "Consolidated",
+                                  "Education",
+                                  "Family",
+                                  "PublicHoliday",
+                                  "FloatingHoliday",
+                                  "InLieuOfNotice",
+                                  "JuryDuty",
+                                  "MilitaryDuty",
+                                  "Sick",
+                                  "Vacation",
+                                  "OtherPersonal"
+                                ]
+                              },
+                              "description": {
+                                "description": "A short phrase further describing the pay type.",
+                                "type": "string"
+                              },
+                              "timeOffHours": {
+                                "description": "Number of hours a worker took off.",
+                                "$schema": "http://json-schema.org/draft-04/schema#",
+                                "version": "4.3.0",
+                                "title": "NumberType",
+                                "type": "number"
+                              }
+                            }
+                          }
                         },
                         "premiumWorkedHours": {
                           "description": "The number of hours a worker was engaged in a premium paid work activity, including premium hours (overtime, shift differential), rest periods and stand-by time. Includes work hours for which compensatory time off was earned. Does not include any employer-paid leave time used.",
@@ -118800,46 +118843,38 @@
                             }
                           }
                         },
-                        "paidTimeOffHours": {
-                          "description": "The number of hours of employer-paid time used by a worker for any type of absence from work including vacation, sickness, bereavement, maternity, family care, jury duty, education, meals, military duty, administrative time off, sabbatical, or other personal leave. Includes hours of compensatory time off (CTO) when used. ",
+                        "paidForWorkInPayPeriod": {
+                          "description": "Details on if the worker was paid in a particular month.",
                           "type": "array",
                           "items": {
-                            "title": "TimeOffHoursType",
-                            "description": "The hours a worker took off. For example, 8 hours of vacation pay.",
+                            "title": "PaidForWorkInPayPeriodType",
+                            "description": "Details on if the worker was paid in a particular month.",
                             "type": "object",
                             "properties": {
-                              "timeOffTypeCode": {
-                                "description": "The type of hours a worker took off, such as bereavement, jury duty, vacation, etc.",
-                                "$schema": "http://json-schema.org/draft-04/schema#",
-                                "version": "4.3.x",
-                                "title": "TimeOffTypeCodeList",
-                                "enum": [
-                                  "Administrative",
-                                  "Bereavement",
-                                  "Compensatory",
-                                  "Consolidated",
-                                  "Education",
-                                  "Family",
-                                  "PublicHoliday",
-                                  "FloatingHoliday",
-                                  "InLieuOfNotice",
-                                  "JuryDuty",
-                                  "MilitaryDuty",
-                                  "Sick",
-                                  "Vacation",
-                                  "OtherPersonal"
-                                ]
-                              },
-                              "description": {
-                                "description": "A short phrase further describing the pay type.",
-                                "type": "string"
-                              },
-                              "timeOffHours": {
-                                "description": "Number of hours a worker took off.",
+                              "includedDayOfMonth": {
+                                "description": "Specifies pay period that includes this day, i.e The person worked during this pay period that includes the 12th.",
                                 "$schema": "http://json-schema.org/draft-04/schema#",
                                 "version": "4.3.0",
-                                "title": "NumberType",
-                                "type": "number"
+                                "title": "DayOfMonthType",
+                                "type": "string",
+                                "hropenFormat": "day",
+                                "pattern": "^(0[1-9]|[12][0-9]|3[01])$"
+                              },
+                              "reportedMonth": {
+                                "description": "The reported month.",
+                                "$schema": "http://json-schema.org/draft-04/schema#",
+                                "version": "4.3.0",
+                                "title": "MonthType",
+                                "type": "string",
+                                "hropenFormat": "month",
+                                "pattern": "^(1[012]|0?[1-9])$"
+                              },
+                              "paidForWorkIndicator": {
+                                "description": "Indicate if worker was paid in PayPeriodMonthDay and ReportedYearMonth.",
+                                "$schema": "http://json-schema.org/draft-04/schema#",
+                                "version": "4.3.0",
+                                "title": "IndicatorType",
+                                "type": "boolean"
                               }
                             }
                           }
@@ -203244,41 +203279,12 @@
                         "title": "NumberType",
                         "type": "number"
                       },
-                      "paidForWorkInPayPeriod": {
-                        "description": "Details on if the worker was paid in a particular month.",
-                        "type": "array",
-                        "items": {
-                          "title": "PaidForWorkInPayPeriodType",
-                          "description": "Details on if the worker was paid in a particular month.",
-                          "type": "object",
-                          "properties": {
-                            "includedDayOfMonth": {
-                              "description": "Specifies pay period that includes this day, i.e The person worked during this pay period that includes the 12th.",
-                              "$schema": "http://json-schema.org/draft-04/schema#",
-                              "version": "4.3.0",
-                              "title": "DayOfMonthType",
-                              "type": "string",
-                              "hropenFormat": "day",
-                              "pattern": "^(0[1-9]|[12][0-9]|3[01])$"
-                            },
-                            "reportedMonth": {
-                              "description": "The reported month.",
-                              "$schema": "http://json-schema.org/draft-04/schema#",
-                              "version": "4.3.0",
-                              "title": "MonthType",
-                              "type": "string",
-                              "hropenFormat": "month",
-                              "pattern": "^(1[012]|0?[1-9])$"
-                            },
-                            "paidForWorkIndicator": {
-                              "description": "Indicate if worker was paid in PayPeriodMonthDay and ReportedYearMonth.",
-                              "$schema": "http://json-schema.org/draft-04/schema#",
-                              "version": "4.3.0",
-                              "title": "IndicatorType",
-                              "type": "boolean"
-                            }
-                          }
-                        }
+                      "workedDays": {
+                        "description": "The number of days, during the paid time period, for which the worker earned compensation.",
+                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "version": "4.3.0",
+                        "title": "NumberType",
+                        "type": "number"
                       },
                       "regularWorkedHours": {
                         "description": "The number of hours a worker was engaged in a regular paid work activity.",
@@ -203286,6 +203292,50 @@
                         "version": "4.3.0",
                         "title": "NumberType",
                         "type": "number"
+                      },
+                      "paidTimeOffHours": {
+                        "description": "The number of hours of employer-paid time used by a worker for any type of absence from work including vacation, sickness, bereavement, maternity, family care, jury duty, education, meals, military duty, administrative time off, sabbatical, or other personal leave. Includes hours of compensatory time off (CTO) when used. ",
+                        "type": "array",
+                        "items": {
+                          "title": "TimeOffHoursType",
+                          "description": "The hours a worker took off. For example, 8 hours of vacation pay.",
+                          "type": "object",
+                          "properties": {
+                            "timeOffTypeCode": {
+                              "description": "The type of hours a worker took off, such as bereavement, jury duty, vacation, etc.",
+                              "$schema": "http://json-schema.org/draft-04/schema#",
+                              "version": "4.3.x",
+                              "title": "TimeOffTypeCodeList",
+                              "enum": [
+                                "Administrative",
+                                "Bereavement",
+                                "Compensatory",
+                                "Consolidated",
+                                "Education",
+                                "Family",
+                                "PublicHoliday",
+                                "FloatingHoliday",
+                                "InLieuOfNotice",
+                                "JuryDuty",
+                                "MilitaryDuty",
+                                "Sick",
+                                "Vacation",
+                                "OtherPersonal"
+                              ]
+                            },
+                            "description": {
+                              "description": "A short phrase further describing the pay type.",
+                              "type": "string"
+                            },
+                            "timeOffHours": {
+                              "description": "Number of hours a worker took off.",
+                              "$schema": "http://json-schema.org/draft-04/schema#",
+                              "version": "4.3.0",
+                              "title": "NumberType",
+                              "type": "number"
+                            }
+                          }
+                        }
                       },
                       "premiumWorkedHours": {
                         "description": "The number of hours a worker was engaged in a premium paid work activity, including premium hours (overtime, shift differential), rest periods and stand-by time. Includes work hours for which compensatory time off was earned. Does not include any employer-paid leave time used.",
@@ -203359,46 +203409,38 @@
                           }
                         }
                       },
-                      "paidTimeOffHours": {
-                        "description": "The number of hours of employer-paid time used by a worker for any type of absence from work including vacation, sickness, bereavement, maternity, family care, jury duty, education, meals, military duty, administrative time off, sabbatical, or other personal leave. Includes hours of compensatory time off (CTO) when used. ",
+                      "paidForWorkInPayPeriod": {
+                        "description": "Details on if the worker was paid in a particular month.",
                         "type": "array",
                         "items": {
-                          "title": "TimeOffHoursType",
-                          "description": "The hours a worker took off. For example, 8 hours of vacation pay.",
+                          "title": "PaidForWorkInPayPeriodType",
+                          "description": "Details on if the worker was paid in a particular month.",
                           "type": "object",
                           "properties": {
-                            "timeOffTypeCode": {
-                              "description": "The type of hours a worker took off, such as bereavement, jury duty, vacation, etc.",
-                              "$schema": "http://json-schema.org/draft-04/schema#",
-                              "version": "4.3.x",
-                              "title": "TimeOffTypeCodeList",
-                              "enum": [
-                                "Administrative",
-                                "Bereavement",
-                                "Compensatory",
-                                "Consolidated",
-                                "Education",
-                                "Family",
-                                "PublicHoliday",
-                                "FloatingHoliday",
-                                "InLieuOfNotice",
-                                "JuryDuty",
-                                "MilitaryDuty",
-                                "Sick",
-                                "Vacation",
-                                "OtherPersonal"
-                              ]
-                            },
-                            "description": {
-                              "description": "A short phrase further describing the pay type.",
-                              "type": "string"
-                            },
-                            "timeOffHours": {
-                              "description": "Number of hours a worker took off.",
+                            "includedDayOfMonth": {
+                              "description": "Specifies pay period that includes this day, i.e The person worked during this pay period that includes the 12th.",
                               "$schema": "http://json-schema.org/draft-04/schema#",
                               "version": "4.3.0",
-                              "title": "NumberType",
-                              "type": "number"
+                              "title": "DayOfMonthType",
+                              "type": "string",
+                              "hropenFormat": "day",
+                              "pattern": "^(0[1-9]|[12][0-9]|3[01])$"
+                            },
+                            "reportedMonth": {
+                              "description": "The reported month.",
+                              "$schema": "http://json-schema.org/draft-04/schema#",
+                              "version": "4.3.0",
+                              "title": "MonthType",
+                              "type": "string",
+                              "hropenFormat": "month",
+                              "pattern": "^(1[012]|0?[1-9])$"
+                            },
+                            "paidForWorkIndicator": {
+                              "description": "Indicate if worker was paid in PayPeriodMonthDay and ReportedYearMonth.",
+                              "$schema": "http://json-schema.org/draft-04/schema#",
+                              "version": "4.3.0",
+                              "title": "IndicatorType",
+                              "type": "boolean"
                             }
                           }
                         }
@@ -208388,35 +208430,43 @@
           }
         }
       },
-      "PaidForWorkInPayPeriodType": {
-        "title": "PaidForWorkInPayPeriodType",
-        "description": "Details on if the worker was paid in a particular month.",
+      "TimeOffHoursType": {
+        "title": "TimeOffHoursType",
+        "description": "The hours a worker took off. For example, 8 hours of vacation pay.",
         "type": "object",
         "properties": {
-          "includedDayOfMonth": {
-            "description": "Specifies pay period that includes this day, i.e The person worked during this pay period that includes the 12th.",
+          "timeOffTypeCode": {
+            "description": "The type of hours a worker took off, such as bereavement, jury duty, vacation, etc.",
             "$schema": "http://json-schema.org/draft-04/schema#",
-            "version": "4.3.0",
-            "title": "DayOfMonthType",
-            "type": "string",
-            "hropenFormat": "day",
-            "pattern": "^(0[1-9]|[12][0-9]|3[01])$"
+            "version": "4.3.x",
+            "title": "TimeOffTypeCodeList",
+            "enum": [
+              "Administrative",
+              "Bereavement",
+              "Compensatory",
+              "Consolidated",
+              "Education",
+              "Family",
+              "PublicHoliday",
+              "FloatingHoliday",
+              "InLieuOfNotice",
+              "JuryDuty",
+              "MilitaryDuty",
+              "Sick",
+              "Vacation",
+              "OtherPersonal"
+            ]
           },
-          "reportedMonth": {
-            "description": "The reported month.",
-            "$schema": "http://json-schema.org/draft-04/schema#",
-            "version": "4.3.0",
-            "title": "MonthType",
-            "type": "string",
-            "hropenFormat": "month",
-            "pattern": "^(1[012]|0?[1-9])$"
+          "description": {
+            "description": "A short phrase further describing the pay type.",
+            "type": "string"
           },
-          "paidForWorkIndicator": {
-            "description": "Indicate if worker was paid in PayPeriodMonthDay and ReportedYearMonth.",
+          "timeOffHours": {
+            "description": "Number of hours a worker took off.",
             "$schema": "http://json-schema.org/draft-04/schema#",
             "version": "4.3.0",
-            "title": "IndicatorType",
-            "type": "boolean"
+            "title": "NumberType",
+            "type": "number"
           }
         }
       },
@@ -208488,43 +208538,35 @@
           }
         }
       },
-      "TimeOffHoursType": {
-        "title": "TimeOffHoursType",
-        "description": "The hours a worker took off. For example, 8 hours of vacation pay.",
+      "PaidForWorkInPayPeriodType": {
+        "title": "PaidForWorkInPayPeriodType",
+        "description": "Details on if the worker was paid in a particular month.",
         "type": "object",
         "properties": {
-          "timeOffTypeCode": {
-            "description": "The type of hours a worker took off, such as bereavement, jury duty, vacation, etc.",
-            "$schema": "http://json-schema.org/draft-04/schema#",
-            "version": "4.3.x",
-            "title": "TimeOffTypeCodeList",
-            "enum": [
-              "Administrative",
-              "Bereavement",
-              "Compensatory",
-              "Consolidated",
-              "Education",
-              "Family",
-              "PublicHoliday",
-              "FloatingHoliday",
-              "InLieuOfNotice",
-              "JuryDuty",
-              "MilitaryDuty",
-              "Sick",
-              "Vacation",
-              "OtherPersonal"
-            ]
-          },
-          "description": {
-            "description": "A short phrase further describing the pay type.",
-            "type": "string"
-          },
-          "timeOffHours": {
-            "description": "Number of hours a worker took off.",
+          "includedDayOfMonth": {
+            "description": "Specifies pay period that includes this day, i.e The person worked during this pay period that includes the 12th.",
             "$schema": "http://json-schema.org/draft-04/schema#",
             "version": "4.3.0",
-            "title": "NumberType",
-            "type": "number"
+            "title": "DayOfMonthType",
+            "type": "string",
+            "hropenFormat": "day",
+            "pattern": "^(0[1-9]|[12][0-9]|3[01])$"
+          },
+          "reportedMonth": {
+            "description": "The reported month.",
+            "$schema": "http://json-schema.org/draft-04/schema#",
+            "version": "4.3.0",
+            "title": "MonthType",
+            "type": "string",
+            "hropenFormat": "month",
+            "pattern": "^(1[012]|0?[1-9])$"
+          },
+          "paidForWorkIndicator": {
+            "description": "Indicate if worker was paid in PayPeriodMonthDay and ReportedYearMonth.",
+            "$schema": "http://json-schema.org/draft-04/schema#",
+            "version": "4.3.0",
+            "title": "IndicatorType",
+            "type": "boolean"
           }
         }
       },
@@ -210468,41 +210510,12 @@
             "title": "NumberType",
             "type": "number"
           },
-          "paidForWorkInPayPeriod": {
-            "description": "Details on if the worker was paid in a particular month.",
-            "type": "array",
-            "items": {
-              "title": "PaidForWorkInPayPeriodType",
-              "description": "Details on if the worker was paid in a particular month.",
-              "type": "object",
-              "properties": {
-                "includedDayOfMonth": {
-                  "description": "Specifies pay period that includes this day, i.e The person worked during this pay period that includes the 12th.",
-                  "$schema": "http://json-schema.org/draft-04/schema#",
-                  "version": "4.3.0",
-                  "title": "DayOfMonthType",
-                  "type": "string",
-                  "hropenFormat": "day",
-                  "pattern": "^(0[1-9]|[12][0-9]|3[01])$"
-                },
-                "reportedMonth": {
-                  "description": "The reported month.",
-                  "$schema": "http://json-schema.org/draft-04/schema#",
-                  "version": "4.3.0",
-                  "title": "MonthType",
-                  "type": "string",
-                  "hropenFormat": "month",
-                  "pattern": "^(1[012]|0?[1-9])$"
-                },
-                "paidForWorkIndicator": {
-                  "description": "Indicate if worker was paid in PayPeriodMonthDay and ReportedYearMonth.",
-                  "$schema": "http://json-schema.org/draft-04/schema#",
-                  "version": "4.3.0",
-                  "title": "IndicatorType",
-                  "type": "boolean"
-                }
-              }
-            }
+          "workedDays": {
+            "description": "The number of days, during the paid time period, for which the worker earned compensation.",
+            "$schema": "http://json-schema.org/draft-04/schema#",
+            "version": "4.3.0",
+            "title": "NumberType",
+            "type": "number"
           },
           "regularWorkedHours": {
             "description": "The number of hours a worker was engaged in a regular paid work activity.",
@@ -210510,6 +210523,50 @@
             "version": "4.3.0",
             "title": "NumberType",
             "type": "number"
+          },
+          "paidTimeOffHours": {
+            "description": "The number of hours of employer-paid time used by a worker for any type of absence from work including vacation, sickness, bereavement, maternity, family care, jury duty, education, meals, military duty, administrative time off, sabbatical, or other personal leave. Includes hours of compensatory time off (CTO) when used. ",
+            "type": "array",
+            "items": {
+              "title": "TimeOffHoursType",
+              "description": "The hours a worker took off. For example, 8 hours of vacation pay.",
+              "type": "object",
+              "properties": {
+                "timeOffTypeCode": {
+                  "description": "The type of hours a worker took off, such as bereavement, jury duty, vacation, etc.",
+                  "$schema": "http://json-schema.org/draft-04/schema#",
+                  "version": "4.3.x",
+                  "title": "TimeOffTypeCodeList",
+                  "enum": [
+                    "Administrative",
+                    "Bereavement",
+                    "Compensatory",
+                    "Consolidated",
+                    "Education",
+                    "Family",
+                    "PublicHoliday",
+                    "FloatingHoliday",
+                    "InLieuOfNotice",
+                    "JuryDuty",
+                    "MilitaryDuty",
+                    "Sick",
+                    "Vacation",
+                    "OtherPersonal"
+                  ]
+                },
+                "description": {
+                  "description": "A short phrase further describing the pay type.",
+                  "type": "string"
+                },
+                "timeOffHours": {
+                  "description": "Number of hours a worker took off.",
+                  "$schema": "http://json-schema.org/draft-04/schema#",
+                  "version": "4.3.0",
+                  "title": "NumberType",
+                  "type": "number"
+                }
+              }
+            }
           },
           "premiumWorkedHours": {
             "description": "The number of hours a worker was engaged in a premium paid work activity, including premium hours (overtime, shift differential), rest periods and stand-by time. Includes work hours for which compensatory time off was earned. Does not include any employer-paid leave time used.",
@@ -210583,46 +210640,38 @@
               }
             }
           },
-          "paidTimeOffHours": {
-            "description": "The number of hours of employer-paid time used by a worker for any type of absence from work including vacation, sickness, bereavement, maternity, family care, jury duty, education, meals, military duty, administrative time off, sabbatical, or other personal leave. Includes hours of compensatory time off (CTO) when used. ",
+          "paidForWorkInPayPeriod": {
+            "description": "Details on if the worker was paid in a particular month.",
             "type": "array",
             "items": {
-              "title": "TimeOffHoursType",
-              "description": "The hours a worker took off. For example, 8 hours of vacation pay.",
+              "title": "PaidForWorkInPayPeriodType",
+              "description": "Details on if the worker was paid in a particular month.",
               "type": "object",
               "properties": {
-                "timeOffTypeCode": {
-                  "description": "The type of hours a worker took off, such as bereavement, jury duty, vacation, etc.",
-                  "$schema": "http://json-schema.org/draft-04/schema#",
-                  "version": "4.3.x",
-                  "title": "TimeOffTypeCodeList",
-                  "enum": [
-                    "Administrative",
-                    "Bereavement",
-                    "Compensatory",
-                    "Consolidated",
-                    "Education",
-                    "Family",
-                    "PublicHoliday",
-                    "FloatingHoliday",
-                    "InLieuOfNotice",
-                    "JuryDuty",
-                    "MilitaryDuty",
-                    "Sick",
-                    "Vacation",
-                    "OtherPersonal"
-                  ]
-                },
-                "description": {
-                  "description": "A short phrase further describing the pay type.",
-                  "type": "string"
-                },
-                "timeOffHours": {
-                  "description": "Number of hours a worker took off.",
+                "includedDayOfMonth": {
+                  "description": "Specifies pay period that includes this day, i.e The person worked during this pay period that includes the 12th.",
                   "$schema": "http://json-schema.org/draft-04/schema#",
                   "version": "4.3.0",
-                  "title": "NumberType",
-                  "type": "number"
+                  "title": "DayOfMonthType",
+                  "type": "string",
+                  "hropenFormat": "day",
+                  "pattern": "^(0[1-9]|[12][0-9]|3[01])$"
+                },
+                "reportedMonth": {
+                  "description": "The reported month.",
+                  "$schema": "http://json-schema.org/draft-04/schema#",
+                  "version": "4.3.0",
+                  "title": "MonthType",
+                  "type": "string",
+                  "hropenFormat": "month",
+                  "pattern": "^(1[012]|0?[1-9])$"
+                },
+                "paidForWorkIndicator": {
+                  "description": "Indicate if worker was paid in PayPeriodMonthDay and ReportedYearMonth.",
+                  "$schema": "http://json-schema.org/draft-04/schema#",
+                  "version": "4.3.0",
+                  "title": "IndicatorType",
+                  "type": "boolean"
                 }
               }
             }
@@ -217519,41 +217568,12 @@
                   "title": "NumberType",
                   "type": "number"
                 },
-                "paidForWorkInPayPeriod": {
-                  "description": "Details on if the worker was paid in a particular month.",
-                  "type": "array",
-                  "items": {
-                    "title": "PaidForWorkInPayPeriodType",
-                    "description": "Details on if the worker was paid in a particular month.",
-                    "type": "object",
-                    "properties": {
-                      "includedDayOfMonth": {
-                        "description": "Specifies pay period that includes this day, i.e The person worked during this pay period that includes the 12th.",
-                        "$schema": "http://json-schema.org/draft-04/schema#",
-                        "version": "4.3.0",
-                        "title": "DayOfMonthType",
-                        "type": "string",
-                        "hropenFormat": "day",
-                        "pattern": "^(0[1-9]|[12][0-9]|3[01])$"
-                      },
-                      "reportedMonth": {
-                        "description": "The reported month.",
-                        "$schema": "http://json-schema.org/draft-04/schema#",
-                        "version": "4.3.0",
-                        "title": "MonthType",
-                        "type": "string",
-                        "hropenFormat": "month",
-                        "pattern": "^(1[012]|0?[1-9])$"
-                      },
-                      "paidForWorkIndicator": {
-                        "description": "Indicate if worker was paid in PayPeriodMonthDay and ReportedYearMonth.",
-                        "$schema": "http://json-schema.org/draft-04/schema#",
-                        "version": "4.3.0",
-                        "title": "IndicatorType",
-                        "type": "boolean"
-                      }
-                    }
-                  }
+                "workedDays": {
+                  "description": "The number of days, during the paid time period, for which the worker earned compensation.",
+                  "$schema": "http://json-schema.org/draft-04/schema#",
+                  "version": "4.3.0",
+                  "title": "NumberType",
+                  "type": "number"
                 },
                 "regularWorkedHours": {
                   "description": "The number of hours a worker was engaged in a regular paid work activity.",
@@ -217561,6 +217581,50 @@
                   "version": "4.3.0",
                   "title": "NumberType",
                   "type": "number"
+                },
+                "paidTimeOffHours": {
+                  "description": "The number of hours of employer-paid time used by a worker for any type of absence from work including vacation, sickness, bereavement, maternity, family care, jury duty, education, meals, military duty, administrative time off, sabbatical, or other personal leave. Includes hours of compensatory time off (CTO) when used. ",
+                  "type": "array",
+                  "items": {
+                    "title": "TimeOffHoursType",
+                    "description": "The hours a worker took off. For example, 8 hours of vacation pay.",
+                    "type": "object",
+                    "properties": {
+                      "timeOffTypeCode": {
+                        "description": "The type of hours a worker took off, such as bereavement, jury duty, vacation, etc.",
+                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "version": "4.3.x",
+                        "title": "TimeOffTypeCodeList",
+                        "enum": [
+                          "Administrative",
+                          "Bereavement",
+                          "Compensatory",
+                          "Consolidated",
+                          "Education",
+                          "Family",
+                          "PublicHoliday",
+                          "FloatingHoliday",
+                          "InLieuOfNotice",
+                          "JuryDuty",
+                          "MilitaryDuty",
+                          "Sick",
+                          "Vacation",
+                          "OtherPersonal"
+                        ]
+                      },
+                      "description": {
+                        "description": "A short phrase further describing the pay type.",
+                        "type": "string"
+                      },
+                      "timeOffHours": {
+                        "description": "Number of hours a worker took off.",
+                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "version": "4.3.0",
+                        "title": "NumberType",
+                        "type": "number"
+                      }
+                    }
+                  }
                 },
                 "premiumWorkedHours": {
                   "description": "The number of hours a worker was engaged in a premium paid work activity, including premium hours (overtime, shift differential), rest periods and stand-by time. Includes work hours for which compensatory time off was earned. Does not include any employer-paid leave time used.",
@@ -217634,46 +217698,38 @@
                     }
                   }
                 },
-                "paidTimeOffHours": {
-                  "description": "The number of hours of employer-paid time used by a worker for any type of absence from work including vacation, sickness, bereavement, maternity, family care, jury duty, education, meals, military duty, administrative time off, sabbatical, or other personal leave. Includes hours of compensatory time off (CTO) when used. ",
+                "paidForWorkInPayPeriod": {
+                  "description": "Details on if the worker was paid in a particular month.",
                   "type": "array",
                   "items": {
-                    "title": "TimeOffHoursType",
-                    "description": "The hours a worker took off. For example, 8 hours of vacation pay.",
+                    "title": "PaidForWorkInPayPeriodType",
+                    "description": "Details on if the worker was paid in a particular month.",
                     "type": "object",
                     "properties": {
-                      "timeOffTypeCode": {
-                        "description": "The type of hours a worker took off, such as bereavement, jury duty, vacation, etc.",
-                        "$schema": "http://json-schema.org/draft-04/schema#",
-                        "version": "4.3.x",
-                        "title": "TimeOffTypeCodeList",
-                        "enum": [
-                          "Administrative",
-                          "Bereavement",
-                          "Compensatory",
-                          "Consolidated",
-                          "Education",
-                          "Family",
-                          "PublicHoliday",
-                          "FloatingHoliday",
-                          "InLieuOfNotice",
-                          "JuryDuty",
-                          "MilitaryDuty",
-                          "Sick",
-                          "Vacation",
-                          "OtherPersonal"
-                        ]
-                      },
-                      "description": {
-                        "description": "A short phrase further describing the pay type.",
-                        "type": "string"
-                      },
-                      "timeOffHours": {
-                        "description": "Number of hours a worker took off.",
+                      "includedDayOfMonth": {
+                        "description": "Specifies pay period that includes this day, i.e The person worked during this pay period that includes the 12th.",
                         "$schema": "http://json-schema.org/draft-04/schema#",
                         "version": "4.3.0",
-                        "title": "NumberType",
-                        "type": "number"
+                        "title": "DayOfMonthType",
+                        "type": "string",
+                        "hropenFormat": "day",
+                        "pattern": "^(0[1-9]|[12][0-9]|3[01])$"
+                      },
+                      "reportedMonth": {
+                        "description": "The reported month.",
+                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "version": "4.3.0",
+                        "title": "MonthType",
+                        "type": "string",
+                        "hropenFormat": "month",
+                        "pattern": "^(1[012]|0?[1-9])$"
+                      },
+                      "paidForWorkIndicator": {
+                        "description": "Indicate if worker was paid in PayPeriodMonthDay and ReportedYearMonth.",
+                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "version": "4.3.0",
+                        "title": "IndicatorType",
+                        "type": "boolean"
                       }
                     }
                   }
@@ -227350,41 +227406,12 @@
                   "title": "NumberType",
                   "type": "number"
                 },
-                "paidForWorkInPayPeriod": {
-                  "description": "Details on if the worker was paid in a particular month.",
-                  "type": "array",
-                  "items": {
-                    "title": "PaidForWorkInPayPeriodType",
-                    "description": "Details on if the worker was paid in a particular month.",
-                    "type": "object",
-                    "properties": {
-                      "includedDayOfMonth": {
-                        "description": "Specifies pay period that includes this day, i.e The person worked during this pay period that includes the 12th.",
-                        "$schema": "http://json-schema.org/draft-04/schema#",
-                        "version": "4.3.0",
-                        "title": "DayOfMonthType",
-                        "type": "string",
-                        "hropenFormat": "day",
-                        "pattern": "^(0[1-9]|[12][0-9]|3[01])$"
-                      },
-                      "reportedMonth": {
-                        "description": "The reported month.",
-                        "$schema": "http://json-schema.org/draft-04/schema#",
-                        "version": "4.3.0",
-                        "title": "MonthType",
-                        "type": "string",
-                        "hropenFormat": "month",
-                        "pattern": "^(1[012]|0?[1-9])$"
-                      },
-                      "paidForWorkIndicator": {
-                        "description": "Indicate if worker was paid in PayPeriodMonthDay and ReportedYearMonth.",
-                        "$schema": "http://json-schema.org/draft-04/schema#",
-                        "version": "4.3.0",
-                        "title": "IndicatorType",
-                        "type": "boolean"
-                      }
-                    }
-                  }
+                "workedDays": {
+                  "description": "The number of days, during the paid time period, for which the worker earned compensation.",
+                  "$schema": "http://json-schema.org/draft-04/schema#",
+                  "version": "4.3.0",
+                  "title": "NumberType",
+                  "type": "number"
                 },
                 "regularWorkedHours": {
                   "description": "The number of hours a worker was engaged in a regular paid work activity.",
@@ -227392,6 +227419,50 @@
                   "version": "4.3.0",
                   "title": "NumberType",
                   "type": "number"
+                },
+                "paidTimeOffHours": {
+                  "description": "The number of hours of employer-paid time used by a worker for any type of absence from work including vacation, sickness, bereavement, maternity, family care, jury duty, education, meals, military duty, administrative time off, sabbatical, or other personal leave. Includes hours of compensatory time off (CTO) when used. ",
+                  "type": "array",
+                  "items": {
+                    "title": "TimeOffHoursType",
+                    "description": "The hours a worker took off. For example, 8 hours of vacation pay.",
+                    "type": "object",
+                    "properties": {
+                      "timeOffTypeCode": {
+                        "description": "The type of hours a worker took off, such as bereavement, jury duty, vacation, etc.",
+                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "version": "4.3.x",
+                        "title": "TimeOffTypeCodeList",
+                        "enum": [
+                          "Administrative",
+                          "Bereavement",
+                          "Compensatory",
+                          "Consolidated",
+                          "Education",
+                          "Family",
+                          "PublicHoliday",
+                          "FloatingHoliday",
+                          "InLieuOfNotice",
+                          "JuryDuty",
+                          "MilitaryDuty",
+                          "Sick",
+                          "Vacation",
+                          "OtherPersonal"
+                        ]
+                      },
+                      "description": {
+                        "description": "A short phrase further describing the pay type.",
+                        "type": "string"
+                      },
+                      "timeOffHours": {
+                        "description": "Number of hours a worker took off.",
+                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "version": "4.3.0",
+                        "title": "NumberType",
+                        "type": "number"
+                      }
+                    }
+                  }
                 },
                 "premiumWorkedHours": {
                   "description": "The number of hours a worker was engaged in a premium paid work activity, including premium hours (overtime, shift differential), rest periods and stand-by time. Includes work hours for which compensatory time off was earned. Does not include any employer-paid leave time used.",
@@ -227465,46 +227536,38 @@
                     }
                   }
                 },
-                "paidTimeOffHours": {
-                  "description": "The number of hours of employer-paid time used by a worker for any type of absence from work including vacation, sickness, bereavement, maternity, family care, jury duty, education, meals, military duty, administrative time off, sabbatical, or other personal leave. Includes hours of compensatory time off (CTO) when used. ",
+                "paidForWorkInPayPeriod": {
+                  "description": "Details on if the worker was paid in a particular month.",
                   "type": "array",
                   "items": {
-                    "title": "TimeOffHoursType",
-                    "description": "The hours a worker took off. For example, 8 hours of vacation pay.",
+                    "title": "PaidForWorkInPayPeriodType",
+                    "description": "Details on if the worker was paid in a particular month.",
                     "type": "object",
                     "properties": {
-                      "timeOffTypeCode": {
-                        "description": "The type of hours a worker took off, such as bereavement, jury duty, vacation, etc.",
-                        "$schema": "http://json-schema.org/draft-04/schema#",
-                        "version": "4.3.x",
-                        "title": "TimeOffTypeCodeList",
-                        "enum": [
-                          "Administrative",
-                          "Bereavement",
-                          "Compensatory",
-                          "Consolidated",
-                          "Education",
-                          "Family",
-                          "PublicHoliday",
-                          "FloatingHoliday",
-                          "InLieuOfNotice",
-                          "JuryDuty",
-                          "MilitaryDuty",
-                          "Sick",
-                          "Vacation",
-                          "OtherPersonal"
-                        ]
-                      },
-                      "description": {
-                        "description": "A short phrase further describing the pay type.",
-                        "type": "string"
-                      },
-                      "timeOffHours": {
-                        "description": "Number of hours a worker took off.",
+                      "includedDayOfMonth": {
+                        "description": "Specifies pay period that includes this day, i.e The person worked during this pay period that includes the 12th.",
                         "$schema": "http://json-schema.org/draft-04/schema#",
                         "version": "4.3.0",
-                        "title": "NumberType",
-                        "type": "number"
+                        "title": "DayOfMonthType",
+                        "type": "string",
+                        "hropenFormat": "day",
+                        "pattern": "^(0[1-9]|[12][0-9]|3[01])$"
+                      },
+                      "reportedMonth": {
+                        "description": "The reported month.",
+                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "version": "4.3.0",
+                        "title": "MonthType",
+                        "type": "string",
+                        "hropenFormat": "month",
+                        "pattern": "^(1[012]|0?[1-9])$"
+                      },
+                      "paidForWorkIndicator": {
+                        "description": "Indicate if worker was paid in PayPeriodMonthDay and ReportedYearMonth.",
+                        "$schema": "http://json-schema.org/draft-04/schema#",
+                        "version": "4.3.0",
+                        "title": "IndicatorType",
+                        "type": "boolean"
                       }
                     }
                   }
