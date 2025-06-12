@@ -5940,7 +5940,7 @@
 							},
 							"inceptionDate": "0000",
 							"terminationDate": "0000",
-							"workDatePeriod": {
+							"trainingDatePeriod": {
 								"start": "0000",
 								"end": "0000"
 							}
