@@ -1,0 +1,21 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",	
+	"title": "WorkersSchema",
+	"description": "A list of workers",
+	"type": "object",
+    "properties": {
+        "workers": {
+            "type": "array",
+            "items": {
+                "$ref": "../../../../common/json/work/workerNounType.json"
+            }
+        },
+        "meta": {
+			"$ref": "../../../../common/json/meta/MetaType.json"
+        },
+        "confirmMessage": {
+			"$ref": "../../../../common/json/messages/confirmMessageType.json"
+        }
+    },
+	"additionalProperties": false
+}

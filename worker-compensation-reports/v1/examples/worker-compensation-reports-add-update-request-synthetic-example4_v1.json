@@ -1,0 +1,95 @@
+{
+	"workerCompensationReports": [
+		{
+
+			"workerId": {
+				"value": "00000001257",
+				"schemeId": "emplId",
+				"description": "Employee Id"
+			},
+
+			"reportingTimePeriod": {
+				"validTo": "2023-01-01",
+				"validFrom": "2023-01-31"
+			},
+			"totalCompensationAmount": {
+				"value": 4000,
+				"currency": "USD"
+			},
+			"workerWithholdingAmount": {
+				"taxWithholdingAmount": [
+					{
+						"typeCode": "FED",
+						"description": "Fedaral Tax",
+						"amount": {
+							"value": 500,
+							"currency": "USD"
+						}
+					},
+					{
+						"typeCode": "SSA",
+						"description": "Social Scurity Tax",
+						"amount": {
+							"value": 100,
+							"currency": "USD"
+						}
+					}
+				],
+
+				"totalTaxWithholdingAmount": {
+					"value": 600,
+					"currency": "USD"
+				},
+				"retirementWithholdingAmount": [
+					{
+						"typeCode": "401",
+						"description": "401k",
+						"amount": {
+							"value": 200,
+							"currency": "USD"
+						}
+					}
+				],
+				"totalOtherWithholdingAmount": {
+					"value": 0,
+					"currency": "USD"
+				},
+				"totalRetirementWithholdingAmount": {
+					"value": 600,
+					"currency": "USD"
+				}
+
+			},
+			"directCompensationAmount": {
+				"salaryAmount": {
+					"value": 4000,
+					"currency": "USD"
+				}
+
+			},
+			"taxableCompensationAmount": [
+				{
+					"typeCode": "WagesTaxableCompensation",
+					"description": "String",
+					"amount": {
+						"value": 3800,
+						"currency": "USD"
+					}
+				}
+			],
+
+			"totalWorkerWithholdingAmount": {
+				"value": 800,
+				"currency": "USD"
+			},
+			"totalDirectCompensationAmount": {
+				"value": 4000,
+				"currency": "USD"
+			},
+			"totalIndirectCompensationAmount": {
+				"value": 0,
+				"currency": "USD"
+			}
+		}
+	]
+}

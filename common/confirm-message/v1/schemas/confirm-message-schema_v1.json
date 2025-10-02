@@ -1,0 +1,13 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"title": "ConfirmMessageSchema",
+	"description": "The confirm message contains the processing results for the corresponding request.  Each resource processed by the request will have a result status (Succeeded, Failed).",
+	"type": "object",
+    "properties": {
+        "confirmMessage": {
+            "type": "object",
+			"$ref": "../../../../../common/json/messages/ConfirmMessageType.json"
+        }
+    },	
+	"additionalProperties": false
+}

@@ -1,0 +1,57 @@
+{
+	"confirmMessage": {
+		"messageID": {
+			"value": "String",
+			"schemeId": "String",
+			"schemeVersionId": "String",
+			"schemeAgencyId": "String",
+			"description": "String",
+			"schemeLink": "http://www.altova.com/",
+			"agencyUri": "http://www.altova.com/"
+		},
+		"messageDateTime": "2001-12-17T09:30:47.0",
+		"requestID": "$",
+		"requestProcessingStatusCode": "received",
+		"requestResultStatusCode": "succeeded",
+		"messages": [
+			{
+			}
+		],
+		"resourceMessages": [
+			{
+				"resourceId": {
+					"value": "String",
+					"schemeId": "String",
+					"schemeVersionId": "String",
+					"schemeAgencyId": "String",
+					"description": "String",
+					"schemeLink": "http://www.altova.com/",
+					"agencyUri": "http://www.altova.com/"
+				},
+				"resourceResultStatusCode": "succeeded",
+				"messages": [
+					{
+					}
+				],
+				"links": [
+					{
+						"href": "http://www.altova.com/",
+						"rel": "alternate",
+						"title": "String",
+						"mediaType": "application/gzip",
+						"method": "GET"
+					}
+				]
+			}
+		],
+		"links": [
+			{
+				"href": "http://www.altova.com/",
+				"rel": "alternate",
+				"title": "String",
+				"mediaType": "application/gzip",
+				"method": "GET"
+			}
+		]
+	}
+}

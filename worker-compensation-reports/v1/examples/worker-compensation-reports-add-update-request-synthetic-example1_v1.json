@@ -1,0 +1,104 @@
+{
+	"workerCompensationReports": [
+		{
+		]
+			"workerId": {
+				"value": "00000001253",
+				"schemeId": "emplId",
+				"description": "Employee Id"
+			},
+
+			"reportingTimePeriod": {
+				"validTo": "2023-01-01",
+				"validFrom": "2023-01-31"
+			},
+			"totalCompensationAmount": {
+				"value": 11000,
+				"currency": "USD"
+			},
+			"workerWithholdingAmount": {
+				"taxWithholdingAmount": [
+					{
+						"typeCode": "FED",
+						"description": "Fedaral Tax",
+						"amount": {
+							"value": 2200,
+							"currency": "USD"
+						}
+					},
+					{
+						"typeCode": "SSA",
+						"description": "Social Scurity Tax",
+						"amount": {
+							"value": 800,
+							"currency": "USD"
+						}
+					}
+				],
+				"otherWithholdingAmount": [
+					{
+						"typeCode": "DED1",
+						"description": "Wage garnishment order1",
+						"amount": {
+							"value": 100,
+							"currency": "USD"
+						}
+					}
+				],
+				"totalTaxWithholdingAmount": {
+					"value": 3000,
+					"currency": "USD"
+				},
+				"retirementWithholdingAmount": [
+					{
+						"typeCode": "401",
+						"description": "401k",
+						"amount": {
+							"value": 1000,
+							"currency": "USD"
+						}
+					}
+				],
+				"totalOtherWithholdingAmount": {
+					"value": 100,
+					"currency": "USD"
+				},
+				"totalRetirementWithholdingAmount": {
+					"value": 1000,
+					"currency": "USD"
+				}
+
+			},
+			"directCompensationAmount": {
+				"salaryAmount": {
+					"value": 11000,
+					"currency": "USD"
+				}
+
+			},
+			"taxableCompensationAmount": [
+				{
+					"typeCode": "WagesTaxableCompensation",
+					"description": "String",
+					"amount": {
+						"value": 10000,
+						"currency": "USD"
+					}
+				}
+			],
+
+			"totalWorkerWithholdingAmount": {
+				"value": 3100,
+				"currency": "USD"
+			},
+			"totalDirectCompensationAmount": {
+				"value": 11000,
+				"currency": "USD"
+			},
+			"totalIndirectCompensationAmount": {
+				"value": 0,
+				"currency": "USD"
+			}
+		}
+	]
+}

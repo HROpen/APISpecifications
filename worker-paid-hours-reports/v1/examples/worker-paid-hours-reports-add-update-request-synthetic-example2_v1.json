@@ -1,0 +1,19 @@
+{
+	"workerPaidHoursReports": [
+		{
+			"workerId": {
+				"value": "00000001252",
+				"schemeId": "emplId",
+				"description": "Employee Id"
+			},
+			"workedWeeks": 4.0,
+			"totalPaidHours": 160.0,
+			"totalWorkedHours": 160.0,
+			"regularWorkedHours": 160.0,
+			"reportingTimePeriod": {
+				"validTo": "2023-01-01",
+				"validFrom": "2023-01-31"
+			}
+		}
+	]
+}

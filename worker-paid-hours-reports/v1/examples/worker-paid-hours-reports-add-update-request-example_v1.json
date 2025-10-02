@@ -1,0 +1,84 @@
+{
+	"workerPaidHoursReports": [
+		{
+			"language": "aa",
+			"workerId": {
+				"value": "String",
+				"schemeId": "String",
+				"agencyUri": "http://www.altova.com/",
+				"schemeLink": "http://www.altova.com/",
+				"description": "String",
+				"schemeAgencyId": "String",
+				"schemeVersionId": "String"
+			},
+			"documentId": {
+				"value": "String",
+				"schemeId": "String",
+				"agencyUri": "http://www.altova.com/",
+				"schemeLink": "http://www.altova.com/",
+				"description": "String",
+				"schemeAgencyId": "String",
+				"schemeVersionId": "String"
+			},
+			"workedWeeks": 0.1,
+			"alternateIds": [
+				{
+					"value": "String",
+					"schemeId": "String",
+					"schemeVersionId": "String",
+					"schemeAgencyId": "String",
+					"description": "String",
+					"schemeLink": "http://www.altova.com/",
+					"agencyUri": "http://www.altova.com/"
+				}
+			],
+			"totalPaidHours": 0.1,
+			"paidTimeOffHours": [
+				{
+					"timeOffTypeCode": "Administrative",
+					"description": "String",
+					"timeOffHours": 0.1
+				}
+			],
+			"totalWorkedHours": 0.1,
+			"premiumWorkedHours": [
+				{
+					"workedPayTypeCode": "BasePay",
+					"description": "String",
+					"workedHours": 0.1
+				}
+			],
+			"regularWorkedHours": 0.1,
+			"reportingTimePeriod": {
+				"validTo": "2001-12-17T09:30:47.0",
+				"validFrom": "2001-12-17T09:30:47.0"
+			},
+			"totalPaidTimeOffHours": 0.1,
+			"paidForWorkInPayPeriod": [
+				{
+					"includedDayOfMonth": "01",
+					"reportedMonth": "10",
+					"paidForWorkIndicator": true
+				}
+			],
+			"totalPremiumWorkedHours": 0.1,
+			"totalHolidayPaidTimeOffHours": 0.1,
+			"dataProtectionPolicy": {
+				"retentionDate": "0000",
+				"retentionDays": 1,
+				"geoRestrictions": [
+					{
+						"country": "AD",
+						"countrySubDivisions": [
+							{
+								"type": "String",
+								"value": "String"
+							}
+						],
+						"policy": "Read"
+					}
+				]
+			}
+		}
+	]
+}

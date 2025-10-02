@@ -1,0 +1,15 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",	
+	"title": "WorkersSchema",
+	"description": "A list of workers",
+	"type": "object",
+    "properties": {
+        "workers": {
+            "type": "array",
+            "items": {
+                "$ref": "../../../../common/json/work/workerNounType.json"
+            }
+        }
+    },
+	"additionalProperties": false
+}
