@@ -1,0 +1,326 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "organization": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Organization Schema",
+      "description": "A legal Organization",
+      "type": "object",
+      "properties": {
+        "RefId": {
+          "type": "string",
+          "description": "Reference Id for the root object."
+        },
+        "senderId": {
+          "type": "string",
+          "description": "Reference Id for the sender"
+        },
+        "receiverId": {
+          "type": "string",
+          "description": "Reference Id for the receiver."
+        },
+        "isMulti-state": {"type": "boolean"},
+        "podURL": {
+          "type": "string",
+          "description": "URL of the POD (Privacy Obligation Document). "
+        },
+        "organizationId": {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "string",
+              "description": "The identifier."
+            },
+            "issuingAuthority": {
+              "type": "string",
+              "description": "The system or authority that mandates or manages the ids."
+            }
+          },
+          "description": "A canonical id used in all relevant objects in the reporting system. "
+        },
+        "taxIds": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "value": {
+                "description": "The identifier.",
+                "type": "string"
+              },
+              "schemeId": {
+                "description": "The identification of the identifier scheme.",
+                "type": "string"
+              },
+              "schemeVersionId": {
+                "description": "The identification of the version of the identifier scheme.",
+                "type": "string"
+              },
+              "schemeAgencyId": {
+                "description": "The identification of the agency that manages the identifier scheme.",
+                "type": "string"
+              },
+              "description": {
+                "description": "The description of the identifier.",
+                "type": "string"
+              },
+              "schemeLink": {
+                "description": "The URI that identifies where the identification scheme data is located.",
+                "type": "string",
+                "format": "uri"
+              },
+              "agencyUri": {
+                "description": "The URI that identifies where the identification scheme is located.",
+                "type": "string",
+                "format": "uri"
+              }
+            },
+            "required": ["value"]
+          },
+          "description": "One or more tax ids.\n"
+        },
+        "industryIdentifiers": {
+          "description": "The types of industry to which the organization belongs. The Industry identifiers could be referenced to a standard taxonomy (such as NAICS) or a custom taxonomy.",
+          "type": "array",
+          "items": {
+            "version": "4.5.0",
+            "title": "IssuerIdentifierType",
+            "description": "An identifier is a character string used to uniquely identify one instance of an object within an identification scheme that is managed by an agency. Use this type when the list or values are controlled by an external entity, the list or values are public and could be referenced or validated. Note that this definition of the  extends the base identifier type with the issuer party identifier.",
+            "type": "object",
+            "properties": {
+              "issuerPartyId": {
+                "description": "The identification of the party that issued the identifier.",
+                "version": "4.3.0",
+                "title": "IdentifierType",
+                "type": "object",
+                "properties": {
+                  "value": {
+                    "description": "The identifier.",
+                    "type": "string"
+                  },
+                  "schemeId": {
+                    "description": "The identification of the identifier scheme.",
+                    "type": "string"
+                  },
+                  "schemeVersionId": {
+                    "description": "The identification of the version of the identifier scheme.",
+                    "type": "string"
+                  },
+                  "schemeAgencyId": {
+                    "description": "The identification of the agency that manages the identifier scheme.",
+                    "type": "string"
+                  },
+                  "description": {
+                    "description": "The description of the identifier.",
+                    "type": "string"
+                  },
+                  "schemeLink": {
+                    "description": "The URI that identifies where the identification scheme data is located.",
+                    "type": "string",
+                    "format": "uri"
+                  },
+                  "agencyUri": {
+                    "description": "The URI that identifies where the identification scheme is located.",
+                    "type": "string",
+                    "format": "uri"
+                  }
+                },
+                "required": ["value"]
+              }
+            },
+            "allOf": [
+              {
+                "version": "4.3.0",
+                "title": "IdentifierType",
+                "description": "An identifier is a character string used to uniquely identify one instance of an object within an identification scheme that is managed by an agency. Use this type when the list or values are controlled by an external entity, the list or values are public and could be referenced or validated.",
+                "type": "object",
+                "properties": {
+                  "value": {
+                    "description": "The identifier.",
+                    "type": "string"
+                  },
+                  "schemeId": {
+                    "description": "The identification of the identifier scheme.",
+                    "type": "string"
+                  },
+                  "schemeVersionId": {
+                    "description": "The identification of the version of the identifier scheme.",
+                    "type": "string"
+                  },
+                  "schemeAgencyId": {
+                    "description": "The identification of the agency that manages the identifier scheme.",
+                    "type": "string"
+                  },
+                  "description": {
+                    "description": "The description of the identifier.",
+                    "type": "string"
+                  },
+                  "schemeLink": {
+                    "description": "The URI that identifies where the identification scheme data is located.",
+                    "type": "string",
+                    "format": "uri"
+                  },
+                  "agencyUri": {
+                    "description": "The URI that identifies where the identification scheme is located.",
+                    "type": "string",
+                    "format": "uri"
+                  }
+                },
+                "required": ["value"]
+              }
+            ]
+          }
+        },
+        "organizationActivity": {
+          "description": "A description of the business activities conducted at the organization, listed by approximate percentage of revenue or sales associated with each activity.",
+          "type": "array",
+          "items": {
+            "version": "4.3.0",
+            "title": "OrganizationActivityType",
+            "description": "The business activities conducted at the establishment.",
+            "type": "object",
+            "properties": {
+              "activityCode": {
+                "description": "The code describing the activity.",
+                "type": "array",
+                "items": {
+                  "title": "CodeType",
+                  "description": "A code is a character string of letters, numbers, special characters (except escape sequences), and symbols. It represents a definitive value, a method, or a property description in an abbreviated or language-independent form that is part of a finite list of allowed values. Use this schema when there is a defined list of values but the owner is unknown or private, the values may not be referenced, or there is no validation possible.",
+                  "type": "string"
+                }
+              },
+              "description": {
+                "description": "A description of the organization activities.",
+                "title": "TextType",
+                "type": "object",
+                "properties": {
+                  "value": {
+                    "description": "The text.",
+                    "type": "string"
+                  },
+                  "languageCode": {
+                    "$ref": "code-sets.json#/definitions/LanguageCodeList",
+                    "description": "The language of the text.",
+                    "title": "LanguageCodeList"
+                  }
+                }
+              },
+              "percentage": {
+                "description": "The percentage the entity spends on the activity.",
+                "version": "4.3.0",
+                "title": "PercentType",
+                "type": "number"
+              }
+            }
+          }
+        },
+        "tradeName": {
+          "type": "string",
+          "description": "The name a company uses for advertising and sales purposes, which may be different from its legal name."
+        },
+        "physicalAddresses": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "typeCode": {
+                "description": "The type of address, for example, business or home.",
+                "title": "CodeType",
+                "type": "string"
+              },
+              "line": {
+                "description": "Street line address",
+                "type": "string"
+              },
+              "countryCode": {
+                "$ref": "code-sets.json#/definitions/CountryCodeList",
+                "description": "Two letter country codes as defined by ISO 3166-1:2013. Content referenced from Wikipedia."
+              },
+              "countrySubDivisions": {
+                "description": "Qualifies the further divisions of the Country. These may be Districts, Regions, States, Provinces etc.",
+                "type": "array",
+                "items": {
+                  "description": "Holds address components.",
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "description": "Specify purpose of this extension (state, province, etc).",
+                      "type": "string"
+                    },
+                    "value": {
+                      "description": "Actual component value.",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "type",
+                    "value"
+                  ]
+                }
+              },
+              "city": {"type": "string"},
+              "postalCode": {"type": "string"},
+              "postOfficeBox": {"type": "string"},
+              "geoLocation": {
+                "title": "GeoType",
+                "description": "A geographical coordinate.",
+                "type": "object",
+                "properties": {
+                  "latitude": {
+                    "description": "The latitude of the geographical location.",
+                    "type": "number",
+                    "minimum": -90,
+                    "maximum": 90
+                  },
+                  "longitude": {
+                    "description": "The longitude of the geographical location.",
+                    "type": "number",
+                    "minimum": -180,
+                    "maximum": 180
+                  },
+                  "altitude": {
+                    "description": "The altitude of the geographical location. Defaults to meters above sea level in case no unitCode provided.",
+                    "version": "4.3.0",
+                    "title": "MeasureType",
+                    "type": "object",
+                    "properties": {
+                      "value": {
+                        "description": "The numeric value of the measure.",
+                        "type": "number"
+                      },
+                      "unitCode": {
+                        "$ref": "code-sets.json#/definitions/UnitCodeList",
+                        "description": "The unit of measure."
+                      }
+                    },
+                    "required": ["value"]
+                  },
+                  "name": {
+                    "description": "The label of the geo coordinates.",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "latitude",
+                  "longitude"
+                ]
+              },
+              "formattedAddress": {"type": "string"}
+            }
+          },
+          "description": "The physical or mailing address of the entity. This may include the street and building number, city, region (state, province, etc), country and postal code."
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "taxIds",
+        "physicalAddresses"
+      ]
+    }
+  },
+  "type": "object",
+  "properties": {
+    "organization": {"$ref": "#/definitions/organization"}
+  },
+  "required": ["organization"],
+  "additionalProperties": false
+}

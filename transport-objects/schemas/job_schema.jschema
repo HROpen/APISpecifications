@@ -1,0 +1,82 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "job": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Job Schema",
+      "description": "An ongoing role or set of responsibilities at an organization. ",
+      "type": "object",
+      "required": [
+        "organizationId",
+        "jobId"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "RefId": {
+          "type": "string",
+          "description": "Reference Id for the root object."
+        },
+        "senderId": {
+          "type": "string",
+          "description": "Reference Id for the sender"
+        },
+        "receiverId": {
+          "type": "string",
+          "description": "Reference Id for the receiver."
+        },
+        "sendTo": {
+          "type": "string",
+          "description": "In multi-state instances identifies the final destination of the object."
+        },
+        "organizationRefId": {
+          "type": "string",
+          "description": "Reference Id to the associated organization for the job."
+        },
+        "podURL": {
+          "type": "string",
+          "description": "URL of the POD (Privacy Obligation Document). "
+        },
+        "organizationId": {
+          "type": "string",
+          "description": "The organization Id associated with the job. "
+        },
+        "jobId": {
+          "type": "string",
+          "description": "The identifier of the job. "
+        },
+        "title": {
+          "type": "string",
+          "description": "The title or name of the job. "
+        },
+        "jobDuties": {
+          "type": "string",
+          "description": "Describes the tasks and responsibilities of a job."
+        },
+        "socInfo": {
+          "type": "array",
+          "items": {
+            "properties": {
+              "classificationSys": {
+                "type": "string",
+                "description": "\"Choose a code below to indicate which occupational classification is used:\n1. Standard Occupational Classification (SOC) - United States\n2. International Standard Classification of Occupations (ISCO)\n3. European Skills, Competences, Qualifications and Occupations (ESCO)\n4.National Occupational Classification (NOC) - Canada\n5. United Kingdom Standard Occupational Classification\n6. Other - specify\""
+              },
+              "assigningEntity": {
+                "type": "string",
+                "description": "\"Choose a code below to indicate which entity assigned the occupational classification code:\n1. Employer\n2. State agency responsible for Unemployment Insurance administration.\n3. U.S. Bureau of Labor Statistics\n4. U.S. Census Bureau\n5. Other - specify\""
+              },
+              "socCodeValue": {"type": "string"}
+            },
+            "required": ["socCodeValue"]
+          },
+          "description": "A Standard Occupational Classification Codes classifies a job's essential work activities/functions/tasks. Several countries have their own standard occupational classification systems.  For example, the US Standard Occcupational Classification is used by federal statistical agencies to classify workers into job categories for collecting, calculating and disseminating data."
+        }
+      }
+    }
+  },
+  "type": "object",
+  "properties": {
+    "job": {"$ref": "#/definitions/job"}
+  },
+  "required": ["job"],
+  "additionalProperties": false
+}
