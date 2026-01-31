@@ -1,0 +1,70 @@
+{
+	"worker_compensation_report": {
+		"RefId": "55d846ad-f602-49ad-92e4-7e9549ced8a2",
+		"senderId": "sc-sender-01",
+		"receiverId": "",
+		"workerRefId": "47880365-a39c-4055-9400-894b652a575f",
+		"podURL": "https://api.greenvillerestaurants.local/pods/pod-001",
+		"workerId": {
+			"value": "GGG-EMP-2023-0007",
+			"schemeId": "GGG-EmployeeNumber",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "HRDept",
+			"description": "Internal employee identifier for Greenville Gourmet Grub LLC",
+			"schemeLink": "https://greenvillerestaurants.local/schemes/employeeNumber",
+			"agencyUri": "https://greenvillerestaurants.local/agency/hr"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2023-01-01T00:00:00Z",
+			"validTo": "2023-12-31T23:59:59Z"
+		},
+		"salaryAmount": {
+			"value": 45000,
+			"currencyCode": "USD"
+		},
+		"regularHourlyWagesAmount": {
+			"workedPayTypeCode": "BasePay",
+			"description": "Standard hourly wage",
+			"workedPayAmount": {
+				"value": 15.75,
+				"currency": "USD"
+			}
+		},
+		"premiumHourlyWagesAmount": [
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Weekend shift differential",
+				"workedPayAmount": {
+					"value": 2.5,
+					"currency": "USD"
+				}
+			},
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Holiday on-call premium",
+				"workedPayAmount": {
+					"value": 5,
+					"currency": "USD"
+				}
+			}
+		],
+		"paidTimeOffAmount": [
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Independence Day holiday pay",
+				"timeOffPayAmount": {
+					"value": 128,
+					"currency": "USD"
+				}
+			},
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Thanksgiving holiday pay",
+				"timeOffPayAmount": {
+					"value": 136,
+					"currency": "USD"
+				}
+			}
+		]
+	}
+}

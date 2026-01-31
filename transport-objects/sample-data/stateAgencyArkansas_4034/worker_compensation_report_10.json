@@ -1,0 +1,70 @@
+{
+	"worker_compensation_report": {
+		"RefId": "b7bffa77-d087-4dfb-b520-c37dc76d0002",
+		"senderId": "ar-sender-01",
+		"receiverId": "",
+		"workerRefId": "91977f7e-c385-4859-872c-4b65087ae1e1",
+		"podURL": "https://pod.southarkansas.gov/documents/workercomp/XYZ-987",
+		"workerId": {
+			"value": "SAR-2024-0001",
+			"schemeId": "StateEmployeeID",
+			"schemeVersionId": "2.0",
+			"schemeAgencyId": "SouthArkansasDHS",
+			"description": "State agency assigned employee identification number",
+			"schemeLink": "https://southarkansas.gov/ids/StateEmployeeID",
+			"agencyUri": "https://southarkansas.gov/agency/SouthArkansasDHS"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2024-01-01T00:00:00Z",
+			"validTo": "2024-12-31T23:59:59Z"
+		},
+		"salaryAmount": {
+			"value": 54000,
+			"currencyCode": "USD"
+		},
+		"regularHourlyWagesAmount": {
+			"workedPayTypeCode": "BasePay",
+			"description": "Standard hourly rate",
+			"workedPayAmount": {
+				"value": 26,
+				"currency": "USD"
+			}
+		},
+		"premiumHourlyWagesAmount": [
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Overtime pay (1.5x standard rate)",
+				"workedPayAmount": {
+					"value": 39,
+					"currency": "USD"
+				}
+			},
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Hazard pay premium",
+				"workedPayAmount": {
+					"value": 31.2,
+					"currency": "USD"
+				}
+			}
+		],
+		"paidTimeOffAmount": [
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Independence Day holiday pay",
+				"timeOffPayAmount": {
+					"value": 200,
+					"currency": "USD"
+				}
+			},
+			{
+				"timeOffPayType": "Sick",
+				"description": "Paid sick leave for medical appointment",
+				"timeOffPayAmount": {
+					"value": 120,
+					"currency": "USD"
+				}
+			}
+		]
+	}
+}

@@ -1,0 +1,62 @@
+{
+	"worker_compensation_report": {
+		"RefId": "caee5eb7-9ab8-4b86-afd2-348c393c0342",
+		"senderId": "ar-sender-01",
+		"receiverId": "",
+		"workerRefId": "bc67694b-cdad-4681-9d9d-13edfdf4b1b9",
+		"podURL": "https://portal.ar.gov/pod/workercompensation/12345",
+		"workerId": {
+			"value": "SP123456",
+			"schemeId": "SPID",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "ARStateAgency",
+			"description": "State Personnel Identifier",
+			"schemeLink": "https://standards.ar.gov/spid",
+			"agencyUri": "https://agency.ar.gov/personnel"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2023-01-01T00:00:00Z",
+			"validTo": "2023-12-31T23:59:59Z"
+		},
+		"salaryAmount": {
+			"value": 55000,
+			"currencyCode": "USD"
+		},
+		"regularHourlyWagesAmount": {
+			"workedPayTypeCode": "BasePay",
+			"description": "Standard hourly compensation",
+			"workedPayAmount": {
+				"value": 28.5,
+				"currency": "USD"
+			}
+		},
+		"premiumHourlyWagesAmount": [
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Overtime compensation",
+				"workedPayAmount": {
+					"value": 42.75,
+					"currency": "USD"
+				}
+			},
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Holiday premium",
+				"workedPayAmount": {
+					"value": 35,
+					"currency": "USD"
+				}
+			}
+		],
+		"paidTimeOffAmount": [
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Thanksgiving Day",
+				"timeOffPayAmount": {
+					"value": 8,
+					"currency": "USD"
+				}
+			}
+		]
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"worker_paid_hours_report": {
+		"RefId": "66211196-ff51-4e74-ab9d-c1bbc09e71be",
+		"senderId": "sc-sender-01",
+		"receiverId": "",
+		"workerRefId": "3fe4df91-68fa-414b-a6b2-18f6d47eb17a",
+		"podURL": "https://columbia-restaurant-llc.example.org/pods/employee-privacy",
+		"workerId": {
+			"value": "WDH-56789",
+			"schemeId": "EmployerAssigned",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "SCDEW",
+			"description": "Employer-assigned identifier for the worker",
+			"schemeLink": "https://columbia-restaurant-llc.example.org/idscheme",
+			"agencyUri": "https://dew.sc.gov"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2023-01-01T00:00:00-05:00",
+			"validTo": "2023-12-31T23:59:59-05:00"
+		},
+		"workedWeeks": 50,
+		"totalHoursPaid": 1900,
+		"totalHoursWorked": 1820,
+		"regularHoursWorked": 1600,
+		"totalPremiumHours": 220,
+		"totalPaidLeaveHours": 80
+	}
+}

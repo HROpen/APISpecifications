@@ -1,0 +1,28 @@
+{
+	"worker_paid_hours_report": {
+		"RefId": "0fbe9664-0b1e-4693-ad17-d9c2ae7478c8",
+		"senderId": "sc-sender-01",
+		"receiverId": "",
+		"workerRefId": "e1debfac-e06f-4507-a877-b16d3225a423",
+		"podURL": "https://data.charlestonbistrollc.com/pod/employee-hours",
+		"workerId": {
+			"value": "CB-EMP-7823",
+			"schemeId": "EMPLOYEE_ID",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "LocalHR",
+			"description": "Identifier for an employee at Charleston Bistro LLC",
+			"schemeLink": "https://charlestonbistrollc.org/schemes/employee_id",
+			"agencyUri": "https://hr.charlestonbistrollc.org"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2023-01-01T00:00:00Z",
+			"validTo": "2023-12-31T23:59:59Z"
+		},
+		"workedWeeks": 50,
+		"totalHoursPaid": 2060,
+		"totalHoursWorked": 2000,
+		"regularHoursWorked": 1955,
+		"totalPremiumHours": 45,
+		"totalPaidLeaveHours": 60
+	}
+}

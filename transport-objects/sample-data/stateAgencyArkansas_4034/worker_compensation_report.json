@@ -1,0 +1,70 @@
+{
+	"worker_compensation_report": {
+		"RefId": "8e1144be-a466-42b3-85fe-a05ecd5d01c7",
+		"senderId": "ar-sender-01",
+		"receiverId": "",
+		"workerRefId": "2bf09a2f-fad2-441a-819b-eacafab926b7",
+		"podURL": "https://pods.southarkansasagency.gov/privacy/SA-PRIVACYPOD-3345",
+		"workerId": {
+			"value": "569-47-1123",
+			"schemeId": "SSN",
+			"schemeVersionId": "1",
+			"schemeAgencyId": "SSA",
+			"description": "Social Security Number as assigned by the SSA",
+			"schemeLink": "https://www.ssa.gov/ssncards",
+			"agencyUri": "https://www.ssa.gov"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2023-01-01T00:00:00Z",
+			"validTo": "2023-12-31T23:59:59Z"
+		},
+		"salaryAmount": {
+			"value": 58500,
+			"currencyCode": "USD"
+		},
+		"regularHourlyWagesAmount": {
+			"workedPayTypeCode": "BasePay",
+			"description": "Regular hourly compensation",
+			"workedPayAmount": {
+				"value": 28.5,
+				"currency": "USD"
+			}
+		},
+		"premiumHourlyWagesAmount": [
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Overtime pay premium",
+				"workedPayAmount": {
+					"value": 42.75,
+					"currency": "USD"
+				}
+			},
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Holiday shift premium",
+				"workedPayAmount": {
+					"value": 45,
+					"currency": "USD"
+				}
+			}
+		],
+		"paidTimeOffAmount": [
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Christmas holiday pay",
+				"timeOffPayAmount": {
+					"value": 160,
+					"currency": "USD"
+				}
+			},
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Thanksgiving holiday pay",
+				"timeOffPayAmount": {
+					"value": 80,
+					"currency": "USD"
+				}
+			}
+		]
+	}
+}

@@ -1,0 +1,56 @@
+{
+	"worker": {
+		"RefId": "55178b1e-bf3a-4ede-93a4-d4d508606b66",
+		"senderId": "multi-state-sender-01",
+		"receiverId": "",
+        "sendTo": "AR",
+		"organizationRefId": "a2660567-c84b-49dc-b4c3-7dbb51e2404b",
+		"podURL": "https://greenvilleplastics.example.com/pod/Thaddeus_Carlton",
+		"workerId": {
+			"value": "EMP-2024-0456",
+			"schemeId": "EMP",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "Greenville Plumbing Supplies Inc HR",
+			"description": "Internal employee identifier",
+			"schemeLink": "https://greenville-plumbing-supplies-inc.example.com/ids/EMP",
+			"agencyUri": "https://greenville-plumbing-supplies-inc.example.com"
+		},
+		"ssn": {
+			"value": "642583097"
+		},
+		"name": {
+			"languageCode": "en-US",
+			"firstName": "Thaddeus",
+			"middleName": "M",
+			"family": "Carlton",
+			"previousLastName": ""
+		},
+		"physicalAddresses": [
+			{
+				"typeCode": "home",
+				"line": "482 Magnolia Drive",
+				"countryCode": "US",
+				"countrySubDivisions": [
+					{
+						"type": "state",
+						"value": "SC"
+					}
+				],
+				"city": "Greenville",
+				"postalCode": "29601",
+				"postOfficeBox": "PO Box 1234",
+				"geoLocation": {
+					"latitude": 34.8526,
+					"longitude": -82.394,
+					"altitude": {
+						"value": 1010,
+						"unitCode": "FOT"
+					},
+					"name": "Home coordinates"
+				},
+				"formattedAddress": "482 Magnolia Drive, Greenville, SC 29601"
+			}
+		],
+		"birthDate": "1986-07-22"
+	}
+}

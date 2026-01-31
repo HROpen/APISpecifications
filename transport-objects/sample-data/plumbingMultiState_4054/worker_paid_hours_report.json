@@ -1,0 +1,29 @@
+{
+	"worker_paid_hours_report": {
+		"RefId": "0efde9d4-b737-448e-b7f7-3b414859d1ec",
+		"senderId": "multi-state-sender-01",
+		"receiverId": "",
+        "sendTo": "SC",
+		"workerRefId": "106c5862-92ca-4792-b36e-9269bc2ac52b",
+		"podURL": "https://dataportability.example.org/pods/223e4567-e89b-12d3-a456-426614174000",
+		"workerId": {
+			"value": "WP-90876",
+			"schemeId": "URN:EMPLOYEEID",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "LocalHRDept",
+			"description": "Internal employee identifier",
+			"schemeLink": "https://schemas.example.org/identifiers/employee-id",
+			"agencyUri": "https://hr.example.org/"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2023-01-01T00:00:00-05:00",
+			"validTo": "2023-12-31T23:59:59-05:00"
+		},
+		"workedWeeks": 52,
+		"totalHoursPaid": 2200,
+		"totalHoursWorked": 2080,
+		"regularHoursWorked": 2000,
+		"totalPremiumHours": 80,
+		"totalPaidLeaveHours": 120
+	}
+}

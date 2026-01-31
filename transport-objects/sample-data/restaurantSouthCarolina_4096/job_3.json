@@ -1,0 +1,14 @@
+{
+	"job": {
+		"RefId": "aa81ef71-4c3c-491e-96ff-a17c6b293a66",
+		"senderId": "sc-sender-01",
+		"receiverId": "",
+		"organizationRefId": "7224133c-19d7-4e61-b7de-94269129990e",
+		"organizationId": "GCE123456",
+		"jobId": "JOB-00123",
+		"title": "Sous Chef",
+		"jobDuties": "Assist the head chef in daily kitchen operations, oversee food preparation, train line cooks, and ensure compliance with health and safety standards.",
+		"socInfo": [
+		]
+	}
+}

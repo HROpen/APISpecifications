@@ -1,0 +1,28 @@
+{
+	"worker_paid_hours_report": {
+		"RefId": "8a3d2675-6f40-4732-acdd-aaab2b26a843",
+		"senderId": "sc-sender-01",
+		"receiverId": "",
+		"workerRefId": "5aaee2fd-6eb6-468a-a10d-14e2537402c0",
+		"podURL": "https://charleston-bistro-llc.example.org/pods/worker-paid-hours-report.json",
+		"workerId": {
+			"value": "CB-EMP-3847",
+			"schemeId": "CompanyEmployeeID",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "SCLOB",
+			"description": "Charleston Bistro LLC employee identifier",
+			"schemeLink": "https://charleston-bistro-llc.example.org/schemes/employee-id",
+			"agencyUri": "https://dol.sc.gov/"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2023-01-01T00:00:00Z",
+			"validTo": "2023-12-31T23:59:59Z"
+		},
+		"workedWeeks": 52,
+		"totalHoursPaid": 2080,
+		"totalHoursWorked": 2000,
+		"regularHoursWorked": 1850,
+		"totalPremiumHours": 150,
+		"totalPaidLeaveHours": 80
+	}
+}

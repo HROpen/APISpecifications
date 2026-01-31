@@ -1,0 +1,29 @@
+{
+	"worker_paid_hours_report": {
+		"RefId": "c2156f10-fd39-416a-b2d2-336f80e76c99",
+		"senderId": "multi-state-sender-01",
+		"receiverId": "",
+        "sendTo": "SC",
+		"workerRefId": "79ff02b0-d52f-44b7-a18d-c50c704f30ba",
+		"podURL": "https://pod.greenvillepipetoolsinc.com/pod",
+		"workerId": {
+			"value": "GPINC-778392",
+			"schemeId": "EMPLOYER_ASSIGNED",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "GPINC-HR",
+			"description": "Internal employer assigned worker ID",
+			"schemeLink": "https://schemes.greenvillepipetoolsinc.com/EMPLOYER_ASSIGNED/1.0",
+			"agencyUri": "https://agencies.greenvillepipetoolsinc.com/hr"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2024-01-01T00:00:00Z",
+			"validTo": "2024-12-31T23:59:59Z"
+		},
+		"workedWeeks": 52,
+		"totalHoursPaid": 2260,
+		"totalHoursWorked": 2140,
+		"regularHoursWorked": 2000,
+		"totalPremiumHours": 140,
+		"totalPaidLeaveHours": 120
+	}
+}

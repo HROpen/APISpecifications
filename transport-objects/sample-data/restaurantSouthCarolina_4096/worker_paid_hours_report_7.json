@@ -1,0 +1,28 @@
+{
+	"worker_paid_hours_report": {
+		"RefId": "dab2e68d-76ea-401f-9718-020900bd5315",
+		"senderId": "sc-sender-01",
+		"receiverId": "",
+		"workerRefId": "93371d68-1684-41d3-96cb-e783ee1041f9",
+		"podURL": "https://pod.example.org/documents/abc123",
+		"workerId": {
+			"value": "EAP-928374",
+			"schemeId": "SC-EMP-ID",
+			"schemeVersionId": "2024.1",
+			"schemeAgencyId": "SC Department of Labor",
+			"description": "State employment identifier",
+			"schemeLink": "https://example.org/schemes/SC-EMP-ID",
+			"agencyUri": "https://scdol.gov"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2024-01-01T00:00:00Z",
+			"validTo": "2024-03-31T23:59:59Z"
+		},
+		"workedWeeks": 13,
+		"totalHoursPaid": 530,
+		"totalHoursWorked": 520,
+		"regularHoursWorked": 480,
+		"totalPremiumHours": 40,
+		"totalPaidLeaveHours": 10
+	}
+}

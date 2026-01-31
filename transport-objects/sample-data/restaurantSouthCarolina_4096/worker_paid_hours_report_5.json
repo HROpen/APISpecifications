@@ -1,0 +1,28 @@
+{
+	"worker_paid_hours_report": {
+		"RefId": "9e4021a8-4349-4abb-823d-4a57bd6b0209",
+		"senderId": "sc-sender-01",
+		"receiverId": "",
+		"workerRefId": "46f78197-60e2-416a-9ccd-fd41b23eb9fb",
+		"podURL": "https://www.greenvillebistroinc.com/pod",
+		"workerId": {
+			"value": "WKR-2023-0001",
+			"schemeId": "SC-EMP-ID",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "South Carolina Department of Labor",
+			"description": "State assigned employee identifier",
+			"schemeLink": "https://schemas.sc.gov/employee-identifier",
+			"agencyUri": "https://sc.gov/labor"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2023-01-01T00:00:00Z",
+			"validTo": "2023-12-31T23:59:59Z"
+		},
+		"workedWeeks": 52,
+		"totalHoursPaid": 2100,
+		"totalHoursWorked": 2050,
+		"regularHoursWorked": 1900,
+		"totalPremiumHours": 150,
+		"totalPaidLeaveHours": 50
+	}
+}

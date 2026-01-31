@@ -1,0 +1,28 @@
+{
+	"worker_paid_hours_report": {
+		"RefId": "6be342a2-1853-4b88-bba7-84137b69a7c5",
+		"senderId": "ar-sender-01",
+		"receiverId": "",
+		"workerRefId": "c97b4e25-2b2d-4656-90a9-7c2c042d7fc3",
+		"podURL": "https://portal.arkansas.gov/pod/AR-POD-2024Q1",
+		"workerId": {
+			"value": "AR-EMP-123456",
+			"schemeId": "STATE_EMPLOYEE_ID",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "Arkansas Department of Finance and Administration",
+			"description": "State-assigned employee identification number",
+			"schemeLink": "https://portal.arkansas.gov/dfa/employee-id-scheme",
+			"agencyUri": "https://dfa.arkansas.gov"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2024-01-01T00:00:00Z",
+			"validTo": "2024-03-31T23:59:59Z"
+		},
+		"workedWeeks": 13,
+		"totalHoursPaid": 512,
+		"totalHoursWorked": 498,
+		"regularHoursWorked": 480,
+		"totalPremiumHours": 18,
+		"totalPaidLeaveHours": 14
+	}
+}

@@ -1,0 +1,71 @@
+{
+	"worker_compensation_report": {
+		"RefId": "17b4b7a6-f6c7-44d1-86d0-5211643991b9",
+		"senderId": "multi-state-sender-01",
+		"receiverId": "",
+        "sendTo": "AR",
+		"workerRefId": "5d7236de-5574-41e1-afbd-ec76d2b78207",
+		"podURL": "https://plumbingcorp.example.com/pods/6df09d22-5248-4d2b-a99b-379020456f0a",
+		"workerId": {
+			"value": "E-2024-1234",
+			"schemeId": "EmployeeID",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "CorpHR",
+			"description": "Corporate employee identifier",
+			"schemeLink": "https://plumbingcorp.example.com/schemes/EmployeeID",
+			"agencyUri": "https://hr.plumbingcorp.example.com"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2024-01-01T00:00:00Z",
+			"validTo": "2024-12-31T23:59:59Z"
+		},
+		"salaryAmount": {
+			"value": 55000,
+			"currencyCode": "USD"
+		},
+		"regularHourlyWagesAmount": {
+			"workedPayTypeCode": "BasePay",
+			"description": "Standard hourly wage",
+			"workedPayAmount": {
+				"value": 24.5,
+				"currency": "USD"
+			}
+		},
+		"premiumHourlyWagesAmount": [
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Overtime pay",
+				"workedPayAmount": {
+					"value": 36.75,
+					"currency": "USD"
+				}
+			},
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Hazard pay",
+				"workedPayAmount": {
+					"value": 30,
+					"currency": "USD"
+				}
+			}
+		],
+		"paidTimeOffAmount": [
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Christmas Day holiday",
+				"timeOffPayAmount": {
+					"value": 196,
+					"currency": "USD"
+				}
+			},
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Independence Day holiday",
+				"timeOffPayAmount": {
+					"value": 196,
+					"currency": "USD"
+				}
+			}
+		]
+	}
+}

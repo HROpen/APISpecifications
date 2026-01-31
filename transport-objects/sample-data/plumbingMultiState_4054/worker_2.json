@@ -1,0 +1,56 @@
+{
+	"worker": {
+		"RefId": "0caa64a9-64a5-49e5-86c9-2eeb4bdf7a1b",
+		"senderId": "multi-state-sender-01",
+		"receiverId": "",
+        "sendTo": "SC",
+		"organizationRefId": "a2660567-c84b-49dc-b4c3-7dbb51e2404b",
+		"podURL": "https://greenvilleplastics.example.com/pods/123456",
+		"workerId": {
+			"value": "EMP-2024-0452",
+			"schemeId": "EMP",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "Greenville Plumbing Supplies Inc HR",
+			"description": "Internal employee identifier",
+			"schemeLink": "https://greenville-plumbing-supplies-inc.example.com/ids/EMP",
+			"agencyUri": "https://greenville-plumbing-supplies-inc.example.com"
+		},
+		"ssn": {
+			"value": "456-12-7890"
+		},
+		"name": {
+			"languageCode": "en-US",
+			"firstName": "Marisol",
+			"middleName": "Lucia",
+			"family": "Calhoun",
+			"previousLastName": ""
+		},
+		"physicalAddresses": [
+			{
+				"typeCode": "home",
+				"line": "213 Oaks Road",
+				"countryCode": "US",
+				"countrySubDivisions": [
+					{
+						"type": "state",
+						"value": "SC"
+					}
+				],
+				"city": "Greenville",
+				"postalCode": "29601",
+				"postOfficeBox": "",
+				"geoLocation": {
+					"latitude": 34.8526,
+					"longitude": -82.394,
+					"altitude": {
+						"value": 1250,
+						"unitCode": "FOT"
+					},
+					"name": "Greenville South Carolina"
+				},
+				"formattedAddress": "213 Oaks Road, Greenville, SC 29601, USA"
+			}
+		],
+		"birthDate": "1985-04-17"
+	}
+}

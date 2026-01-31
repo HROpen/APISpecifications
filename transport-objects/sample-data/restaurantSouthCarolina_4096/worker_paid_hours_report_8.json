@@ -1,0 +1,28 @@
+{
+	"worker_paid_hours_report": {
+		"RefId": "9a9395b8-1c1d-4d8c-b865-c722e29d10b2",
+		"senderId": "sc-sender-01",
+		"receiverId": "",
+		"workerRefId": "cfaa68b6-3523-4c09-a866-212251f3e5af",
+		"podURL": "https://greenvilleeateryinc.local/pod/priv-oblig-doc-2023.pdf",
+		"workerId": {
+			"value": "EMP-483721",
+			"schemeId": "EmployeeInternalID",
+			"schemeVersionId": "v1.0",
+			"schemeAgencyId": "Greenville Eatery Inc HR",
+			"description": "Internal employee identifier assigned by Greenville Eatery Inc HR system",
+			"schemeLink": "https://greenvilleeateryinc.local/schemes/employee-internal-id",
+			"agencyUri": "https://greenvilleeateryinc.local/hr"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2023-12-31T23:59:59-05:00",
+			"validTo": "2023-01-01T00:00:00-05:00"
+		},
+		"workedWeeks": 52,
+		"totalHoursPaid": 2020,
+		"totalHoursWorked": 1980,
+		"regularHoursWorked": 1900,
+		"totalPremiumHours": 80,
+		"totalPaidLeaveHours": 40
+	}
+}

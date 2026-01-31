@@ -1,0 +1,70 @@
+{
+	"worker_compensation_report": {
+		"RefId": "ededf51b-821f-4427-ab4e-d2629ae5d67d",
+		"senderId": "sc-sender-01",
+		"receiverId": "",
+		"workerRefId": "e1debfac-e06f-4507-a877-b16d3225a423",
+		"podURL": "https://portal.southcarolina.gov/pods/restaurant-chain-compensation",
+		"workerId": {
+			"value": "WC-927451",
+			"schemeId": "SC-EMP-ID",
+			"schemeVersionId": "v1.0",
+			"schemeAgencyId": "SouthCarolinaDeptLabor",
+			"description": "State issued employee identifier",
+			"schemeLink": "https://scdlr.gov/employee-id-scheme",
+			"agencyUri": "https://scdlr.gov"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2023-01-01T00:00:00Z",
+			"validTo": "2023-12-31T23:59:59Z"
+		},
+		"salaryAmount": {
+			"value": 36000,
+			"currencyCode": "USD"
+		},
+		"regularHourlyWagesAmount": {
+			"workedPayTypeCode": "BasePay",
+			"description": "Standard hourly rate",
+			"workedPayAmount": {
+				"value": 14.5,
+				"currency": "USD"
+			}
+		},
+		"premiumHourlyWagesAmount": [
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Overtime premium",
+				"workedPayAmount": {
+					"value": 5,
+					"currency": "USD"
+				}
+			},
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Holiday shift premium",
+				"workedPayAmount": {
+					"value": 3.5,
+					"currency": "USD"
+				}
+			}
+		],
+		"paidTimeOffAmount": [
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Annual leave",
+				"timeOffPayAmount": {
+					"value": 120,
+					"currency": "USD"
+				}
+			},
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Sick leave",
+				"timeOffPayAmount": {
+					"value": 80,
+					"currency": "USD"
+				}
+			}
+		]
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"job": {
+		"RefId": "90270288-2ffb-4e1b-b2f2-d782f414ea9a",
+		"senderId": "multi-state-sender-01",
+		"receiverId": "",
+        "sendTo": "AR",
+		"organizationRefId": "a2660567-c84b-49dc-b4c3-7dbb51e2404b",
+		"organizationId": "GPI_SC",
+		"jobId": "JOB-1003",
+		"title": "Plastic Injection Molding Machine Operator",
+		"jobDuties": "Operate and maintain injection molding machines to manufacture plastic plumbing fittings and components; ensure quality control; perform routine maintenance; and document production metrics.",
+		"socInfo": [
+			{
+				"classificationSys": "1",
+				"assigningEntity": "1",
+				"socCodeValue": "51-9195"
+			},
+			{
+				"classificationSys": "2",
+				"assigningEntity": "3",
+				"socCodeValue": "7124"
+			}
+		]
+	}
+}

@@ -1,0 +1,71 @@
+{
+	"worker_compensation_report": {
+		"RefId": "1e2d43a0-331e-45e6-836b-172f2dd73d13",
+		"senderId": "multi-state-sender-01",
+		"receiverId": "",
+        "sendTo": "SC",
+		"workerRefId": "0286a39e-04f4-46eb-b69a-4abeef5b8279",
+		"podURL": "http://example.org/pods/compensation-doc",
+		"workerId": {
+			"value": "WKR-00012345",
+			"schemeId": "EmployerAssignedID",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "AcmeComplianceBoard",
+			"description": "Primary employee identifier",
+			"schemeLink": "http://acmecomplianceboard.org/idscheme",
+			"agencyUri": "http://acmecomplianceboard.org"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2023-01-01T00:00:00Z",
+			"validTo": "2023-12-31T23:59:59Z"
+		},
+		"salaryAmount": {
+			"value": 55000,
+			"currencyCode": "USD"
+		},
+		"regularHourlyWagesAmount": {
+			"workedPayTypeCode": "BasePay",
+			"description": "Standard hourly compensation",
+			"workedPayAmount": {
+				"value": 25,
+				"currency": "USD"
+			}
+		},
+		"premiumHourlyWagesAmount": [
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Overtime pay (1.5x)",
+				"workedPayAmount": {
+					"value": 37.5,
+					"currency": "USD"
+				}
+			},
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Holiday overtime pay",
+				"workedPayAmount": {
+					"value": 37.5,
+					"currency": "USD"
+				}
+			}
+		],
+		"paidTimeOffAmount": [
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Memorial Day holiday pay",
+				"timeOffPayAmount": {
+					"value": 200,
+					"currency": "USD"
+				}
+			},
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Independence Day holiday pay",
+				"timeOffPayAmount": {
+					"value": 150,
+					"currency": "USD"
+				}
+			}
+		]
+	}
+}

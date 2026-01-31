@@ -1,0 +1,55 @@
+{
+	"worker": {
+		"RefId": "cfaa68b6-3523-4c09-a866-212251f3e5af",
+		"senderId": "sc-sender-01",
+		"receiverId": "",
+		"organizationRefId": "7224133c-19d7-4e61-b7de-94269129990e",
+		"podURL": "https://privacypolicy.greenvillerestaurantchain.example.org/employee",
+		"workerId": {
+			"value": "EMP-20240058",
+			"schemeId": "EmployeeID",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "GGI-HR",
+			"description": "Internal employee identification number",
+			"schemeLink": "https://schemes.example.org/employee-id",
+			"agencyUri": "https://ggi.example.org/hr"
+		},
+		"ssn": {
+			"value": "652-48-2197"
+		},
+		"name": {
+			"languageCode": "en-US",
+			"firstName": "Marisol",
+			"middleName": "Antonia",
+			"family": "Rodriguez",
+			"previousLastName": "Mendoza"
+		},
+		"physicalAddresses": [
+			{
+				"typeCode": "Home",
+				"line": "472 Willow Street Apt 3B",
+				"countryCode": "US",
+				"countrySubDivisions": [
+					{
+						"type": "state",
+						"value": "SC"
+					}
+				],
+				"city": "Charleston",
+				"postalCode": "29403",
+				"postOfficeBox": "",
+				"geoLocation": {
+					"latitude": 32.7765,
+					"longitude": -79.9311,
+					"altitude": {
+						"value": 15,
+						"unitCode": "FOT"
+					},
+					"name": "Home Coordinates"
+				},
+				"formattedAddress": "472 Willow Street Apt 3B, Charleston, SC 29403, USA"
+			}
+		],
+		"birthDate": "1987-04-16"
+	}
+}

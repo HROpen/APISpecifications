@@ -1,0 +1,29 @@
+{
+	"worker_paid_hours_report": {
+		"RefId": "ecdb81e1-ad4f-4251-abe9-ee75ffa0f6c3",
+		"senderId": "multi-state-sender-01",
+		"receiverId": "",
+        "sendTo": "AR",
+		"workerRefId": "55178b1e-bf3a-4ede-93a4-d4d508606b66",
+		"podURL": "https://greenvilleplasticsinc.example.org/pods/worker-paid-hours-report",
+		"workerId": {
+			"value": "GPPL-00482",
+			"schemeId": "PayrollID",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "Greenville Plastics Inc",
+			"description": "Internal payroll identifier for employee compensation tracking",
+			"schemeLink": "https://greenvilleplasticsinc.example.org/schemes/payroll-id",
+			"agencyUri": "https://greenvilleplasticsinc.example.org"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2023-01-01T00:00:00Z",
+			"validTo": "2023-12-31T23:59:59Z"
+		},
+		"workedWeeks": 52,
+		"totalHoursPaid": 2040,
+		"totalHoursWorked": 2000,
+		"regularHoursWorked": 1920,
+		"totalPremiumHours": 80,
+		"totalPaidLeaveHours": 40
+	}
+}

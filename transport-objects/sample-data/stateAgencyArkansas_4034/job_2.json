@@ -1,0 +1,24 @@
+{
+	"job": {
+		"RefId": "5d3ef164-be04-4531-80c1-7523ff6247eb",
+		"senderId": "ar-sender-01",
+		"receiverId": "",
+		"organizationRefId": "7015e59b-8d51-4e8d-b922-2fb7bd736963",
+		"organizationId": "SA-AR-001",
+		"jobId": "JOB-UI-2024-007",
+		"title": "Unemployment Insurance Claims Specialist",
+		"jobDuties": "Process unemployment insurance claims for state agency clients, ensuring compliance with regulations and providing support to claimants from initial filing through adjudication.",
+		"socInfo": [
+			{
+				"classificationSys": "1",
+				"assigningEntity": "2",
+				"socCodeValue": "43-9041"
+			},
+			{
+				"classificationSys": "1",
+				"assigningEntity": "2",
+				"socCodeValue": "43-3031"
+			}
+		]
+	}
+}

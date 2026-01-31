@@ -1,0 +1,71 @@
+{
+	"worker_compensation_report": {
+		"RefId": "3dfce987-b6cd-42b6-9a23-97e0c0bb168b",
+		"senderId": "multi-state-sender-01",
+		"receiverId": "",
+        "sendTo": "SC",
+		"workerRefId": "106c5862-92ca-4792-b36e-9269bc2ac52b",
+		"podURL": "https://pod.example.com/privacy-docs/compensation",
+		"workerId": {
+			"value": "EID-7463821",
+			"schemeId": "EmployeeID",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "CorpHR",
+			"description": "Internal employee identification number",
+			"schemeLink": "https://example.com/schemes/employee-id",
+			"agencyUri": "https://example.com/agency/CorpHR"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2023-01-01T00:00:00Z",
+			"validTo": "2023-12-31T23:59:59Z"
+		},
+		"salaryAmount": {
+			"value": 60000,
+			"currencyCode": "USD"
+		},
+		"regularHourlyWagesAmount": {
+			"workedPayTypeCode": "BasePay",
+			"description": "Standard full-time hourly rate",
+			"workedPayAmount": {
+				"value": 35.5,
+				"currency": "USD"
+			}
+		},
+		"premiumHourlyWagesAmount": [
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Overtime premium rate",
+				"workedPayAmount": {
+					"value": 53.25,
+					"currency": "USD"
+				}
+			},
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Weekend shift premium",
+				"workedPayAmount": {
+					"value": 42,
+					"currency": "USD"
+				}
+			}
+		],
+		"paidTimeOffAmount": [
+			{
+				"timeOffPayType": "Holiday",
+				"description": "New Year's Day observance",
+				"timeOffPayAmount": {
+					"value": 8,
+					"currency": "USD"
+				}
+			},
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Thanksgiving break",
+				"timeOffPayAmount": {
+					"value": 16,
+					"currency": "USD"
+				}
+			}
+		]
+	}
+}

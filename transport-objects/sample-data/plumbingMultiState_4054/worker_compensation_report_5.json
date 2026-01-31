@@ -1,0 +1,71 @@
+{
+	"worker_compensation_report": {
+		"RefId": "c3137afc-7a25-46e0-a4bf-590dddc8ef0e",
+		"senderId": "multi-state-sender-01",
+		"receiverId": "",
+        "sendTo": "SC",
+		"workerRefId": "41f5df2d-3e23-4084-a8fd-bb4128dff977",
+		"podURL": "https://greenvilleplasticsinc.example.org/pod/98765",
+		"workerId": {
+			"value": "GP123456789",
+			"schemeId": "WID",
+			"schemeVersionId": "v1.0",
+			"schemeAgencyId": "SCDeptOfLabor",
+			"description": "State-issued employee identification number",
+			"schemeLink": "https://scdol.gov/schemas/worker-id",
+			"agencyUri": "https://scdol.gov"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2023-01-01T00:00:00Z",
+			"validTo": "2023-12-31T23:59:59Z"
+		},
+		"salaryAmount": {
+			"value": 55000,
+			"currencyCode": "USD"
+		},
+		"regularHourlyWagesAmount": {
+			"workedPayTypeCode": "BasePay",
+			"description": "Standard production hourly rate",
+			"workedPayAmount": {
+				"value": 24.5,
+				"currency": "USD"
+			}
+		},
+		"premiumHourlyWagesAmount": [
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Weekend overtime",
+				"workedPayAmount": {
+					"value": 36.75,
+					"currency": "USD"
+				}
+			},
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Holiday shift premium",
+				"workedPayAmount": {
+					"value": 40,
+					"currency": "USD"
+				}
+			}
+		],
+		"paidTimeOffAmount": [
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Federal holiday compensation",
+				"timeOffPayAmount": {
+					"value": 480,
+					"currency": "USD"
+				}
+			},
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Company-wide day off pay",
+				"timeOffPayAmount": {
+					"value": 300,
+					"currency": "USD"
+				}
+			}
+		]
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"worker_paid_hours_report": {
+		"RefId": "80a6ea2e-ac71-49a0-ae9a-104287b0fee7",
+		"senderId": "ar-sender-01",
+		"receiverId": "",
+		"workerRefId": "2bf09a2f-fad2-441a-819b-eacafab926b7",
+		"podURL": "https://pdocs.state.ar.us/pods/ARK-12345",
+		"workerId": {
+			"value": "ARW-89234",
+			"schemeId": "SSN",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "Arkansas Department of Workforce",
+			"description": "State worker identification number",
+			"schemeLink": "https://id-schemes.gov/arkansas/workers",
+			"agencyUri": "https://ar.gov/workforce"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2024-03-31T23:59:59Z",
+			"validTo": "2024-01-01T00:00:00Z"
+		},
+		"workedWeeks": 13,
+		"totalHoursPaid": 580,
+		"totalHoursWorked": 540,
+		"regularHoursWorked": 520,
+		"totalPremiumHours": 20,
+		"totalPaidLeaveHours": 40
+	}
+}

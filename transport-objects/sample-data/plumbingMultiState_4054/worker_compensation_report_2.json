@@ -1,0 +1,71 @@
+{
+	"worker_compensation_report": {
+		"RefId": "78b1c317-47be-48ca-a48a-c73b2377b12c",
+		"senderId": "multi-state-sender-01",
+		"receiverId": "",
+        "sendTo": "SC",
+		"workerRefId": "0caa64a9-64a5-49e5-86c9-2eeb4bdf7a1b",
+		"podURL": "https://greenvilleplasticsinc.example.com/pod/987654321",
+		"workerId": {
+			"value": "GP-EMP-00047",
+			"schemeId": "EmployeeNumber",
+			"schemeVersionId": "v1",
+			"schemeAgencyId": "Greenville Plastics HR",
+			"description": "Internal employee identification number",
+			"schemeLink": "https://greenvilleplasticsinc.example.com/schemes/employee-identifier",
+			"agencyUri": "https://greenvilleplasticsinc.example.com/hr"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2023-01-01T00:00:00Z",
+			"validTo": "2023-12-31T23:59:59Z"
+		},
+		"salaryAmount": {
+			"value": 65000,
+			"currencyCode": "USD"
+		},
+		"regularHourlyWagesAmount": {
+			"workedPayTypeCode": "BasePay",
+			"description": "Standard hourly wage",
+			"workedPayAmount": {
+				"value": 30,
+				"currency": "USD"
+			}
+		},
+		"premiumHourlyWagesAmount": [
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Overtime hourly premium",
+				"workedPayAmount": {
+					"value": 5,
+					"currency": "USD"
+				}
+			},
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Holiday hourly premium",
+				"workedPayAmount": {
+					"value": 10,
+					"currency": "USD"
+				}
+			}
+		],
+		"paidTimeOffAmount": [
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Memorial Day holiday pay",
+				"timeOffPayAmount": {
+					"value": 240,
+					"currency": "USD"
+				}
+			},
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Independence Day holiday pay",
+				"timeOffPayAmount": {
+					"value": 270,
+					"currency": "USD"
+				}
+			}
+		]
+	}
+}

@@ -1,0 +1,125 @@
+{
+	"organization": {
+		"RefId": "7015e59b-8d51-4e8d-b922-2fb7bd736963",
+		"senderId": "ar-sender-01",
+		"receiverId": "",
+		"isMulti-state": false,
+		"organizationId": {
+			"value": "SA-AR-001",
+			"issuingAuthority": "Arkansas Department of Finance and Administration"
+		},
+		"taxIds": [
+			{
+				"value": "12-3456789",
+				"schemeId": "EIN",
+				"schemeVersionId": "1.0",
+				"schemeAgencyId": "IRS",
+				"description": "Employer Identification Number",
+				"schemeLink": "https://www.irs.gov/businesses/small-businesses-self-employed/employer-id-numbers",
+				"agencyUri": "https://www.irs.gov/"
+			},
+			{
+				"value": "AR-987654321",
+				"schemeId": "StateTaxID",
+				"schemeVersionId": "2022",
+				"schemeAgencyId": "Arkansas Department of Finance",
+				"description": "Arkansas State Tax ID",
+				"schemeLink": "https://www.dfa.arkansas.gov/business-and-commercial-services/tax-services",
+				"agencyUri": "https://www.dfa.arkansas.gov/"
+			}
+		],
+		"industryIdentifiers": [
+			{
+				"value": "921110",
+				"schemeId": "NAICS",
+				"schemeVersionId": "2022",
+				"schemeAgencyId": "Census",
+				"description": "Executive Offices",
+				"schemeLink": "https://www.census.gov/naics/?58967?yearbck=2022",
+				"agencyUri": "https://www.census.gov/naics/?58967?yearbck=2022"
+			},
+			{
+				"value": "123456789",
+				"schemeId": "DUNS",
+				"schemeVersionId": "v4",
+				"schemeAgencyId": "Dun & Bradstreet",
+				"description": "Data Universal Numbering System",
+				"schemeLink": "https://www.dnb.com",
+				"agencyUri": "https://www.dnb.com"
+			}
+		],
+		"organizationActivity": [
+			{
+				"activityCode": [
+					"921110"
+				],
+				"description": {
+					"value": "Executive Offices",
+					"languageCode": "en-US"
+				},
+				"percentage": 60
+			},
+			{
+				"activityCode": [
+					"921190"
+				],
+				"description": {
+					"value": "Other General Government Support",
+					"languageCode": "en-US"
+				},
+				"percentage": 40
+			}
+		],
+		"tradeName": "El Dorado Administration LLC",
+		"physicalAddresses": [
+			{
+				"typeCode": "Business",
+				"line": "456 Court Street",
+				"countryCode": "US",
+				"countrySubDivisions": [
+					{
+						"type": "state",
+						"value": "AR"
+					}
+				],
+				"city": "Camden",
+				"postalCode": "71701",
+				"postOfficeBox": "P.O. Box 123",
+				"geoLocation": {
+					"latitude": 33.5849,
+					"longitude": -92.8396,
+					"altitude": {
+						"value": 200,
+						"unitCode": "FOT"
+					},
+					"name": "Camden Office Coordinates"
+				},
+				"formattedAddress": "456 Court Street, Camden, AR 71701, USA"
+			},
+			{
+				"typeCode": "Business",
+				"line": "789 State Office Drive",
+				"countryCode": "US",
+				"countrySubDivisions": [
+					{
+						"type": "state",
+						"value": "AR"
+					}
+				],
+				"city": "Texarkana",
+				"postalCode": "71854",
+				"postOfficeBox": "P.O. Box 456",
+				"geoLocation": {
+					"latitude": 33.4251,
+					"longitude": -94.0477,
+					"altitude": {
+						"value": 230,
+						"unitCode": "FOT"
+					},
+					"name": "Texarkana Office Coordinates"
+				},
+				"formattedAddress": "789 State Office Drive, Texarkana, AR 71854, USA"
+			}
+		]
+	}
+}

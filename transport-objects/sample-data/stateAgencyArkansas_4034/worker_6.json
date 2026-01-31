@@ -1,0 +1,55 @@
+{
+	"worker": {
+		"RefId": "f298bc7e-8409-41e1-bf1c-bff05edf4c8c",
+		"senderId": "ar-sender-01",
+		"receiverId": "",
+		"organizationRefId": "7015e59b-8d51-4e8d-b922-2fb7bd736963",
+		"podURL": "https://stateagency.example.org/pod/worker/5421",
+		"workerId": {
+			"value": "AGY-758396",
+			"schemeId": "ArkDHS-WorkID",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "Arkansas Department of Human Services",
+			"description": "Primary state agency worker identifier",
+			"schemeLink": "https://dhr.arkansas.gov/schemes/workerid",
+			"agencyUri": "https://arkansas.gov/departments/dhs"
+		},
+		"ssn": {
+			"value": "746281035"
+		},
+		"name": {
+			"languageCode": "en-US",
+			"firstName": "Isadora",
+			"middleName": "Marcel",
+			"family": "Winslet",
+			"previousLastName": ""
+		},
+		"physicalAddresses": [
+			{
+				"typeCode": "home",
+				"line": "742 Desert Oak Drive",
+				"countryCode": "US",
+				"countrySubDivisions": [
+					{
+						"type": "state",
+						"value": "AR"
+					}
+				],
+				"city": "El Dorado",
+				"postalCode": "71730",
+				"postOfficeBox": "P.O. Box 542",
+				"geoLocation": {
+					"latitude": 33.207026,
+					"longitude": -92.666384,
+					"altitude": {
+						"value": 285,
+						"unitCode": "FOT"
+					},
+					"name": "Home Coordinates"
+				},
+				"formattedAddress": "742 Desert Oak Drive, El Dorado, AR 71730, USA"
+			}
+		],
+		"birthDate": "1983-11-29"
+	}
+}

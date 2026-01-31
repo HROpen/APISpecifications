@@ -1,0 +1,56 @@
+{
+	"worker": {
+		"RefId": "5d7236de-5574-41e1-afbd-ec76d2b78207",
+		"senderId": "multi-state-sender-01",
+		"receiverId": "",
+        "sendTo": "AR",
+		"organizationRefId": "a2660567-c84b-49dc-b4c3-7dbb51e2404b",
+		"podURL": "https://privacypolicies.example.org/greenville-plastics-pod",
+		"workerId": {
+			"value": "EMP-2024-0457",
+			"schemeId": "EMP",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "Greenville Plumbing Supplies Inc HR",
+			"description": "Internal employee identifier",
+			"schemeLink": "https://greenville-plumbing-supplies-inc.example.com/ids/EMP",
+			"agencyUri": "https://greenville-plumbing-supplies-inc.example.com"
+		},
+		"ssn": {
+			"value": "583024611"
+		},
+		"name": {
+			"languageCode": "en-US",
+			"firstName": "Aislinn",
+			"middleName": "Maeve",
+			"family": "Pernell",
+			"previousLastName": "Harrington"
+		},
+		"physicalAddresses": [
+			{
+				"typeCode": "home",
+				"line": "317 Forge Street",
+				"countryCode": "US",
+				"countrySubDivisions": [
+					{
+						"type": "state",
+						"value": "SC"
+					}
+				],
+				"city": "Spartanburg",
+				"postalCode": "29306",
+				"postOfficeBox": "PO Box 224",
+				"geoLocation": {
+					"latitude": 34.9496,
+					"longitude": -81.932,
+					"altitude": {
+						"value": 800.5,
+						"unitCode": "FOT"
+					},
+					"name": "Spartanburg Home Elevation"
+				},
+				"formattedAddress": "317 Forge Street, Spartanburg, SC 29306, USA"
+			}
+		],
+		"birthDate": "1985-07-14"
+	}
+}

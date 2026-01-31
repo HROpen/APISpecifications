@@ -1,0 +1,55 @@
+{
+	"worker": {
+		"RefId": "a4817e24-dbeb-41ce-9c47-7d55e062a7db",
+		"senderId": "sc-sender-01",
+		"receiverId": "",
+		"organizationRefId": "7224133c-19d7-4e61-b7de-94269129990e",
+		"podURL": "https://example.org/pod/privdoc/ABCD1234",
+		"workerId": {
+			"value": "EMP-20240052",
+			"schemeId": "EmployeeID",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "GGI-HR",
+			"description": "Internal employee identification number",
+			"schemeLink": "https://schemes.example.org/employee-id",
+			"agencyUri": "https://ggi.example.org/hr"
+		},
+		"ssn": {
+			"value": "812556790"
+		},
+		"name": {
+			"languageCode": "en-US",
+			"firstName": "Aaliyah",
+			"middleName": "M.",
+			"family": "Beckett",
+			"previousLastName": ""
+		},
+		"physicalAddresses": [
+			{
+				"typeCode": "home",
+				"line": "1224 Magnolia Plantation Road",
+				"countryCode": "US",
+				"countrySubDivisions": [
+					{
+						"type": "state",
+						"value": "SC"
+					}
+				],
+				"city": "Charleston",
+				"postalCode": "29407",
+				"postOfficeBox": "PO Box 42",
+				"geoLocation": {
+					"latitude": 32.7765,
+					"longitude": -79.9302,
+					"altitude": {
+						"value": 15,
+						"unitCode": "FOT"
+					},
+					"name": "Charleston Home"
+				},
+				"formattedAddress": "1224 Magnolia Plantation Road, Charleston, SC 29407, US"
+			}
+		],
+		"birthDate": "1990-05-16"
+	}
+}

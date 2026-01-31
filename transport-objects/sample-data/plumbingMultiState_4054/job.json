@@ -1,0 +1,20 @@
+{
+	"job": {
+		"RefId": "780504a4-ac5e-4675-aaa5-5c9db4ec5bc0",
+		"senderId": "multi-state-sender-01",
+		"receiverId": "",
+        "sendTo": "AR",
+		"organizationRefId": "a2660567-c84b-49dc-b4c3-7dbb51e2404b",
+		"organizationId": "Greenville Plastics Inc",
+		"jobId": "JOB-1001",
+		"title": "Team Assembler",
+		"jobDuties": "Assemble and inspect PVC plumbing fittings using hand tools and automated equipment, ensuring parts meet quality standards and production targets.",
+		"socInfo": [
+			{
+				"classificationSys": "1",
+				"assigningEntity": "1",
+				"socCodeValue": "51-2092"
+			}
+		]
+	}
+}

@@ -1,0 +1,55 @@
+{
+	"worker": {
+		"RefId": "3056f6e7-5039-451d-b056-98dfc1fb1f18",
+		"senderId": "ar-sender-01",
+		"receiverId": "",
+		"organizationRefId": "7015e59b-8d51-4e8d-b922-2fb7bd736963",
+		"podURL": "https://pods.arkansas.gov/privacy/emp123",
+		"workerId": {
+			"value": "AGY-758392",
+			"schemeId": "ArkDHS-WorkID",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "Arkansas Department of Human Services",
+			"description": "Primary state agency worker identifier",
+			"schemeLink": "https://dhr.arkansas.gov/schemes/workerid",
+			"agencyUri": "https://arkansas.gov/departments/dhs"
+		},
+		"ssn": {
+			"value": "452789912"
+		},
+		"name": {
+			"languageCode": "en-US",
+			"firstName": "Marisol",
+			"middleName": "Lupe",
+			"family": "Garcia",
+			"previousLastName": ""
+		},
+		"physicalAddresses": [
+			{
+				"typeCode": "home",
+				"line": "342 Cresthaven Drive",
+				"countryCode": "US",
+				"countrySubDivisions": [
+					{
+						"type": "state",
+						"value": "AR"
+					}
+				],
+				"city": "Hot Springs",
+				"postalCode": "71901",
+				"postOfficeBox": "PO Box 792",
+				"geoLocation": {
+					"latitude": 34.5037,
+					"longitude": -93.0552,
+					"altitude": {
+						"value": 600,
+						"unitCode": "FOT"
+					},
+					"name": "Hot Springs Center"
+				},
+				"formattedAddress": "342 Cresthaven Drive, Hot Springs, AR 71901, USA"
+			}
+		],
+		"birthDate": "1985-07-23"
+	}
+}

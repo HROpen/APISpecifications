@@ -1,0 +1,55 @@
+{
+	"worker": {
+		"RefId": "1485de19-1429-4c40-ac06-a4edb4d69685",
+		"senderId": "ar-sender-01",
+		"receiverId": "",
+		"organizationRefId": "7015e59b-8d51-4e8d-b922-2fb7bd736963",
+		"podURL": "https://portal.arkansas.gov/pod/b7c9f8a3",
+		"workerId": {
+			"value": "AGY-758395",
+			"schemeId": "ArkDHS-WorkID",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "Arkansas Department of Human Services",
+			"description": "Primary state agency worker identifier",
+			"schemeLink": "https://dhr.arkansas.gov/schemes/workerid",
+			"agencyUri": "https://arkansas.gov/departments/dhs"
+		},
+		"ssn": {
+			"value": "729481563"
+		},
+		"name": {
+			"languageCode": "en-US",
+			"firstName": "Ximena",
+			"middleName": "Marisol",
+			"family": "Martínez",
+			"previousLastName": ""
+		},
+		"physicalAddresses": [
+			{
+				"typeCode": "home",
+				"line": "1423 Quincy Street",
+				"countryCode": "US",
+				"countrySubDivisions": [
+					{
+						"type": "state",
+						"value": "Arkansas"
+					}
+				],
+				"city": "Texarkana",
+				"postalCode": "71854",
+				"postOfficeBox": "P.O. Box 788",
+				"geoLocation": {
+					"latitude": 33.4357,
+					"longitude": -94.0477,
+					"altitude": {
+						"value": 300,
+						"unitCode": "FOT"
+					},
+					"name": "Home Coordinates"
+				},
+				"formattedAddress": "1423 Quincy Street, Texarkana, AR 71854, USA"
+			}
+		],
+		"birthDate": "1985-11-03"
+	}
+}

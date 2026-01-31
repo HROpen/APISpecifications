@@ -1,0 +1,28 @@
+{
+	"worker_paid_hours_report": {
+		"RefId": "c41728d2-05a8-4f8e-90f7-573436431be4",
+		"senderId": "sc-sender-01",
+		"receiverId": "",
+		"workerRefId": "e6a47bcc-2a5f-4198-837c-b61b4c753ad6",
+		"podURL": "https://charlestoneatsinc.com/pods/worker-hours-2024Q1.xml",
+		"workerId": {
+			"value": "CEI-2024-1147",
+			"schemeId": "EmployeeNumber",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "SC Dept of Labor",
+			"description": "Internal employee identification number",
+			"schemeLink": "https://charlestoneatsinc.com/schemas/EmployeeNumber",
+			"agencyUri": "https://labor.sc.gov"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2024-01-01T00:00:00Z",
+			"validTo": "2024-03-31T23:59:59Z"
+		},
+		"workedWeeks": 12,
+		"totalHoursPaid": 480,
+		"totalHoursWorked": 450,
+		"regularHoursWorked": 400,
+		"totalPremiumHours": 50,
+		"totalPaidLeaveHours": 30
+	}
+}

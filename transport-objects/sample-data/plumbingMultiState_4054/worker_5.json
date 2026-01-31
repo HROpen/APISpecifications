@@ -1,0 +1,56 @@
+{
+	"worker": {
+		"RefId": "41f5df2d-3e23-4084-a8fd-bb4128dff977",
+		"senderId": "multi-state-sender-01",
+		"receiverId": "",
+        "sendTo": "SC",
+		"organizationRefId": "a2660567-c84b-49dc-b4c3-7dbb51e2404b",
+		"podURL": "https://api.greenvilleplasticsinc.com/pods/worker-HK459",
+		"workerId": {
+			"value": "EMP-2024-0455",
+			"schemeId": "EMP",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "Greenville Plumbing Supplies Inc HR",
+			"description": "Internal employee identifier",
+			"schemeLink": "https://greenville-plumbing-supplies-inc.example.com/ids/EMP",
+			"agencyUri": "https://greenville-plumbing-supplies-inc.example.com"
+		},
+		"ssn": {
+			"value": "732-45-9812"
+		},
+		"name": {
+			"languageCode": "en-US",
+			"firstName": "Lucinda",
+			"middleName": "Marisol",
+			"family": "Hernández",
+			"previousLastName": "Montoya"
+		},
+		"physicalAddresses": [
+			{
+				"typeCode": "home",
+				"line": "742 Magnolia Drive",
+				"countryCode": "US",
+				"countrySubDivisions": [
+					{
+						"type": "state",
+						"value": "SC"
+					}
+				],
+				"city": "Greenville",
+				"postalCode": "29607",
+				"postOfficeBox": "PO Box 221",
+				"geoLocation": {
+					"latitude": 34.856,
+					"longitude": -82.397,
+					"altitude": {
+						"value": 100,
+						"unitCode": "FOT"
+					},
+					"name": "Home GeoPoint"
+				},
+				"formattedAddress": "742 Magnolia Drive, Greenville, SC 29607"
+			}
+		],
+		"birthDate": "1987-10-25"
+	}
+}

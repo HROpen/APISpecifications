@@ -1,0 +1,56 @@
+{
+	"worker": {
+		"RefId": "106c5862-92ca-4792-b36e-9269bc2ac52b",
+		"senderId": "multi-state-sender-01",
+		"receiverId": "",
+        "sendTo": "SC",
+		"organizationRefId": "a2660567-c84b-49dc-b4c3-7dbb51e2404b",
+		"podURL": "https://greenville-plumbing-supplies-inc.example.com/pod",
+		"workerId": {
+			"value": "EMP-2024-0451",
+			"schemeId": "EMP",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "Greenville Plumbing Supplies Inc HR",
+			"description": "Internal employee identifier",
+			"schemeLink": "https://greenville-plumbing-supplies-inc.example.com/ids/EMP",
+			"agencyUri": "https://greenville-plumbing-supplies-inc.example.com"
+		},
+		"ssn": {
+			"value": "572-49-8362"
+		},
+		"name": {
+			"languageCode": "en-US",
+			"firstName": "Marisol",
+			"middleName": "Lucia",
+			"family": "Quintana",
+			"previousLastName": "Martinez"
+		},
+		"physicalAddresses": [
+			{
+				"typeCode": "home",
+				"line": "1824 Magnolia Oak Drive",
+				"countryCode": "US",
+				"countrySubDivisions": [
+					{
+						"type": "state",
+						"value": "SC"
+					}
+				],
+				"city": "Greenville",
+				"postalCode": "29607",
+				"postOfficeBox": "PO Box 4532",
+				"geoLocation": {
+					"latitude": 34.8526,
+					"longitude": -82.394,
+					"altitude": {
+						"value": 984,
+						"unitCode": "FOT"
+					},
+					"name": "Residence"
+				},
+				"formattedAddress": "1824 Magnolia Oak Drive, Greenville, SC 29607, USA"
+			}
+		],
+		"birthDate": "1988-06-15"
+	}
+}

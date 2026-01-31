@@ -1,0 +1,24 @@
+{
+	"job": {
+		"RefId": "683f4f83-0c5c-4604-9b65-ea6a16d77ee4",
+		"senderId": "sc-sender-01",
+		"receiverId": "",
+		"organizationRefId": "7224133c-19d7-4e61-b7de-94269129990e",
+		"organizationId": "GCE123456",
+		"jobId": "JOB-10023",
+		"title": "Restaurant Manager",
+		"jobDuties": "Oversee daily restaurant operations, manage staff schedules, ensure guest satisfaction, and maintain compliance with health and safety regulations.",
+		"socInfo": [
+			{
+				"classificationSys": "1",
+				"assigningEntity": "1",
+				"socCodeValue": "35-1012"
+			},
+			{
+				"classificationSys": "1",
+				"assigningEntity": "1",
+				"socCodeValue": "35-1011"
+			}
+		]
+	}
+}

@@ -1,0 +1,55 @@
+{
+	"worker": {
+		"RefId": "93371d68-1684-41d3-96cb-e783ee1041f9",
+		"senderId": "sc-sender-01",
+		"receiverId": "",
+		"organizationRefId": "7224133c-19d7-4e61-b7de-94269129990e",
+		"podURL": "https://www.greenvillebistro.com/privacy/pod/982374",
+		"workerId": {
+			"value": "EMP-20240057",
+			"schemeId": "EmployeeID",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "GGI-HR",
+			"description": "Internal employee identification number",
+			"schemeLink": "https://schemes.example.org/employee-id",
+			"agencyUri": "https://ggi.example.org/hr"
+		},
+		"ssn": {
+			"value": "987654321"
+		},
+		"name": {
+			"languageCode": "en-US",
+			"firstName": "Marisol",
+			"middleName": "Elena",
+			"family": "Coronado",
+			"previousLastName": ""
+		},
+		"physicalAddresses": [
+			{
+				"typeCode": "home",
+				"line": "732 Bay Street",
+				"countryCode": "US",
+				"countrySubDivisions": [
+					{
+						"type": "state",
+						"value": "SC"
+					}
+				],
+				"city": "Charleston",
+				"postalCode": "29401",
+				"postOfficeBox": "PO Box 2493",
+				"geoLocation": {
+					"latitude": 32.7765,
+					"longitude": -79.9311,
+					"altitude": {
+						"value": 8,
+						"unitCode": "FOT"
+					},
+					"name": "Residence"
+				},
+				"formattedAddress": "732 Bay Street, Charleston, SC 29401"
+			}
+		],
+		"birthDate": "1985-07-12"
+	}
+}

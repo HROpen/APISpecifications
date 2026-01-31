@@ -1,0 +1,71 @@
+{
+	"worker_compensation_report": {
+		"RefId": "38feaa6a-7bfe-43bb-9ecc-ed726a4d90a1",
+		"senderId": "multi-state-sender-01",
+		"receiverId": "",
+        "sendTo": "AR",
+		"workerRefId": "f5ca09f7-6b92-4334-8294-79f83a094fcb",
+		"podURL": "https://pod.example.com/pod/67890",
+		"workerId": {
+			"value": "WKR-004782",
+			"schemeId": "SSN",
+			"schemeVersionId": "9",
+			"schemeAgencyId": "SSA",
+			"description": "Social Security Number",
+			"schemeLink": "https://www.ssa.gov/",
+			"agencyUri": "https://www.ssa.gov/privacy/"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2023-01-01T00:00:00Z",
+			"validTo": "2023-12-31T23:59:59Z"
+		},
+		"salaryAmount": {
+			"value": 45000,
+			"currencyCode": "USD"
+		},
+		"regularHourlyWagesAmount": {
+			"workedPayTypeCode": "BasePay",
+			"description": "Standard hourly wage",
+			"workedPayAmount": {
+				"value": 22.5,
+				"currency": "USD"
+			}
+		},
+		"premiumHourlyWagesAmount": [
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Overtime pay",
+				"workedPayAmount": {
+					"value": 33.75,
+					"currency": "USD"
+				}
+			},
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Night shift differential",
+				"workedPayAmount": {
+					"value": 28,
+					"currency": "USD"
+				}
+			}
+		],
+		"paidTimeOffAmount": [
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Independence Day holiday compensation",
+				"timeOffPayAmount": {
+					"value": 96,
+					"currency": "USD"
+				}
+			},
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Thanksgiving holiday compensation",
+				"timeOffPayAmount": {
+					"value": 120,
+					"currency": "USD"
+				}
+			}
+		]
+	}
+}

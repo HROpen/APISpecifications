@@ -1,0 +1,70 @@
+{
+	"worker_compensation_report": {
+		"RefId": "55a012b8-bda3-4933-b4fe-c20691929170",
+		"senderId": "ar-sender-01",
+		"receiverId": "",
+		"workerRefId": "c97b4e25-2b2d-4656-90a9-7c2c042d7fc3",
+		"podURL": "https://privacy.statear.gov/documents/9f8b3a1",
+		"workerId": {
+			"value": "S123-45-6789",
+			"schemeId": "SSN",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "SSA",
+			"description": "Social Security Number",
+			"schemeLink": "https://www.ssa.gov",
+			"agencyUri": "https://www.ssa.gov"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2023-01-01T00:00:00Z",
+			"validTo": "2023-12-31T23:59:59Z"
+		},
+		"salaryAmount": {
+			"value": 58000,
+			"currencyCode": "USD"
+		},
+		"regularHourlyWagesAmount": {
+			"workedPayTypeCode": "BasePay",
+			"description": "Standard hourly wage",
+			"workedPayAmount": {
+				"value": 28.75,
+				"currency": "USD"
+			}
+		},
+		"premiumHourlyWagesAmount": [
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Evening shift differential",
+				"workedPayAmount": {
+					"value": 3.5,
+					"currency": "USD"
+				}
+			},
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Weekend overtime premium",
+				"workedPayAmount": {
+					"value": 7.5,
+					"currency": "USD"
+				}
+			}
+		],
+		"paidTimeOffAmount": [
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Independence Day holiday pay",
+				"timeOffPayAmount": {
+					"value": 230,
+					"currency": "USD"
+				}
+			},
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Thanksgiving holiday pay",
+				"timeOffPayAmount": {
+					"value": 300,
+					"currency": "USD"
+				}
+			}
+		]
+	}
+}

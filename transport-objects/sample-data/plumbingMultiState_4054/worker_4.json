@@ -1,0 +1,56 @@
+{
+	"worker": {
+		"RefId": "0286a39e-04f4-46eb-b69a-4abeef5b8279",
+		"senderId": "multi-state-sender-01",
+		"receiverId": "",
+        "sendTo": "SC",
+		"organizationRefId": "a2660567-c84b-49dc-b4c3-7dbb51e2404b",
+		"podURL": "https://pod.example.com/privacy/84729",
+		"workerId": {
+			"value": "EMP-2024-0454",
+			"schemeId": "EMP",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "Greenville Plumbing Supplies Inc HR",
+			"description": "Internal employee identifier",
+			"schemeLink": "https://greenville-plumbing-supplies-inc.example.com/ids/EMP",
+			"agencyUri": "https://greenville-plumbing-supplies-inc.example.com"
+		},
+		"ssn": {
+			"value": "684273901"
+		},
+		"name": {
+			"languageCode": "en-US",
+			"firstName": "Esmeralda",
+			"middleName": "Lucía",
+			"family": "Mendez",
+			"previousLastName": ""
+		},
+		"physicalAddresses": [
+			{
+				"typeCode": "home",
+				"line": "742 Cypress Drive",
+				"countryCode": "US",
+				"countrySubDivisions": [
+					{
+						"type": "state",
+						"value": "SC"
+					}
+				],
+				"city": "Greenville",
+				"postalCode": "29601",
+				"postOfficeBox": "PO Box 482",
+				"geoLocation": {
+					"latitude": 34.8526,
+					"longitude": -82.394,
+					"altitude": {
+						"value": 984,
+						"unitCode": "FOT"
+					},
+					"name": "Site Entrance"
+				},
+				"formattedAddress": "742 Cypress Drive, Greenville, SC 29601, USA P.O. Box 482"
+			}
+		],
+		"birthDate": "1988-06-12"
+	}
+}

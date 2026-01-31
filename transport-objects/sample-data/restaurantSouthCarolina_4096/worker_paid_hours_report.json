@@ -1,0 +1,28 @@
+{
+	"worker_paid_hours_report": {
+		"RefId": "a7440723-95c1-4b3f-966c-a6d21886b1e2",
+		"senderId": "sc-sender-01",
+		"receiverId": "",
+		"workerRefId": "47880365-a39c-4055-9400-894b652a575f",
+		"podURL": "https://privacypolicies.charlestondiningco.com/pod.pdf",
+		"workerId": {
+			"value": "EMP-SC-0001234",
+			"schemeId": "SC-EMPLID",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "SCDOL",
+			"description": "South Carolina Department of Labor Employee Identifier",
+			"schemeLink": "https://scdol.gov/employee-id-schema",
+			"agencyUri": "https://scdol.gov"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2023-03-01T00:00:00-05:00",
+			"validTo": "2023-03-31T23:59:59-05:00"
+		},
+		"workedWeeks": 4,
+		"totalHoursPaid": 168,
+		"totalHoursWorked": 160,
+		"regularHoursWorked": 150,
+		"totalPremiumHours": 10,
+		"totalPaidLeaveHours": 8
+	}
+}

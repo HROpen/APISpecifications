@@ -1,0 +1,28 @@
+{
+	"worker_paid_hours_report": {
+		"RefId": "bae2b941-9633-4951-9049-7d7183f37d50",
+		"senderId": "ar-sender-01",
+		"receiverId": "",
+		"workerRefId": "3056f6e7-5039-451d-b056-98dfc1fb1f18",
+		"podURL": "https://southarkansas.gov/pod/847362",
+		"workerId": {
+			"value": "WK-847362",
+			"schemeId": "ARK-WORKER-ID",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "Arkansas Department of Labor",
+			"description": "State-assigned worker identifier",
+			"schemeLink": "https://southarkansas.gov/schemes/worker-id",
+			"agencyUri": "https://dol.southarkansas.gov"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2023-01-01T00:00:00Z",
+			"validTo": "2023-12-31T23:59:59Z"
+		},
+		"workedWeeks": 48,
+		"totalHoursPaid": 2040,
+		"totalHoursWorked": 2000,
+		"regularHoursWorked": 1920,
+		"totalPremiumHours": 80,
+		"totalPaidLeaveHours": 40
+	}
+}

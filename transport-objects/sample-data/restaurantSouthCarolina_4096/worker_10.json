@@ -1,0 +1,55 @@
+{
+	"worker": {
+		"RefId": "3fe4df91-68fa-414b-a6b2-18f6d47eb17a",
+		"senderId": "sc-sender-01",
+		"receiverId": "",
+		"organizationRefId": "7224133c-19d7-4e61-b7de-94269129990e",
+		"podURL": "https://pod.restaurantchain.example.com/SC-001",
+		"workerId": {
+			"value": "EMP-20240050",
+			"schemeId": "EmployeeID",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "GGI-HR",
+			"description": "Internal employee identification number",
+			"schemeLink": "https://schemes.example.org/employee-id",
+			"agencyUri": "https://ggi.example.org/hr"
+		},
+		"ssn": {
+			"value": "671-24-8391"
+		},
+		"name": {
+			"languageCode": "en-US",
+			"firstName": "Keisha",
+			"middleName": "Monroe",
+			"family": "Mbatha",
+			"previousLastName": ""
+		},
+		"physicalAddresses": [
+			{
+				"typeCode": "home",
+				"line": "48 Franklin Place",
+				"countryCode": "US",
+				"countrySubDivisions": [
+					{
+						"type": "state",
+						"value": "SC"
+					}
+				],
+				"city": "Charleston",
+				"postalCode": "29401",
+				"postOfficeBox": "PO Box 4765",
+				"geoLocation": {
+					"latitude": 32.7765,
+					"longitude": -79.9311,
+					"altitude": {
+						"value": 8,
+						"unitCode": "FOT"
+					},
+					"name": "Home Coordinates"
+				},
+				"formattedAddress": "48 Franklin Place, Charleston, South Carolina 29401, USA"
+			}
+		],
+		"birthDate": "1985-06-12"
+	}
+}

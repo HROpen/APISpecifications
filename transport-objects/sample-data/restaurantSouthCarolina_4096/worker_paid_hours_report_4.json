@@ -1,0 +1,28 @@
+{
+	"worker_paid_hours_report": {
+		"RefId": "03051685-4f64-4215-aacf-62ce4df3c35d",
+		"senderId": "sc-sender-01",
+		"receiverId": "",
+		"workerRefId": "52c33882-1c49-423c-a18a-ff017782ab31",
+		"podURL": "https://data.sc-culinarychain.com/pod/cc-2024-01",
+		"workerId": {
+			"value": "EMP-8273",
+			"schemeId": "COMPANY_EMP_ID",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "Charleston Culinary Corp",
+			"description": "Internal employee identification number",
+			"schemeLink": "https://charlestonculinary.com/employee-id-scheme",
+			"agencyUri": "https://charlestonculinary.com"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2024-01-01T00:00:00Z",
+			"validTo": "2024-01-31T23:59:59Z"
+		},
+		"workedWeeks": 4,
+		"totalHoursPaid": 160,
+		"totalHoursWorked": 152,
+		"regularHoursWorked": 144,
+		"totalPremiumHours": 8,
+		"totalPaidLeaveHours": 8
+	}
+}

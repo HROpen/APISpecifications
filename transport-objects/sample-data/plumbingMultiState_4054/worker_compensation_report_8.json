@@ -1,0 +1,71 @@
+{
+	"worker_compensation_report": {
+		"RefId": "60915f12-bad5-4d45-826f-36554906bdc0",
+		"senderId": "multi-state-sender-01",
+		"receiverId": "",
+        "sendTo": "AR",
+		"workerRefId": "7c575fe5-7bb2-43c4-b312-23bad79e0bc7",
+		"podURL": "https://pod.example.com/reports/comp-2024-07",
+		"workerId": {
+			"value": "RP-472915",
+			"schemeId": "EmployeeNumber",
+			"schemeVersionId": "v2.1",
+			"schemeAgencyId": "AcmeHR",
+			"description": "Internal employee identifier",
+			"schemeLink": "https://example.com/schemes/employee-number",
+			"agencyUri": "https://acmehr.example.com"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2023-01-01T00:00:00Z",
+			"validTo": "2023-12-31T23:59:59Z"
+		},
+		"salaryAmount": {
+			"value": 59800,
+			"currencyCode": "USD"
+		},
+		"regularHourlyWagesAmount": {
+			"workedPayTypeCode": "BasePay",
+			"description": "Standard manufacturing hourly wage",
+			"workedPayAmount": {
+				"value": 28.75,
+				"currency": "USD"
+			}
+		},
+		"premiumHourlyWagesAmount": [
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Weekend overtime differential",
+				"workedPayAmount": {
+					"value": 43.13,
+					"currency": "USD"
+				}
+			},
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Holiday premium rate",
+				"workedPayAmount": {
+					"value": 50,
+					"currency": "USD"
+				}
+			}
+		],
+		"paidTimeOffAmount": [
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Observed national holidays",
+				"timeOffPayAmount": {
+					"value": 230,
+					"currency": "USD"
+				}
+			},
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Year-end company shutdown",
+				"timeOffPayAmount": {
+					"value": 460,
+					"currency": "USD"
+				}
+			}
+		]
+	}
+}

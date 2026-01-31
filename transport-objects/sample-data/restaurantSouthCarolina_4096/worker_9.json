@@ -1,0 +1,55 @@
+{
+	"worker": {
+		"RefId": "5aaee2fd-6eb6-468a-a10d-14e2537402c0",
+		"senderId": "sc-sender-01",
+		"receiverId": "",
+		"organizationRefId": "7224133c-19d7-4e61-b7de-94269129990e",
+		"podURL": "https://columbiadining-llc.com/pod.json",
+		"workerId": {
+			"value": "EMP-20240059",
+			"schemeId": "EmployeeID",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "GGI-HR",
+			"description": "Internal employee identification number",
+			"schemeLink": "https://schemes.example.org/employee-id",
+			"agencyUri": "https://ggi.example.org/hr"
+		},
+		"ssn": {
+			"value": "572-19-2837"
+		},
+		"name": {
+			"languageCode": "en-US",
+			"firstName": "Marlon",
+			"middleName": "River",
+			"family": "Duvall",
+			"previousLastName": ""
+		},
+		"physicalAddresses": [
+			{
+				"typeCode": "HOME",
+				"line": "245 Willow Cypress Rd",
+				"countryCode": "US",
+				"countrySubDivisions": [
+					{
+						"type": "state",
+						"value": "SC"
+					}
+				],
+				"city": "Columbia",
+				"postalCode": "29201",
+				"postOfficeBox": "PO Box 4832",
+				"geoLocation": {
+					"latitude": 34.0007,
+					"longitude": -81.0348,
+					"altitude": {
+						"value": 300,
+						"unitCode": "FOT"
+					},
+					"name": "home address"
+				},
+				"formattedAddress": "245 Willow Cypress Rd, Columbia, SC 29201, USA"
+			}
+		],
+		"birthDate": "1985-07-16"
+	}
+}

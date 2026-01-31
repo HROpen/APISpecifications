@@ -1,0 +1,55 @@
+{
+	"worker": {
+		"RefId": "91977f7e-c385-4859-872c-4b65087ae1e1",
+		"senderId": "ar-sender-01",
+		"receiverId": "",
+		"organizationRefId": "7015e59b-8d51-4e8d-b922-2fb7bd736963",
+		"podURL": "https://pod.arkansas.gov/documents/privacy-obligation-marisol-santiago",
+		"workerId": {
+			"value": "AGY-758390",
+			"schemeId": "ArkDHS-WorkID",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "Arkansas Department of Human Services",
+			"description": "Primary state agency worker identifier",
+			"schemeLink": "https://dhr.arkansas.gov/schemes/workerid",
+			"agencyUri": "https://arkansas.gov/departments/dhs"
+		},
+		"ssn": {
+			"value": "641380912"
+		},
+		"name": {
+			"languageCode": "en-US",
+			"firstName": "Marisol",
+			"middleName": "Yvette",
+			"family": "Santiago",
+			"previousLastName": ""
+		},
+		"physicalAddresses": [
+			{
+				"typeCode": "home",
+				"line": "412 Southern Oak Street",
+				"countryCode": "US",
+				"countrySubDivisions": [
+					{
+						"type": "state",
+						"value": "AR"
+					}
+				],
+				"city": "El Dorado",
+				"postalCode": "71730",
+				"postOfficeBox": "PO Box 847",
+				"geoLocation": {
+					"latitude": 33.209843,
+					"longitude": -92.666412,
+					"altitude": {
+						"value": 289,
+						"unitCode": "FOT"
+					},
+					"name": "Residence Coordinates"
+				},
+				"formattedAddress": "412 Southern Oak Street, El Dorado, AR 71730, USA"
+			}
+		],
+		"birthDate": "1978-11-23"
+	}
+}

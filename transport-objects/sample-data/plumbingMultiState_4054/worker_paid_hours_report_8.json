@@ -1,0 +1,29 @@
+{
+	"worker_paid_hours_report": {
+		"RefId": "40263750-339d-4ff3-9cf6-6b1b8edc8fd5",
+		"senderId": "multi-state-sender-01",
+		"receiverId": "",
+        "sendTo": "AR",
+		"workerRefId": "7c575fe5-7bb2-43c4-b312-23bad79e0bc7",
+		"podURL": "https://pods.greenvilleplasticsinc.com/worker/WKR-49302/pod",
+		"workerId": {
+			"value": "WKR-49302",
+			"schemeId": "NationalWorkerID",
+			"schemeVersionId": "3.2",
+			"schemeAgencyId": "NWI-Agency",
+			"description": "National worker identification code",
+			"schemeLink": "https://nwi.example.org/schemes/national-worker-id",
+			"agencyUri": "https://nwi.example.org"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2024-01-01T00:00:00Z",
+			"validTo": "2024-03-31T23:59:59Z"
+		},
+		"workedWeeks": 13,
+		"totalHoursPaid": 528,
+		"totalHoursWorked": 520,
+		"regularHoursWorked": 500,
+		"totalPremiumHours": 20,
+		"totalPaidLeaveHours": 8
+	}
+}

@@ -1,0 +1,62 @@
+{
+	"worker_compensation_report": {
+		"RefId": "38dde477-b1f7-4ab7-be94-abb06c79f0f3",
+		"senderId": "sc-sender-01",
+		"receiverId": "",
+		"workerRefId": "5aaee2fd-6eb6-468a-a10d-14e2537402c0",
+		"podURL": "https://portability.greenvillegourmet.example.org/pod/789",
+		"workerId": {
+			"value": "GG-EMP-0452",
+			"schemeId": "EmployeeNumber",
+			"schemeVersionId": "2.0",
+			"schemeAgencyId": "Greenville Gourmet Inc. HR",
+			"description": "Internal HR assigned employee number",
+			"schemeLink": "https://greenvillegourmet.example.org/docs/idscheme",
+			"agencyUri": "https://greenvillegourmet.example.org"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2023-01-01T00:00:00Z",
+			"validTo": "2023-12-31T23:59:59Z"
+		},
+		"salaryAmount": {
+			"value": 48000,
+			"currencyCode": "USD"
+		},
+		"regularHourlyWagesAmount": {
+			"workedPayTypeCode": "BasePay",
+			"description": "Standard hourly rate",
+			"workedPayAmount": {
+				"value": 15.75,
+				"currency": "USD"
+			}
+		},
+		"premiumHourlyWagesAmount": [
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Weekend shift differential",
+				"workedPayAmount": {
+					"value": 2.5,
+					"currency": "USD"
+				}
+			},
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Late-night shift differential",
+				"workedPayAmount": {
+					"value": 3,
+					"currency": "USD"
+				}
+			}
+		],
+		"paidTimeOffAmount": [
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Paid holiday leave",
+				"timeOffPayAmount": {
+					"value": 120,
+					"currency": "USD"
+				}
+			}
+		]
+	}
+}

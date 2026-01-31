@@ -1,0 +1,28 @@
+{
+	"worker_paid_hours_report": {
+		"RefId": "b3b00760-8bc1-4a24-8641-75e410004441",
+		"senderId": "sc-sender-01",
+		"receiverId": "",
+		"workerRefId": "a4817e24-dbeb-41ce-9c47-7d55e062a7db",
+		"podURL": "https://spartanburg-dining-llc.com/pods/9098",
+		"workerId": {
+			"value": "WX-472839",
+			"schemeId": "EMPID",
+			"schemeVersionId": "v1",
+			"schemeAgencyId": "SC Dept of Labor",
+			"description": "Employee unique identifier",
+			"schemeLink": "https://scdlr.gov/empid-scheme",
+			"agencyUri": "https://scdlr.gov"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2023-04-01T00:00:00Z",
+			"validTo": "2023-06-30T23:59:59Z"
+		},
+		"workedWeeks": 13,
+		"totalHoursPaid": 520,
+		"totalHoursWorked": 500,
+		"regularHoursWorked": 450,
+		"totalPremiumHours": 50,
+		"totalPaidLeaveHours": 20
+	}
+}

@@ -1,0 +1,70 @@
+{
+	"worker_compensation_report": {
+		"RefId": "1fbd9f2d-a9ad-45cf-924e-7d1a4f9b305d",
+		"senderId": "ar-sender-01",
+		"receiverId": "",
+		"workerRefId": "1485de19-1429-4c40-ac06-a4edb4d69685",
+		"podURL": "https://www.dol.arkansas.gov/pods/compensation/abcd1234",
+		"workerId": {
+			"value": "SA-AR-457922",
+			"schemeId": "StateEmployeeID",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "ArkansasDepartmentOfLabor",
+			"description": "State agency employee identification",
+			"schemeLink": "https://www.dol.arkansas.gov/employee-id",
+			"agencyUri": "https://www.dol.arkansas.gov"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2023-01-01T00:00:00Z",
+			"validTo": "2023-12-31T23:59:59Z"
+		},
+		"salaryAmount": {
+			"value": 58200,
+			"currencyCode": "USD"
+		},
+		"regularHourlyWagesAmount": {
+			"workedPayTypeCode": "BasePay",
+			"description": "Hourly base wage",
+			"workedPayAmount": {
+				"value": 28.99,
+				"currency": "USD"
+			}
+		},
+		"premiumHourlyWagesAmount": [
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Overtime premium",
+				"workedPayAmount": {
+					"value": 43.49,
+					"currency": "USD"
+				}
+			},
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Weekend premium",
+				"workedPayAmount": {
+					"value": 42,
+					"currency": "USD"
+				}
+			}
+		],
+		"paidTimeOffAmount": [
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Independence Day leave",
+				"timeOffPayAmount": {
+					"value": 250,
+					"currency": "USD"
+				}
+			},
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Christmas leave",
+				"timeOffPayAmount": {
+					"value": 300,
+					"currency": "USD"
+				}
+			}
+		]
+	}
+}

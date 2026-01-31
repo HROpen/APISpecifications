@@ -1,0 +1,70 @@
+{
+	"worker_compensation_report": {
+		"RefId": "f19e1790-5441-4aee-966f-df5dd7ba2fd4",
+		"senderId": "sc-sender-01",
+		"receiverId": "",
+		"workerRefId": "e6a47bcc-2a5f-4198-837c-b61b4c753ad6",
+		"podURL": "https://s3.example.com/pod/restaurant_chain_policy.pdf",
+		"workerId": {
+			"value": "987-65-4321",
+			"schemeId": "SSN",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "SSA",
+			"description": "Employee Social Security Number",
+			"schemeLink": "https://www.ssa.gov/ssnumber/",
+			"agencyUri": "https://www.ssa.gov/"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2023-01-01T00:00:00Z",
+			"validTo": "2023-12-31T23:59:59Z"
+		},
+		"salaryAmount": {
+			"value": 45000,
+			"currencyCode": "USD"
+		},
+		"regularHourlyWagesAmount": {
+			"workedPayTypeCode": "BasePay",
+			"description": "Standard hourly base rate",
+			"workedPayAmount": {
+				"value": 15,
+				"currency": "USD"
+			}
+		},
+		"premiumHourlyWagesAmount": [
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Overtime shift premium",
+				"workedPayAmount": {
+					"value": 22.5,
+					"currency": "USD"
+				}
+			},
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Holiday weekend premium",
+				"workedPayAmount": {
+					"value": 18.75,
+					"currency": "USD"
+				}
+			}
+		],
+		"paidTimeOffAmount": [
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Annual leave payout",
+				"timeOffPayAmount": {
+					"value": 1200,
+					"currency": "USD"
+				}
+			},
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Sick leave payout",
+				"timeOffPayAmount": {
+					"value": 800,
+					"currency": "USD"
+				}
+			}
+		]
+	}
+}

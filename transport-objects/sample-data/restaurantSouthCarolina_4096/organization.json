@@ -1,0 +1,73 @@
+{
+	"organization": {
+		"RefId": "7224133c-19d7-4e61-b7de-94269129990e",
+		"senderId": "sc-sender-01",
+		"receiverId": "",
+		"isMulti-state": false,
+		"organizationId": {
+			"value": "GCE123456",
+			"issuingAuthority": "South Carolina Secretary of State"
+		},
+		"taxIds": [
+			{
+				"value": "47-5123456",
+				"schemeId": "EIN",
+				"schemeVersionId": "1.0",
+				"schemeAgencyId": "IRS",
+				"description": "Employer Identification Number",
+				"schemeLink": "https://www.irs.gov/businesses/small-businesses-self-employed/employer-id-numbers",
+				"agencyUri": "https://www.irs.gov"
+			}
+		],
+		"industryIdentifiers": [
+			{
+				"value": "722513",
+				"schemeId": "NAICS",
+				"schemeVersionId": "2022",
+				"schemeAgencyId": "US Census Bureau",
+				"description": "Limited-Service Restaurants",
+				"schemeLink": "https://www.census.gov/naics/?58967?yearbck=2022",
+				"agencyUri": "https://www.census.gov"
+			}
+		],
+		"organizationActivity": [
+			{
+				"activityCode": [
+					"722513"
+				],
+				"description": {
+					"value": "Limited-Service Restaurants",
+					"languageCode": "en-US"
+				},
+				"percentage": 100
+			}
+		],
+		"tradeName": "Charleston Coastal Eats",
+		"physicalAddresses": [
+			{
+				"typeCode": "business",
+				"line": "124 Sea Breeze Avenue",
+				"countryCode": "US",
+				"countrySubDivisions": [
+					{
+						"type": "state",
+						"value": "SC"
+					}
+				],
+				"city": "Charleston",
+				"postalCode": "29401",
+				"postOfficeBox": "P.O. Box 5678",
+				"geoLocation": {
+					"latitude": 32.7765,
+					"longitude": -79.9311,
+					"altitude": {
+						"value": 15,
+						"unitCode": "FOT"
+					},
+					"name": "Main Office Coordinates"
+				},
+				"formattedAddress": "124 Sea Breeze Avenue, Charleston, SC 29401, USA"
+			}
+		]
+	}
+}

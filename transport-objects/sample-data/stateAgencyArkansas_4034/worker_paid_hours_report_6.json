@@ -1,0 +1,28 @@
+{
+	"worker_paid_hours_report": {
+		"RefId": "15ddb24e-6326-4b54-b108-03b4780dbabf",
+		"senderId": "ar-sender-01",
+		"receiverId": "",
+		"workerRefId": "f298bc7e-8409-41e1-bf1c-bff05edf4c8c",
+		"podURL": "https://pods.southark.gov/ARK-POD-4782",
+		"workerId": {
+			"value": "WK-89273",
+			"schemeId": "ARK-EMP-ID",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "AR-DHR",
+			"description": "Arkansas Employee Identification Number",
+			"schemeLink": "https://schemas.southark.gov/ark-emp-id",
+			"agencyUri": "https://dhr.southark.gov"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2023-01-01T00:00:00Z",
+			"validTo": "2023-03-31T23:59:59Z"
+		},
+		"workedWeeks": 13,
+		"totalHoursPaid": 520,
+		"totalHoursWorked": 500,
+		"regularHoursWorked": 450,
+		"totalPremiumHours": 50,
+		"totalPaidLeaveHours": 20
+	}
+}

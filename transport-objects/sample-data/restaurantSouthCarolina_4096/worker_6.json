@@ -1,0 +1,55 @@
+{
+	"worker": {
+		"RefId": "e1debfac-e06f-4507-a877-b16d3225a423",
+		"senderId": "sc-sender-01",
+		"receiverId": "",
+		"organizationRefId": "7224133c-19d7-4e61-b7de-94269129990e",
+		"podURL": "https://pod.example.com/privacy/abc123",
+		"workerId": {
+			"value": "EMP-20240056",
+			"schemeId": "EmployeeID",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "GGI-HR",
+			"description": "Internal employee identification number",
+			"schemeLink": "https://schemes.example.org/employee-id",
+			"agencyUri": "https://ggi.example.org/hr"
+		},
+		"ssn": {
+			"value": "845231790"
+		},
+		"name": {
+			"languageCode": "en-US",
+			"firstName": "Marisol",
+			"middleName": "Ana",
+			"family": "Vega",
+			"previousLastName": "Reyes"
+		},
+		"physicalAddresses": [
+			{
+				"typeCode": "home",
+				"line": "742 Blue Heron Drive",
+				"countryCode": "US",
+				"countrySubDivisions": [
+					{
+						"type": "state",
+						"value": "SC"
+					}
+				],
+				"city": "Spartanburg",
+				"postalCode": "29306",
+				"postOfficeBox": "PO Box 540",
+				"geoLocation": {
+					"latitude": 34.9486,
+					"longitude": -81.932,
+					"altitude": {
+						"value": 804,
+						"unitCode": "FOT"
+					},
+					"name": "Home Location"
+				},
+				"formattedAddress": "742 Blue Heron Drive, Spartanburg, SC 29306, USA"
+			}
+		],
+		"birthDate": "1985-07-23"
+	}
+}

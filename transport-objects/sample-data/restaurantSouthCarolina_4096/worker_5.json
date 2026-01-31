@@ -1,0 +1,55 @@
+{
+	"worker": {
+		"RefId": "46f78197-60e2-416a-9ccd-fd41b23eb9fb",
+		"senderId": "sc-sender-01",
+		"receiverId": "",
+		"organizationRefId": "7224133c-19d7-4e61-b7de-94269129990e",
+		"podURL": "https://example.org/pod/9934",
+		"workerId": {
+			"value": "EMP-20240055",
+			"schemeId": "EmployeeID",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "GGI-HR",
+			"description": "Internal employee identification number",
+			"schemeLink": "https://schemes.example.org/employee-id",
+			"agencyUri": "https://ggi.example.org/hr"
+		},
+		"ssn": {
+			"value": "584-27-3910"
+		},
+		"name": {
+			"languageCode": "en-US",
+			"firstName": "Imani",
+			"middleName": "Renee",
+			"family": "Washington",
+			"previousLastName": ""
+		},
+		"physicalAddresses": [
+			{
+				"typeCode": "home",
+				"line": "482 Palmetto Trace Road",
+				"countryCode": "US",
+				"countrySubDivisions": [
+					{
+						"type": "state",
+						"value": "SC"
+					}
+				],
+				"city": "Charleston",
+				"postalCode": "29401",
+				"postOfficeBox": "PO Box 1724",
+				"geoLocation": {
+					"latitude": 32.7765,
+					"longitude": -79.9311,
+					"altitude": {
+						"value": 15,
+						"unitCode": "FOT"
+					},
+					"name": "Office Location"
+				},
+				"formattedAddress": "482 Palmetto Trace Road, Charleston, SC 29401, USA"
+			}
+		],
+		"birthDate": "1988-06-14"
+	}
+}

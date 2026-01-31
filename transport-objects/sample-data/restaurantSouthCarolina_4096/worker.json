@@ -1,0 +1,55 @@
+{
+	"worker": {
+		"RefId": "47880365-a39c-4055-9400-894b652a575f",
+		"senderId": "sc-sender-01",
+		"receiverId": "",
+		"organizationRefId": "7224133c-19d7-4e61-b7de-94269129990e",
+		"podURL": "https://pod.greenvillegrille.example.org/doc/1.0",
+		"workerId": {
+			"value": "EMP-20240051",
+			"schemeId": "EmployeeID",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "GGI-HR",
+			"description": "Internal employee identification number",
+			"schemeLink": "https://schemes.example.org/employee-id",
+			"agencyUri": "https://ggi.example.org/hr"
+		},
+		"ssn": {
+			"value": "345678901"
+		},
+		"name": {
+			"languageCode": "en-US",
+			"firstName": "Marisol",
+			"middleName": "Jean",
+			"family": "Hernandez",
+			"previousLastName": ""
+		},
+		"physicalAddresses": [
+			{
+				"typeCode": "home",
+				"line": "4825 Brookmeade Drive",
+				"countryCode": "US",
+				"countrySubDivisions": [
+					{
+						"type": "state",
+						"value": "SC"
+					}
+				],
+				"city": "Greenville",
+				"postalCode": "29615",
+				"postOfficeBox": "PO Box 1034",
+				"geoLocation": {
+					"latitude": 34.8526,
+					"longitude": -82.394,
+					"altitude": {
+						"value": 650,
+						"unitCode": "FOT"
+					},
+					"name": "Residence Elevation"
+				},
+				"formattedAddress": "4825 Brookmeade Drive, Greenville, SC 29615, USA"
+			}
+		],
+		"birthDate": "1987-06-14"
+	}
+}

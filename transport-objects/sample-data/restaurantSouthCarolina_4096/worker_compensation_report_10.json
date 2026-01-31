@@ -1,0 +1,70 @@
+{
+	"worker_compensation_report": {
+		"RefId": "53b6b353-ff5b-496c-906c-98ca87874b54",
+		"senderId": "sc-sender-01",
+		"receiverId": "",
+		"workerRefId": "3fe4df91-68fa-414b-a6b2-18f6d47eb17a",
+		"podURL": "https://www.greenvillefoodserviceinc.com/pod/12345",
+		"workerId": {
+			"value": "WKR-100234",
+			"schemeId": "SSN",
+			"schemeVersionId": "v1",
+			"schemeAgencyId": "SSA",
+			"description": "U.S. Social Security Number",
+			"schemeLink": "https://www.ssa.gov/ssnumber/",
+			"agencyUri": "https://www.ssa.gov/"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2024-01-01T00:00:00Z",
+			"validTo": "2024-03-31T23:59:59Z"
+		},
+		"salaryAmount": {
+			"value": 45000,
+			"currencyCode": "USD"
+		},
+		"regularHourlyWagesAmount": {
+			"workedPayTypeCode": "BasePay",
+			"description": "Standard hourly compensation",
+			"workedPayAmount": {
+				"value": 15.5,
+				"currency": "USD"
+			}
+		},
+		"premiumHourlyWagesAmount": [
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Holiday shift premium",
+				"workedPayAmount": {
+					"value": 22.5,
+					"currency": "USD"
+				}
+			},
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Weekend shift premium",
+				"workedPayAmount": {
+					"value": 18,
+					"currency": "USD"
+				}
+			}
+		],
+		"paidTimeOffAmount": [
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Independence Day holiday pay",
+				"timeOffPayAmount": {
+					"value": 120,
+					"currency": "USD"
+				}
+			},
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Thanksgiving holiday pay",
+				"timeOffPayAmount": {
+					"value": 200,
+					"currency": "USD"
+				}
+			}
+		]
+	}
+}

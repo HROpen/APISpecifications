@@ -1,0 +1,71 @@
+{
+	"worker_compensation_report": {
+		"RefId": "8ede3050-25f1-4fea-b408-af571a7d14ac",
+		"senderId": "multi-state-sender-01",
+		"receiverId": "",
+        "sendTo": "AR",
+		"workerRefId": "e375190f-7bac-43c8-a84a-683cee8a607c",
+		"podURL": "https://data.example.com/pod/58e2f7a1",
+		"workerId": {
+			"value": "E-92347",
+			"schemeId": "EmployeeID",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "ACME-ORG",
+			"description": "Internal employee identification number",
+			"schemeLink": "https://standards.example.org/schemes/employeeid",
+			"agencyUri": "https://acme.example.com/employeeid"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2023-01-01T00:00:00Z",
+			"validTo": "2023-12-31T23:59:59Z"
+		},
+		"salaryAmount": {
+			"value": 65000,
+			"currencyCode": "USD"
+		},
+		"regularHourlyWagesAmount": {
+			"workedPayTypeCode": "BasePay",
+			"description": "Standard hourly wage",
+			"workedPayAmount": {
+				"value": 28.5,
+				"currency": "USD"
+			}
+		},
+		"premiumHourlyWagesAmount": [
+			{
+				"PayTypeCode": "Overtime",
+				"description": "Time-and-a-half pay for overtime hours",
+				"workedPayAmount": {
+					"value": 42.75,
+					"currency": "USD"
+				}
+			},
+			{
+				"PayTypeCode": "ShiftDifferential",
+				"description": "Additional pay for second shift hours",
+				"workedPayAmount": {
+					"value": 30,
+					"currency": "USD"
+				}
+			}
+		],
+		"paidTimeOffAmount": [
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Year-end holiday",
+				"timeOffPayAmount": {
+					"value": 1200,
+					"currency": "USD"
+				}
+			},
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Mid-year holiday",
+				"timeOffPayAmount": {
+					"value": 800,
+					"currency": "USD"
+				}
+			}
+		]
+	}
+}

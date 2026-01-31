@@ -1,0 +1,70 @@
+{
+	"worker_compensation_report": {
+		"RefId": "4ccfbf94-0249-4ec1-8009-f4b2e38a653f",
+		"senderId": "ar-sender-01",
+		"receiverId": "",
+		"workerRefId": "629b95ed-c872-4627-8686-efabb85cc64f",
+		"podURL": "https://southarkansasagency.gov/pods/0eaf2cd1-e06a-4bcf-ae19-89733370c236.xml",
+		"workerId": {
+			"value": "WKR-AR-0007",
+			"schemeId": "StateEmployeeID",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "ADA-DFA",
+			"description": "Arkansas State Employee Identification Number",
+			"schemeLink": "https://dfa.arkansas.gov/id-schemes/state-employee-id",
+			"agencyUri": "https://dfa.arkansas.gov"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2023-01-01T00:00:00Z",
+			"validTo": "2023-12-31T23:59:59Z"
+		},
+		"salaryAmount": {
+			"value": 55000,
+			"currencyCode": "USD"
+		},
+		"regularHourlyWagesAmount": {
+			"workedPayTypeCode": "BasePay",
+			"description": "Standard base hourly rate",
+			"workedPayAmount": {
+				"value": 26.5,
+				"currency": "USD"
+			}
+		},
+		"premiumHourlyWagesAmount": [
+			{
+				"PayTypeCode": "OvertimePay",
+				"description": "Overtime premium hourly rate",
+				"workedPayAmount": {
+					"value": 13.25,
+					"currency": "USD"
+				}
+			},
+			{
+				"PayTypeCode": "NightShiftPay",
+				"description": "Night shift premium hourly rate",
+				"workedPayAmount": {
+					"value": 5,
+					"currency": "USD"
+				}
+			}
+		],
+		"paidTimeOffAmount": [
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Observed state holidays",
+				"timeOffPayAmount": {
+					"value": 1200,
+					"currency": "USD"
+				}
+			},
+			{
+				"timeOffPayType": "Sick",
+				"description": "Paid sick leave",
+				"timeOffPayAmount": {
+					"value": 800,
+					"currency": "USD"
+				}
+			}
+		]
+	}
+}

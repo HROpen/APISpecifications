@@ -1,0 +1,29 @@
+{
+	"worker_paid_hours_report": {
+		"RefId": "e661ad6a-4303-4321-93b7-e21fec96f502",
+		"senderId": "multi-state-sender-01",
+		"receiverId": "",
+        "sendTo": "SC",
+		"workerRefId": "0caa64a9-64a5-49e5-86c9-2eeb4bdf7a1b",
+		"podURL": "https://data.greenvilleplasticsinc.com/pod/doc-092837",
+		"workerId": {
+			"value": "WSC-092837",
+			"schemeId": "EmployeeID",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "InternalHR",
+			"description": "Internal company employee identifier",
+			"schemeLink": "https://schemas.greenvilleplasticsinc.com/employeeid",
+			"agencyUri": "https://hr.greenvilleplasticsinc.com"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2024-01-01T00:00:00Z",
+			"validTo": "2024-03-31T23:59:59Z"
+		},
+		"workedWeeks": 13,
+		"totalHoursPaid": 520,
+		"totalHoursWorked": 500,
+		"regularHoursWorked": 450,
+		"totalPremiumHours": 50,
+		"totalPaidLeaveHours": 20
+	}
+}

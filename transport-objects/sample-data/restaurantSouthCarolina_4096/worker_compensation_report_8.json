@@ -1,0 +1,70 @@
+{
+	"worker_compensation_report": {
+		"RefId": "fc10db9a-907b-4478-beda-8f5048efe38a",
+		"senderId": "sc-sender-01",
+		"receiverId": "",
+		"workerRefId": "cfaa68b6-3523-4c09-a866-212251f3e5af",
+		"podURL": "https://greenvilledining-llc.example.com/pods/EMP-123456",
+		"workerId": {
+			"value": "EMP-123456",
+			"schemeId": "SC-EMPLOYER-ID",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "SC DOL",
+			"description": "South Carolina Employer Identification",
+			"schemeLink": "https://dol.sc.gov/id-schemes/emp",
+			"agencyUri": "https://dol.sc.gov"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2023-01-01T00:00:00Z",
+			"validTo": "2023-12-31T23:59:59Z"
+		},
+		"salaryAmount": {
+			"value": 34800,
+			"currencyCode": "USD"
+		},
+		"regularHourlyWagesAmount": {
+			"workedPayTypeCode": "BasePay",
+			"description": "Standard hourly rate",
+			"workedPayAmount": {
+				"value": 15.5,
+				"currency": "USD"
+			}
+		},
+		"premiumHourlyWagesAmount": [
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Weekend differential",
+				"workedPayAmount": {
+					"value": 20,
+					"currency": "USD"
+				}
+			},
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Holiday overtime rate",
+				"workedPayAmount": {
+					"value": 23.25,
+					"currency": "USD"
+				}
+			}
+		],
+		"paidTimeOffAmount": [
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Christmas Day holiday pay",
+				"timeOffPayAmount": {
+					"value": 124,
+					"currency": "USD"
+				}
+			},
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Labor Day holiday pay",
+				"timeOffPayAmount": {
+					"value": 120.5,
+					"currency": "USD"
+				}
+			}
+		]
+	}
+}

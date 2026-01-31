@@ -1,0 +1,55 @@
+{
+	"worker": {
+		"RefId": "e6a47bcc-2a5f-4198-837c-b61b4c753ad6",
+		"senderId": "sc-sender-01",
+		"receiverId": "",
+		"organizationRefId": "7224133c-19d7-4e61-b7de-94269129990e",
+		"podURL": "https://pod.example.org/privdocs/abc123",
+		"workerId": {
+			"value": "EMP-20240053",
+			"schemeId": "EmployeeID",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "GGI-HR",
+			"description": "Internal employee identification number",
+			"schemeLink": "https://schemes.example.org/employee-id",
+			"agencyUri": "https://ggi.example.org/hr"
+		},
+		"ssn": {
+			"value": "285673091"
+		},
+		"name": {
+			"languageCode": "en-US",
+			"firstName": "Marisol",
+			"middleName": "Elena",
+			"family": "Gonzalez",
+			"previousLastName": ""
+		},
+		"physicalAddresses": [
+			{
+				"typeCode": "home",
+				"line": "742 Walnut Grove Drive",
+				"countryCode": "US",
+				"countrySubDivisions": [
+					{
+						"type": "state",
+						"value": "SC"
+					}
+				],
+				"city": "Columbia",
+				"postalCode": "29204",
+				"postOfficeBox": "PO Box 1234",
+				"geoLocation": {
+					"latitude": 34.0007,
+					"longitude": -81.0348,
+					"altitude": {
+						"value": 300,
+						"unitCode": "FOT"
+					},
+					"name": "Home Coordinates"
+				},
+				"formattedAddress": "742 Walnut Grove Drive, Columbia, SC 29204, USA"
+			}
+		],
+		"birthDate": "1987-04-12"
+	}
+}

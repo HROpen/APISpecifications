@@ -1,0 +1,20 @@
+{
+	"job": {
+		"RefId": "7ad3c140-257f-4207-9721-b6bc2c02e6ed",
+		"senderId": "ar-sender-01",
+		"receiverId": "",
+		"organizationRefId": "7015e59b-8d51-4e8d-b922-2fb7bd736963",
+		"organizationId": "SA-AR-001",
+		"jobId": "HS-HSS-J1001",
+		"title": "Medical and Health Services Manager",
+		"jobDuties": "Plan, direct, and coordinate medical and health services in South Arkansas; develop policies, oversee staff, and ensure compliance with state regulations.",
+		"socInfo": [
+			{
+				"classificationSys": "1",
+				"assigningEntity": "2",
+				"socCodeValue": "11-9111"
+			}
+		]
+	}
+}
+

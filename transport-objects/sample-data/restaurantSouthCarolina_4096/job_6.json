@@ -1,0 +1,14 @@
+{
+	"job": {
+		"RefId": "7281ef71-4c3c-491e-96ff-a17c6b293a66",
+		"senderId": "sc-sender-01",
+		"receiverId": "",
+		"organizationRefId": "7224133c-19d7-4e61-b7de-94269129990e",
+		"organizationId": "GCE123456",
+		"jobId": "JOB-00123",
+		"title": "Bartender",
+		"jobDuties": "Create drink recipes; Mix ingredients, such as liquor, soda, water, sugar, and bitters, to prepare cocktails and other drinks; Order or requisition liquors and supplies; Plan bar menus.",
+		"socInfo": [
+		]
+	}
+}

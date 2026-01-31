@@ -1,0 +1,70 @@
+{
+	"worker_compensation_report": {
+		"RefId": "06df5d65-9dd9-4814-b750-c2808b1edabe",
+		"senderId": "ar-sender-01",
+		"receiverId": "",
+		"workerRefId": "f298bc7e-8409-41e1-bf1c-bff05edf4c8c",
+		"podURL": "https://southarkansas.gov/pods/compensation/RC-2024.pdf",
+		"workerId": {
+			"value": "SAE-20240123",
+			"schemeId": "StateAgencyID",
+			"schemeVersionId": "v1.2",
+			"schemeAgencyId": "SouthArkansasSA",
+			"description": "Identifier assigned by South Arkansas State Agency",
+			"schemeLink": "https://southarkansas.gov/idschemes/StateAgencyID",
+			"agencyUri": "https://southarkansas.gov"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2024-01-01T00:00:00Z",
+			"validTo": "2024-12-31T23:59:59Z"
+		},
+		"salaryAmount": {
+			"value": 55000,
+			"currencyCode": "USD"
+		},
+		"regularHourlyWagesAmount": {
+			"workedPayTypeCode": "BasePay",
+			"description": "Standard hourly rate",
+			"workedPayAmount": {
+				"value": 25.75,
+				"currency": "USD"
+			}
+		},
+		"premiumHourlyWagesAmount": [
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Overtime pay",
+				"workedPayAmount": {
+					"value": 38.63,
+					"currency": "USD"
+				}
+			},
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Weekend bonus rate",
+				"workedPayAmount": {
+					"value": 30.86,
+					"currency": "USD"
+				}
+			}
+		],
+		"paidTimeOffAmount": [
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Independence Day holiday pay",
+				"timeOffPayAmount": {
+					"value": 206,
+					"currency": "USD"
+				}
+			},
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Christmas holiday pay",
+				"timeOffPayAmount": {
+					"value": 206,
+					"currency": "USD"
+				}
+			}
+		]
+	}
+}

@@ -1,0 +1,56 @@
+{
+	"worker": {
+		"RefId": "7c575fe5-7bb2-43c4-b312-23bad79e0bc7",
+		"senderId": "multi-state-sender-01",
+		"receiverId": "",
+        "sendTo": "AR",
+		"organizationRefId": "a2660567-c84b-49dc-b4c3-7dbb51e2404b",
+		"podURL": "http://example.com/pods/employee-privacy-v1",
+		"workerId": {
+			"value": "EMP-2024-0458",
+			"schemeId": "EMP",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "Greenville Plumbing Supplies Inc HR",
+			"description": "Internal employee identifier",
+			"schemeLink": "https://greenville-plumbing-supplies-inc.example.com/ids/EMP",
+			"agencyUri": "https://greenville-plumbing-supplies-inc.example.com"
+		},
+		"ssn": {
+			"value": "539274816"
+		},
+		"name": {
+			"languageCode": "en-US",
+			"firstName": "Seraphina",
+			"middleName": "Odette",
+			"family": "Golightly",
+			"previousLastName": "Langdon"
+		},
+		"physicalAddresses": [
+			{
+				"typeCode": "home",
+				"line": "4722 Holly Springs Road",
+				"countryCode": "US",
+				"countrySubDivisions": [
+					{
+						"type": "state",
+						"value": "SC"
+					}
+				],
+				"city": "Greenville",
+				"postalCode": "29607",
+				"postOfficeBox": "PO Box 1543",
+				"geoLocation": {
+					"latitude": 34.8526,
+					"longitude": -82.394,
+					"altitude": {
+						"value": 100,
+						"unitCode": "FOT"
+					},
+					"name": "Home Residence"
+				},
+				"formattedAddress": "4722 Holly Springs Road, Greenville, SC 29607, USA"
+			}
+		],
+		"birthDate": "1986-04-19"
+	}
+}

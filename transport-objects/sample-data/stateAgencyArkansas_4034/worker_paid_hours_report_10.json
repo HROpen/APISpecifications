@@ -1,0 +1,28 @@
+{
+	"worker_paid_hours_report": {
+		"RefId": "38961f37-fba8-4a94-a167-157a86a13e5f",
+		"senderId": "ar-sender-01",
+		"receiverId": "",
+		"workerRefId": "91977f7e-c385-4859-872c-4b65087ae1e1",
+		"podURL": "https://pods.southarkansas.gov/PSA/EMP-14789",
+		"workerId": {
+			"value": "EMP-14789",
+			"schemeId": "ARK-EMP",
+			"schemeVersionId": "1.1",
+			"schemeAgencyId": "ARStateAgency",
+			"description": "Arkansas State Agency Employee Identifier",
+			"schemeLink": "https://southarkansas.gov/schemes/ark-emp",
+			"agencyUri": "https://southarkansas.gov"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2023-01-01T00:00:00Z",
+			"validTo": "2023-03-31T23:59:59Z"
+		},
+		"workedWeeks": 13,
+		"totalHoursPaid": 536,
+		"totalHoursWorked": 520,
+		"regularHoursWorked": 510,
+		"totalPremiumHours": 10,
+		"totalPaidLeaveHours": 16
+	}
+}

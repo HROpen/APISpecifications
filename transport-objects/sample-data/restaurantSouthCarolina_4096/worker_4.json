@@ -1,0 +1,55 @@
+{
+	"worker": {
+		"RefId": "52c33882-1c49-423c-a18a-ff017782ab31",
+		"senderId": "sc-sender-01",
+		"receiverId": "",
+		"organizationRefId": "7224133c-19d7-4e61-b7de-94269129990e",
+		"podURL": "https://www.greenvillerestaurants.com/privacy/pod.pdf",
+		"workerId": {
+			"value": "EMP-20240054",
+			"schemeId": "EmployeeID",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "GGI-HR",
+			"description": "Internal employee identification number",
+			"schemeLink": "https://schemes.example.org/employee-id",
+			"agencyUri": "https://ggi.example.org/hr"
+		},
+		"ssn": {
+			"value": "742-85-9102"
+		},
+		"name": {
+			"languageCode": "en-US",
+			"firstName": "Adamma",
+			"middleName": "Ifunanya",
+			"family": "Nwafor",
+			"previousLastName": "Okoro"
+		},
+		"physicalAddresses": [
+			{
+				"typeCode": "home",
+				"line": "205 Cedar Street",
+				"countryCode": "US",
+				"countrySubDivisions": [
+					{
+						"type": "state",
+						"value": "SC"
+					}
+				],
+				"city": "Greenville",
+				"postalCode": "29601",
+				"postOfficeBox": "PO Box 345",
+				"geoLocation": {
+					"latitude": 34.8526,
+					"longitude": -82.394,
+					"altitude": {
+						"value": 682,
+						"unitCode": "FOT"
+					},
+					"name": "Home coordinates"
+				},
+				"formattedAddress": "205 Cedar Street, Greenville, SC 29601, USA"
+			}
+		],
+		"birthDate": "2089-07-16"
+	}
+}

@@ -1,0 +1,71 @@
+{
+	"worker_compensation_report": {
+		"RefId": "daac18b0-dbbc-4380-957b-a270ba4f3eef",
+		"senderId": "multi-state-sender-01",
+		"receiverId": "",
+        "sendTo": "AR",
+		"workerRefId": "55178b1e-bf3a-4ede-93a4-d4d508606b66",
+		"podURL": "https://greenvilleplasticsinc.example.org/pods/comp-report/130171bf-1cba-4927-9961-4509608b1a13",
+		"workerId": {
+			"value": "PLB9123456",
+			"schemeId": "PLUMBID",
+			"schemeVersionId": "2.1",
+			"schemeAgencyId": "SC-Workforce",
+			"description": "State plumbing corp worker identifier",
+			"schemeLink": "https://standards.example.org/schemes/plumbid",
+			"agencyUri": "https://sc.gov/workforce"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2023-01-01T00:00:00Z",
+			"validTo": "2023-12-31T23:59:59Z"
+		},
+		"salaryAmount": {
+			"value": 55000,
+			"currencyCode": "USD"
+		},
+		"regularHourlyWagesAmount": {
+			"workedPayTypeCode": "BasePay",
+			"description": "Hourly base wage",
+			"workedPayAmount": {
+				"value": 27.5,
+				"currency": "USD"
+			}
+		},
+		"premiumHourlyWagesAmount": [
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Overtime premium",
+				"workedPayAmount": {
+					"value": 41.25,
+					"currency": "USD"
+				}
+			},
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Holiday work premium",
+				"workedPayAmount": {
+					"value": 55,
+					"currency": "USD"
+				}
+			}
+		],
+		"paidTimeOffAmount": [
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Year-end holiday compensation",
+				"timeOffPayAmount": {
+					"value": 1200,
+					"currency": "USD"
+				}
+			},
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Independence Day compensation",
+				"timeOffPayAmount": {
+					"value": 300,
+					"currency": "USD"
+				}
+			}
+		]
+	}
+}

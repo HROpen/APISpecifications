@@ -1,0 +1,28 @@
+{
+	"worker_paid_hours_report": {
+		"RefId": "f8e21d59-a4dd-4e3c-af7a-53da9aab0ed2",
+		"senderId": "ar-sender-01",
+		"receiverId": "",
+		"workerRefId": "e74e91b9-515f-4039-b3ed-17e8025e7817",
+		"podURL": "https://pods.state.ar.gov/pods/37829",
+		"workerId": {
+			"value": "AR-SEP-48302",
+			"schemeId": "StateEmployeeNumber",
+			"schemeVersionId": "2021.1",
+			"schemeAgencyId": "Arkansas Office of Personnel Management",
+			"description": "State employee identification number",
+			"schemeLink": "https://id.arkansas.gov/employee_numbers",
+			"agencyUri": "https://arpopm.arkansas.gov"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2023-01-01T00:00:00Z",
+			"validTo": "2023-03-31T23:59:59Z"
+		},
+		"workedWeeks": 13,
+		"totalHoursPaid": 520,
+		"totalHoursWorked": 480,
+		"regularHoursWorked": 400,
+		"totalPremiumHours": 80,
+		"totalPaidLeaveHours": 40
+	}
+}

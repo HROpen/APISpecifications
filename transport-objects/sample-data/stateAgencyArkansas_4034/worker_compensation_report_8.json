@@ -1,0 +1,70 @@
+{
+	"worker_compensation_report": {
+		"RefId": "05ce17a7-8a94-40a6-b6d7-9735d7684541",
+		"senderId": "ar-sender-01",
+		"receiverId": "",
+		"workerRefId": "e74e91b9-515f-4039-b3ed-17e8025e7817",
+		"podURL": "https://sdop.example.gov/pods/12345",
+		"workerId": {
+			"value": "W-20230908-8347",
+			"schemeId": "SSN",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "SSA",
+			"description": "Social Security Number for identity verification",
+			"schemeLink": "https://www.ssa.gov/ssnumber/",
+			"agencyUri": "https://api.ssa.gov"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2023-01-01T00:00:00Z",
+			"validTo": "2023-12-31T23:59:59Z"
+		},
+		"salaryAmount": {
+			"value": 59000.5,
+			"currencyCode": "USD"
+		},
+		"regularHourlyWagesAmount": {
+			"workedPayTypeCode": "BasePay",
+			"description": "State employee base hourly wage",
+			"workedPayAmount": {
+				"value": 28.5,
+				"currency": "USD"
+			}
+		},
+		"premiumHourlyWagesAmount": [
+			{
+				"PayTypeCode": "HolidayPremium",
+				"description": "Premium for working state holidays",
+				"workedPayAmount": {
+					"value": 42.75,
+					"currency": "USD"
+				}
+			},
+			{
+				"PayTypeCode": "HazardPay",
+				"description": "Premium for hazardous duty hours",
+				"workedPayAmount": {
+					"value": 35,
+					"currency": "USD"
+				}
+			}
+		],
+		"paidTimeOffAmount": [
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Compensation for observing federal holidays",
+				"timeOffPayAmount": {
+					"value": 228,
+					"currency": "USD"
+				}
+			},
+			{
+				"timeOffPayType": "Sick",
+				"description": "Sick leave compensation",
+				"timeOffPayAmount": {
+					"value": 150,
+					"currency": "USD"
+				}
+			}
+		]
+	}
+}

@@ -1,0 +1,63 @@
+{
+	"worker_compensation_report": {
+		"RefId": "28ff8756-7c0a-4a4b-ba56-8748e1023179",
+		"senderId": "multi-state-sender-01",
+		"receiverId": "",
+        "sendTo": "SC",
+		"workerRefId": "79ff02b0-d52f-44b7-a18d-c50c704f30ba",
+		"podURL": "https://www.greenvilleplastics.com/pod/alpha-2023",
+		"workerId": {
+			"value": "WP-472839",
+			"schemeId": "InternalEmployeeNumber",
+			"schemeVersionId": "v2.1",
+			"schemeAgencyId": "GreenvillePlasticsHR",
+			"description": "Internal employee identification number",
+			"schemeLink": "https://www.greenvilleplastics.com/standards/employee-id",
+			"agencyUri": "https://www.greenvilleplastics.com/hr"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2023-01-01T00:00:00Z",
+			"validTo": "2023-12-31T23:59:59Z"
+		},
+		"salaryAmount": {
+			"value": 58000,
+			"currencyCode": "USD"
+		},
+		"regularHourlyWagesAmount": {
+			"workedPayTypeCode": "BasePay",
+			"description": "Standard hourly rate",
+			"workedPayAmount": {
+				"value": 28.75,
+				"currency": "USD"
+			}
+		},
+		"premiumHourlyWagesAmount": [
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Night shift differential",
+				"workedPayAmount": {
+					"value": 3.5,
+					"currency": "USD"
+				}
+			},
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Safety incentive bonus",
+				"workedPayAmount": {
+					"value": 2,
+					"currency": "USD"
+				}
+			}
+		],
+		"paidTimeOffAmount": [
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Veterans Day paid holiday",
+				"timeOffPayAmount": {
+					"value": 8,
+					"currency": "USD"
+				}
+			}
+		]
+	}
+}

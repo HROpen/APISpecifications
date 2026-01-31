@@ -1,0 +1,56 @@
+{
+	"worker": {
+		"RefId": "e375190f-7bac-43c8-a84a-683cee8a607c",
+		"senderId": "multi-state-sender-01",
+		"receiverId": "",
+        "sendTo": "AR",
+		"organizationRefId": "a2660567-c84b-49dc-b4c3-7dbb51e2404b",
+		"podURL": "https://privacy.example.org/pods/worker/754839206",
+		"workerId": {
+			"value": "EMP-2024-0459",
+			"schemeId": "EMP",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "Greenville Plumbing Supplies Inc HR",
+			"description": "Internal employee identifier",
+			"schemeLink": "https://greenville-plumbing-supplies-inc.example.com/ids/EMP",
+			"agencyUri": "https://greenville-plumbing-supplies-inc.example.com"
+		},
+		"ssn": {
+			"value": "754839206"
+		},
+		"name": {
+			"languageCode": "en-US",
+			"firstName": "Eulalia",
+			"middleName": "Olivia",
+			"family": "Baxter",
+			"previousLastName": "Montgomery"
+		},
+		"physicalAddresses": [
+			{
+				"typeCode": "home",
+				"line": "312 Birchwood Drive Apt 4B",
+				"countryCode": "US",
+				"countrySubDivisions": [
+					{
+						"type": "state",
+						"value": "SC"
+					}
+				],
+				"city": "Greenville",
+				"postalCode": "29607",
+				"postOfficeBox": "",
+				"geoLocation": {
+					"latitude": 34.8526,
+					"longitude": -82.394,
+					"altitude": {
+						"value": 925,
+						"unitCode": "FOT"
+					},
+					"name": "Home location"
+				},
+				"formattedAddress": "312 Birchwood Drive, Apt 4B, Greenville, SC 29607, US"
+			}
+		],
+		"birthDate": "1987-11-23"
+	}
+}

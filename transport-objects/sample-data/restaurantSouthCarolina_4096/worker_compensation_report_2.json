@@ -1,0 +1,70 @@
+{
+	"worker_compensation_report": {
+		"RefId": "5051bd5e-f5cf-4043-bbe2-b8120814b965",
+		"senderId": "sc-sender-01",
+		"receiverId": "",
+		"workerRefId": "a4817e24-dbeb-41ce-9c47-7d55e062a7db",
+		"podURL": "https://southernbitesinc.com/pods/wc_report_2023.pdf",
+		"workerId": {
+			"value": "WKR-100239",
+			"schemeId": "LocalWorkerID",
+			"schemeVersionId": "v1.0",
+			"schemeAgencyId": "SouthernBitesHR",
+			"description": "Internal worker identification number",
+			"schemeLink": "https://southernbitesinc.com/id-scheme",
+			"agencyUri": "https://southernbitesinc.com/hr-agency"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2023-01-01T00:00:00Z",
+			"validTo": "2023-12-31T23:59:59Z"
+		},
+		"salaryAmount": {
+			"value": 36000,
+			"currencyCode": "USD"
+		},
+		"regularHourlyWagesAmount": {
+			"workedPayTypeCode": "BasePay",
+			"description": "Standard hourly wage",
+			"workedPayAmount": {
+				"value": 18.25,
+				"currency": "USD"
+			}
+		},
+		"premiumHourlyWagesAmount": [
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Holiday premium hourly pay",
+				"workedPayAmount": {
+					"value": 27.38,
+					"currency": "USD"
+				}
+			},
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Overtime premium hourly pay",
+				"workedPayAmount": {
+					"value": 27,
+					"currency": "USD"
+				}
+			}
+		],
+		"paidTimeOffAmount": [
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Christmas holiday pay",
+				"timeOffPayAmount": {
+					"value": 146,
+					"currency": "USD"
+				}
+			},
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Thanksgiving holiday pay",
+				"timeOffPayAmount": {
+					"value": 182.5,
+					"currency": "USD"
+				}
+			}
+		]
+	}
+}

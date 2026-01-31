@@ -1,0 +1,70 @@
+{
+	"worker_compensation_report": {
+		"RefId": "1530e53c-3c6f-4b1c-b829-d2ed5baad511",
+		"senderId": "ar-sender-01",
+		"receiverId": "",
+		"workerRefId": "3056f6e7-5039-451d-b056-98dfc1fb1f18",
+		"podURL": "https://pod.arkansas.gov/pods/7f8e5c3a",
+		"workerId": {
+			"value": "SPY-584-2R1",
+			"schemeId": "StatePayrollNumber",
+			"schemeVersionId": "2.1",
+			"schemeAgencyId": "ArkansasDepartmentOfFinance",
+			"description": "State payroll identification number",
+			"schemeLink": "https://portal.arkansas.gov/identification-schemes/StatePayrollNumber",
+			"agencyUri": "https://portal.arkansas.gov"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2023-01-01T00:00:00Z",
+			"validTo": "2023-12-31T23:59:59Z"
+		},
+		"salaryAmount": {
+			"value": 55000,
+			"currencyCode": "USD"
+		},
+		"regularHourlyWagesAmount": {
+			"workedPayTypeCode": "BasePay",
+			"description": "Standard hourly rate",
+			"workedPayAmount": {
+				"value": 26.44,
+				"currency": "USD"
+			}
+		},
+		"premiumHourlyWagesAmount": [
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Overtime pay",
+				"workedPayAmount": {
+					"value": 39.66,
+					"currency": "USD"
+				}
+			},
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Holiday overtime pay",
+				"workedPayAmount": {
+					"value": 52.88,
+					"currency": "USD"
+				}
+			}
+		],
+		"paidTimeOffAmount": [
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Annual leave payout",
+				"timeOffPayAmount": {
+					"value": 2115.2,
+					"currency": "USD"
+				}
+			},
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Compensatory holiday payout",
+				"timeOffPayAmount": {
+					"value": 1057.6,
+					"currency": "USD"
+				}
+			}
+		]
+	}
+}

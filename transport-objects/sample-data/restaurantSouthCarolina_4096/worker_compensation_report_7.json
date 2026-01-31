@@ -1,0 +1,70 @@
+{
+	"worker_compensation_report": {
+		"RefId": "b4e8051f-1f77-4bf5-83af-aad9b4ed3d57",
+		"senderId": "sc-sender-01",
+		"receiverId": "",
+		"workerRefId": "93371d68-1684-41d3-96cb-e783ee1041f9",
+		"podURL": "https://greenville-dining-llc.com/pods/pod-ab12cd34",
+		"workerId": {
+			"value": "WKR-20394",
+			"schemeId": "LocalEmpID",
+			"schemeVersionId": "v1.0",
+			"schemeAgencyId": "SouthCarolinaDeptLabor",
+			"description": "Primary employee identifier assigned by Greenville Dining LLC",
+			"schemeLink": "https://scdlr.gov/identifiers/LocalEmpID",
+			"agencyUri": "https://scdlr.gov"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2023-01-01T00:00:00Z",
+			"validTo": "2023-12-31T23:59:59Z"
+		},
+		"salaryAmount": {
+			"value": 35000,
+			"currencyCode": "USD"
+		},
+		"regularHourlyWagesAmount": {
+			"workedPayTypeCode": "BasePay",
+			"description": "Standard hourly rate",
+			"workedPayAmount": {
+				"value": 15.75,
+				"currency": "USD"
+			}
+		},
+		"premiumHourlyWagesAmount": [
+			{
+				"PayTypeCode": "HolidayPremium",
+				"description": "Holiday work premium",
+				"workedPayAmount": {
+					"value": 3.5,
+					"currency": "USD"
+				}
+			},
+			{
+				"PayTypeCode": "ShiftDifferential",
+				"description": "Night shift differential",
+				"workedPayAmount": {
+					"value": 2,
+					"currency": "USD"
+				}
+			}
+		],
+		"paidTimeOffAmount": [
+			{
+				"timeOffPayType": "Sick",
+				"description": "Paid sick leave",
+				"timeOffPayAmount": {
+					"value": 8,
+					"currency": "USD"
+				}
+			},
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Observed holiday",
+				"timeOffPayAmount": {
+					"value": 10,
+					"currency": "USD"
+				}
+			}
+		]
+	}
+}

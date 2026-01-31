@@ -1,0 +1,29 @@
+{
+	"worker_paid_hours_report": {
+		"RefId": "6a3522fe-dce1-486c-af6d-494459d46aea",
+		"senderId": "multi-state-sender-01",
+		"receiverId": "",
+        "sendTo": "AR",
+		"workerRefId": "e375190f-7bac-43c8-a84a-683cee8a607c",
+		"podURL": "https://greenvilleplastics.example.com/pod/2023/Q1",
+		"workerId": {
+			"value": "GP-IMOK-4532",
+			"schemeId": "EmployeeInternalID",
+			"schemeVersionId": "2.1",
+			"schemeAgencyId": "GreenvillePlasticsHR",
+			"description": "Internal identifier assigned to each employee",
+			"schemeLink": "https://greenvilleplastics.example.com/schema/employee-id",
+			"agencyUri": "https://greenvilleplastics.example.com/hr"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2023-01-01T00:00:00Z",
+			"validTo": "2023-03-31T23:59:59Z"
+		},
+		"workedWeeks": 13,
+		"totalHoursPaid": 551,
+		"totalHoursWorked": 535,
+		"regularHoursWorked": 520,
+		"totalPremiumHours": 15,
+		"totalPaidLeaveHours": 16
+	}
+}

@@ -1,0 +1,70 @@
+{
+	"worker_compensation_report": {
+		"RefId": "88803f04-4dad-4eeb-b8a4-a2e3723dd37f",
+		"senderId": "sc-sender-01",
+		"receiverId": "",
+		"workerRefId": "46f78197-60e2-416a-9ccd-fd41b23eb9fb",
+		"podURL": "https://privacypolicies.greenvillerestaurantinc.example/pod",
+		"workerId": {
+			"value": "WKR-839274",
+			"schemeId": "SC-RC-EMP",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "SC-Dept-of-Labor",
+			"description": "Employee registry ID",
+			"schemeLink": "https://schemas.sc.gov/employee-id",
+			"agencyUri": "https://labor.sc.gov"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2023-01-01T00:00:00-05:00",
+			"validTo": "2023-12-31T23:59:59-05:00"
+		},
+		"salaryAmount": {
+			"value": 35000,
+			"currencyCode": "USD"
+		},
+		"regularHourlyWagesAmount": {
+			"workedPayTypeCode": "BasePay",
+			"description": "Standard hourly rate",
+			"workedPayAmount": {
+				"value": 15.75,
+				"currency": "USD"
+			}
+		},
+		"premiumHourlyWagesAmount": [
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Overtime hours at 1.5x rate",
+				"workedPayAmount": {
+					"value": 23.62,
+					"currency": "USD"
+				}
+			},
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Holiday shift premium",
+				"workedPayAmount": {
+					"value": 18,
+					"currency": "USD"
+				}
+			}
+		],
+		"paidTimeOffAmount": [
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Independence Day holiday pay",
+				"timeOffPayAmount": {
+					"value": 126,
+					"currency": "USD"
+				}
+			},
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Christmas Day holiday pay",
+				"timeOffPayAmount": {
+					"value": 126,
+					"currency": "USD"
+				}
+			}
+		]
+	}
+}

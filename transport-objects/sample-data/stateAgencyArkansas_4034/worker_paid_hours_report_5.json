@@ -1,0 +1,28 @@
+{
+	"worker_paid_hours_report": {
+		"RefId": "36066ee0-94c5-42af-9c1f-66cabdf523dd",
+		"senderId": "ar-sender-01",
+		"receiverId": "",
+		"workerRefId": "1485de19-1429-4c40-ac06-a4edb4d69685",
+		"podURL": "https://portal.state.ar.gov/pod/837459",
+		"workerId": {
+			"value": "721-58-6324",
+			"schemeId": "SSN",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "SSA",
+			"description": "Social Security Number",
+			"schemeLink": "https://www.ssa.gov/ssnumber",
+			"agencyUri": "https://www.ssa.gov"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2023-01-01T00:00:00Z",
+			"validTo": "2023-12-31T23:59:59Z"
+		},
+		"workedWeeks": 50,
+		"totalHoursPaid": 2020,
+		"totalHoursWorked": 1880,
+		"regularHoursWorked": 1600,
+		"totalPremiumHours": 280,
+		"totalPaidLeaveHours": 140
+	}
+}

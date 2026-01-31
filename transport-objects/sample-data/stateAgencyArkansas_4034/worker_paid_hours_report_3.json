@@ -1,0 +1,28 @@
+{
+	"worker_paid_hours_report": {
+		"RefId": "c687e493-7ccd-41d0-95bf-8be933944f64",
+		"senderId": "ar-sender-01",
+		"receiverId": "",
+		"workerRefId": "bc67694b-cdad-4681-9d9d-13edfdf4b1b9",
+		"podURL": "https://sdagency.gov/pods/employee-doc-00456",
+		"workerId": {
+			"value": "EMP-SAR-00456",
+			"schemeId": "StateAgencyEmployeeID",
+			"schemeVersionId": "v2.0",
+			"schemeAgencyId": "SAR-DPT",
+			"description": "State agency employee identification number",
+			"schemeLink": "https://sdagency.gov/schemes/StateAgencyEmployeeID",
+			"agencyUri": "https://sdagency.gov"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2023-01-01T00:00:00Z",
+			"validTo": "2023-01-31T23:59:59Z"
+		},
+		"workedWeeks": 4,
+		"totalHoursPaid": 172,
+		"totalHoursWorked": 160,
+		"regularHoursWorked": 150,
+		"totalPremiumHours": 10,
+		"totalPaidLeaveHours": 12
+	}
+}

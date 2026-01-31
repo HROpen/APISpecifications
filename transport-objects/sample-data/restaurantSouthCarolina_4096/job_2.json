@@ -1,0 +1,19 @@
+{
+	"job": {
+		"RefId": "4e8144e9-c45e-4ee6-b4f6-037872eb5502",
+		"senderId": "sc-sender-01",
+		"receiverId": "",
+		"organizationRefId": "7224133c-19d7-4e61-b7de-94269129990e",
+		"organizationId": "GCE123456",
+		"jobId": "GRC-2023-001",
+		"title": "Sous Chef",
+		"jobDuties": "Assist the head chef in daily kitchen operations, supervise kitchen staff, manage inventory, and ensure consistent quality and presentation of menu items.",
+		"socInfo": [
+			{
+				"classificationSys": "1",
+				"assigningEntity": "1",
+				"socCodeValue": "35-2011"
+			}
+		]
+	}
+}

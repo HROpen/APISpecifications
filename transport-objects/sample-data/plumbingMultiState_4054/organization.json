@@ -1,0 +1,107 @@
+{
+	"organization": {
+		"RefId": "a2660567-c84b-49dc-b4c3-7dbb51e2404b",
+		"senderId": "multi-state-sender-01",
+		"receiverId": "",
+		"isMulti-state": true,
+		"organizationId": {
+			"value": "1005161d-7112-46d1-b651-1b6a83e216b5",
+			"issuingAuthority": "InternalRegistry"
+		},
+		"taxIds": [
+			{
+				"value": "12-3456789",
+				"schemeId": "EIN",
+				"schemeVersionId": "2023",
+				"schemeAgencyId": "IRS",
+				"description": "Employer Identification Number",
+				"schemeLink": "https://www.irs.gov/",
+				"agencyUri": "https://www.irs.gov/"
+			}
+		],
+		"industryIdentifiers": [
+			{
+				"value": "332913",
+				"schemeId": "NAICS",
+				"schemeVersionId": "2022",
+				"schemeAgencyId": "US Census Bureau",
+				"description": "North American Industry Classification System",
+				"schemeLink": "https://www.census.gov/naics/",
+				"agencyUri": "https://www.census.gov/"
+			}
+		],
+		"organizationActivity": [
+			{
+				"activityCode": [
+					"332913"
+				],
+				"description": {
+					"value": "Plumbing fixture fitting and trim manufacturing",
+					"languageCode": "en-US"
+				},
+				"percentage": 60
+			},
+			{
+				"activityCode": [
+					"326122"
+				],
+				"description": {
+					"value": "Plastics pipe and pipe fitting manufacturing",
+					"languageCode": "en-US"
+				},
+				"percentage": 40
+			}
+		],
+		"tradeName": "Streamline Pipe & Tool Works",
+		"physicalAddresses": [
+			{
+				"typeCode": "business",
+				"line": "120 Mill Stream Parkway",
+				"countryCode": "US",
+				"countrySubDivisions": [
+					{
+						"type": "state",
+						"value": "SC"
+					}
+				],
+				"city": "Greenville",
+				"postalCode": "29607",
+				"postOfficeBox": "",
+				"geoLocation": {
+					"latitude": 34.8546,
+					"longitude": -82.394,
+					"altitude": {
+						"value": 700,
+						"unitCode": "FOT"
+					},
+					"name": "Greenville Plant"
+				},
+				"formattedAddress": "120 Mill Stream Pkwy, Greenville, SC 29607, USA"
+			},
+			{
+				"typeCode": "business",
+				"line": "45 Industrial Drive",
+				"countryCode": "US",
+				"countrySubDivisions": [
+					{
+						"type": "state",
+						"value": "AR"
+					}
+				],
+				"city": "Hot Springs",
+				"postalCode": "71913",
+				"postOfficeBox": "",
+				"geoLocation": {
+					"latitude": 34.5037,
+					"longitude": -93.0552,
+					"altitude": {
+						"value": 400,
+						"unitCode": "FOT"
+					},
+					"name": "Hot Springs Facility"
+				},
+				"formattedAddress": "45 Industrial Dr, Hot Springs, AR 71913, USA"
+			}
+		]
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"worker_paid_hours_report": {
+		"RefId": "7a9dd5b6-1c31-48ce-acf4-cc755b2f2ecc",
+		"senderId": "multi-state-sender-01",
+		"receiverId": "",
+        "sendTo": "SC",
+		"workerRefId": "0286a39e-04f4-46eb-b69a-4abeef5b8279",
+		"podURL": "https://privacypolicy.corporateexample.com/pod/73482",
+		"workerId": {
+			"value": "EMP-4782",
+			"schemeId": "SSN",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "SSA",
+			"description": "U.S. Social Security Number",
+			"schemeLink": "https://www.ssa.gov/ssnumber",
+			"agencyUri": "https://www.ssa.gov"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2023-01-01T00:00:00Z",
+			"validTo": "2023-12-31T23:59:59Z"
+		},
+		"workedWeeks": 52,
+		"totalHoursPaid": 2200,
+		"totalHoursWorked": 2150,
+		"regularHoursWorked": 2000,
+		"totalPremiumHours": 150,
+		"totalPaidLeaveHours": 50
+	}
+}

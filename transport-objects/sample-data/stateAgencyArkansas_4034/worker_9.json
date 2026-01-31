@@ -1,0 +1,55 @@
+{
+	"worker": {
+		"RefId": "1cc02e28-9d6a-44b3-8241-60701771b3d2",
+		"senderId": "ar-sender-01",
+		"receiverId": "",
+		"organizationRefId": "7015e59b-8d51-4e8d-b922-2fb7bd736963",
+		"podURL": "https://privacy.arkansas.gov/pods/hotsprings-health-systems-llc",
+		"workerId": {
+			"value": "AGY-758399",
+			"schemeId": "ArkDHS-WorkID",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "Arkansas Department of Human Services",
+			"description": "Primary state agency worker identifier",
+			"schemeLink": "https://dhr.arkansas.gov/schemes/workerid",
+			"agencyUri": "https://arkansas.gov/departments/dhs"
+		},
+		"ssn": {
+			"value": "529871634"
+		},
+		"name": {
+			"languageCode": "en-US",
+			"firstName": "Anjali",
+			"middleName": "Meera",
+			"family": "Patel",
+			"previousLastName": "Mehta"
+		},
+		"physicalAddresses": [
+			{
+				"typeCode": "home",
+				"line": "1024 Pinecrest Way",
+				"countryCode": "US",
+				"countrySubDivisions": [
+					{
+						"type": "state",
+						"value": "AR"
+					}
+				],
+				"city": "El Dorado",
+				"postalCode": "71730",
+				"postOfficeBox": "PO Box 456",
+				"geoLocation": {
+					"latitude": 33.2089,
+					"longitude": -92.6673,
+					"altitude": {
+						"value": 233,
+						"unitCode": "FOT"
+					},
+					"name": "Office"
+				},
+				"formattedAddress": "1024 Pinecrest Way, El Dorado, AR 71730, USA"
+			}
+		],
+		"birthDate": "1985-07-12"
+	}
+}

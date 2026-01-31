@@ -1,0 +1,25 @@
+{
+	"job": {
+		"RefId": "8e285b7c-d1a7-4530-a4e5-a8ead790ba6c",
+		"senderId": "multi-state-sender-01",
+		"receiverId": "",
+        "sendTo": "SC",
+		"organizationRefId": "a2660567-c84b-49dc-b4c3-7dbb51e2404b",
+		"organizationId": "Greenville Pipeworks LLC",
+		"jobId": "GPW-1001",
+		"title": "Injection Molding Machine Operator",
+		"jobDuties": "Set up, operate, and monitor injection molding machines to manufacture plastic plumbing fittings. Perform quality inspections, adjust machine settings, maintain production logs, and adhere to safety protocols.",
+		"socInfo": [
+			{
+				"classificationSys": "1",
+				"assigningEntity": "1",
+				"socCodeValue": "51-9111"
+			},
+			{
+				"classificationSys": "1",
+				"assigningEntity": "3",
+				"socCodeValue": "51-9061"
+			}
+		]
+	}
+}

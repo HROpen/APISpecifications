@@ -1,0 +1,28 @@
+{
+	"worker_paid_hours_report": {
+		"RefId": "4579206b-5648-4df1-82e1-da3b2015903b",
+		"senderId": "ar-sender-01",
+		"receiverId": "",
+		"workerRefId": "1cc02e28-9d6a-44b3-8241-60701771b3d2",
+		"podURL": "https://portal.arkansas.gov/pods/abc123",
+		"workerId": {
+			"value": "A1234567",
+			"schemeId": "AR-DL",
+			"schemeVersionId": "2020",
+			"schemeAgencyId": "Arkansas Department of Finance and Administration",
+			"description": "Arkansas Driver's License Number",
+			"schemeLink": "https://www.dfa.arkansas.gov/administration/license",
+			"agencyUri": "https://www.arkansas.gov/"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2023-01-01T00:00:00-06:00",
+			"validTo": "2023-12-31T23:59:59-06:00"
+		},
+		"workedWeeks": 50,
+		"totalHoursPaid": 2270,
+		"totalHoursWorked": 2150,
+		"regularHoursWorked": 2000,
+		"totalPremiumHours": 150,
+		"totalPaidLeaveHours": 120
+	}
+}

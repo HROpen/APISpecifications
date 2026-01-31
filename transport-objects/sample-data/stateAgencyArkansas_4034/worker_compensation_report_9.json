@@ -1,0 +1,70 @@
+{
+	"worker_compensation_report": {
+		"RefId": "3da414ab-46c7-4fca-8514-979304c67a98",
+		"senderId": "ar-sender-01",
+		"receiverId": "",
+		"workerRefId": "1cc02e28-9d6a-44b3-8241-60701771b3d2",
+		"podURL": "https://southarkansasagency.gov/pods/2d15dea5-717a-4f9e-99bc-d5d2271fa3c5",
+		"workerId": {
+			"value": "AR-SEA-789654",
+			"schemeId": "StateEmpID",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "AR-DHR",
+			"description": "State employee identification number",
+			"schemeLink": "https://southarkansasagency.gov/schemes/state-emp-id",
+			"agencyUri": "https://southarkansasagency.gov"
+		},
+		"reportingTimePeriod": {
+			"validFrom": "2023-01-01T00:00:00Z",
+			"validTo": "2023-12-31T23:59:59Z"
+		},
+		"salaryAmount": {
+			"value": 55000,
+			"currencyCode": "USD"
+		},
+		"regularHourlyWagesAmount": {
+			"workedPayTypeCode": "BasePay",
+			"description": "Base hourly compensation rate",
+			"workedPayAmount": {
+				"value": 26.5,
+				"currency": "USD"
+			}
+		},
+		"premiumHourlyWagesAmount": [
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Overtime premium rate",
+				"workedPayAmount": {
+					"value": 39.75,
+					"currency": "USD"
+				}
+			},
+			{
+				"PayTypeCode": "OtherPremium",
+				"description": "Night shift differential rate",
+				"workedPayAmount": {
+					"value": 29.8,
+					"currency": "USD"
+				}
+			}
+		],
+		"paidTimeOffAmount": [
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Independence Day holiday pay",
+				"timeOffPayAmount": {
+					"value": 212,
+					"currency": "USD"
+				}
+			},
+			{
+				"timeOffPayType": "Holiday",
+				"description": "Thanksgiving holiday pay",
+				"timeOffPayAmount": {
+					"value": 169,
+					"currency": "USD"
+				}
+			}
+		]
+	}
+}

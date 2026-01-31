@@ -1,0 +1,56 @@
+{
+	"worker": {
+		"RefId": "79ff02b0-d52f-44b7-a18d-c50c704f30ba",
+		"senderId": "multi-state-sender-01",
+		"receiverId": "",
+        "sendTo": "SC",
+		"organizationRefId": "a2660567-c84b-49dc-b4c3-7dbb51e2404b",
+		"podURL": "https://plumbingdatapod.example.com/doc/privacy",
+		"workerId": {
+			"value": "EMP-2024-0453",
+			"schemeId": "EMP",
+			"schemeVersionId": "1.0",
+			"schemeAgencyId": "Greenville Plumbing Supplies Inc HR",
+			"description": "Internal employee identifier",
+			"schemeLink": "https://greenville-plumbing-supplies-inc.example.com/ids/EMP",
+			"agencyUri": "https://greenville-plumbing-supplies-inc.example.com"
+		},
+		"ssn": {
+			"value": "689-45-2103"
+		},
+		"name": {
+			"languageCode": "en-US",
+			"firstName": "Eladio",
+			"middleName": "G.",
+			"family": "Martínez",
+			"previousLastName": ""
+		},
+		"physicalAddresses": [
+			{
+				"typeCode": "home",
+				"line": "482 Haywood Road",
+				"countryCode": "US",
+				"countrySubDivisions": [
+					{
+						"type": "state",
+						"value": "SC"
+					}
+				],
+				"city": "Greenville",
+				"postalCode": "29601",
+				"postOfficeBox": "PO Box 314",
+				"geoLocation": {
+					"latitude": 34.8526,
+					"longitude": -82.394,
+					"altitude": {
+						"value": 100,
+						"unitCode": "FOT"
+					},
+					"name": "Greenville Plant Location"
+				},
+				"formattedAddress": "482 Haywood Road, Greenville, SC 29601, USA"
+			}
+		],
+		"birthDate": "1985-07-19"
+	}
+}
