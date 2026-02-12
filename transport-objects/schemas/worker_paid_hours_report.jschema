@@ -11,18 +11,6 @@
           "type": "string",
           "description": "Reference Id to the root object."
         },
-        "senderId": {
-          "type": "string",
-          "description": "Reference Id for the sender"
-        },
-        "receiverId": {
-          "type": "string",
-          "description": "Reference Id for the receiver."
-        },
-        "sendTo": {
-          "type": "string",
-          "description": "In multi-state instances identifies the final destination of the object."
-        },
         "workerRefId": {
           "type": "string",
           "description": "Reference Id to the associated organization for the worker."

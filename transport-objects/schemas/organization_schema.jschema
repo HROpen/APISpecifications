@@ -11,15 +11,6 @@
           "type": "string",
           "description": "Reference Id for the root object."
         },
-        "senderId": {
-          "type": "string",
-          "description": "Reference Id for the sender"
-        },
-        "receiverId": {
-          "type": "string",
-          "description": "Reference Id for the receiver."
-        },
-        "isMulti-state": {"type": "boolean"},
         "podURL": {
           "type": "string",
           "description": "URL of the POD (Privacy Obligation Document). "
